@@ -39,3 +39,5 @@ Route::get('/from/{id?}', function ($id = null) {
 
     return redirect()->to($entry->url());
 });
+
+Route::get('versions.json', fn () => config('docs.versions'));
