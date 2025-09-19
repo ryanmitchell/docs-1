@@ -273,10 +273,10 @@ Statamic.$conditions.add('reallyLovesFood', ({ values }) => {
 
 ### Field context
 
-Furthermore, if you need access to values outside of the current [field context](#field-context), we also provide a `root` values parameter, as well as access to the VueX store via `store` and `storeName`:
+Furthermore, if you need access to values outside of the current [field context](#field-context), we also provide a `root` values parameter, as well as access to the Publish Container object via `container`:
 
 ```javascript
-Statamic.$conditions.add('...', ({ root, store, storeName }) => {
+Statamic.$conditions.add('...', ({ root, container }) => {
     //
 });
 ```
