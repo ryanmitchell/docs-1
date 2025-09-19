@@ -26,7 +26,7 @@ your-addon/
 Here's `package.json`, which contains the commands you'll need to run, and the dependencies needed to run Vite.
 
 - The `laravel-vite-plugin` package allows a simpler wrapper around common Vite options, and provides hot reloading.
-- The `@vitejs/plugin-vue2` package allows you to use Vue v2 in your code. Vue v2 is used because that's the version used in the Control Panel. If you aren't adding Vue components to the CP you can leave this out.
+- The `@statamic/cms` package allows you to import Vue components from Statamic. As it's not a "real" npm package, the code is being pulled from your addon's `vendor` directory.
 
 ```json
 {
@@ -35,10 +35,12 @@ Here's `package.json`, which contains the commands you'll need to run, and the d
         "dev": "vite",
         "build": "vite build"
     },
+    "dependencies": {
+        "@statamic/cms": "file:./vendor/statamic/cms/resources/dist-package"
+    },
     "devDependencies": {
-        "@vitejs/plugin-vue2": "^2.2.0",
-        "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
+        "laravel-vite-plugin": "^1.2.0",
+        "vite": "^6.3.4"
     }
 }
 ```
@@ -47,12 +49,12 @@ Here's `package.json`, which contains the commands you'll need to run, and the d
 Here's `vite.config.js`, which configures Vite itself.
 
 - The Laravel Vite plugin defaults to the `public` directory to place the compiled code because it's intended to be used in your app. We've changed it to `resources/dist` as we think it's a nicer convention when using in an addon. Of course, you may customize it. Whichever directory you choose, you'll need to make sure it exists.
-- If you aren't using Vue components in the CP, you may omit the `vue` plugin and its import.
+- The `statamic` plugin allows you to import Statamic's Vue components and CSS files.
 
 ```js
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue2';
+import statamic from '@statamic/cms/vite-plugin';
 
 export default defineConfig({
     plugins: [
@@ -63,7 +65,7 @@ export default defineConfig({
             ],
             publicDirectory: 'resources/dist',
         }),
-        vue(),
+        statamic(),
     ],
 });
 ```
@@ -90,38 +92,19 @@ If you use the `php please make:fieldtype` command, these files will be created 
 
 ## Tailwind CSS
 
-If you want to use [Tailwind CSS](https://tailwindcss.com) in your addon's views, you'll need to install & configure Tailwind to scan your addon's files.
+If you want to use [Tailwind CSS](https://tailwindcss.com) in your addon's views, you'll need to install & configure Tailwind.
 
-1. First, install `tailwindcss` and `postcss`:
+1. First, install `tailwindcss`:
     ```sh
-    npm install tailwindcss postcss
+    npm install tailwindcss
     ```
 
-2. Create a `postcss.config.js` file in the root of your addon:
-    ```js
-    module.exports = {
-        plugins: {
-            tailwindcss: {}
-        },
-    };
-    ```
-
-3. Create a `tailwind.config.js` file. In the `content` array, add the paths you'd like Tailwind to scan for classes:
-    ```js
-    module.exports = {
-        content: [
-            './resources/js/components/**/*.vue',
-            './resources/views/widgets/**/*.blade.php',
-        ]
-    }
-    ```
-
-4. Finally, in your addon's CSS file, include Tailwind's utility classes:
+3. In your addon's CSS file, import Statamic's `tailwind.css` file:
     ```css
-    @import "tailwindcss/utilities";
+    @import "@statamic/cms/tailwind.css";
     ```
 
-    You don't need to add `@tailwind base;` or `@tailwind components;` since they're included in Statamic's CSS file.
+    You don't need to `@import "tailwindcss"`, as it'll be imported by Statamic's `tailwind.css` file.
 
 ## Development
 
@@ -147,6 +130,31 @@ export default defineConfig({
             input: [
 ```
 :::
+
+### Vue Devtools
+Vue Devtools are disabled by default, for security reasons. 
+
+Statamic provides an opt-in dev build, allowing you to use Vue Devtools and see un-minified code, useful when debugging custom Vue components.
+
+Your app must have debug mode enabled:
+
+```
+APP_DEBUG=true
+```
+
+The dev build can either be published via the `vendor:publish` command:
+
+```
+php artisan vendor:publish --tag=statamic-cp-dev
+```
+
+Alternatively, it can be symlinked:
+
+```
+ln -s /path/to/vendor/statamic/cms/resources/dist-dev public/vendor/statamic/cp-dev
+```
+
+Statamic will attempt to use the dev build as long as the `public/vendor/statamic/cp-dev` directory exists. You **shouldn't** commit these or use this on production.
 
 ## Deployment
 
