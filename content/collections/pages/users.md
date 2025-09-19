@@ -68,43 +68,61 @@ In turn, **roles** are attached directly to individual users or [user groups](#u
 
 ### Statamic's native permissions {#native-permissions}
 
-| Permission | Handle |
-|------------|--------|
-| Access the Control Panel | `access cp` |
-| Create, edit, and delete collections | `configure collections` |
-| Access site | `access {site} site` |
-| View entries | `view {collection} entries` |
-| ↳  Edit entries | `edit {collection} entries` |
-| &nbsp;&nbsp;↳  Create entries | `create {collection} entries` |
-| &nbsp;&nbsp;↳  Delete entries | `delete {collection} entries` |
-| &nbsp;&nbsp;↳  Publish entries | `publish {collection} entries` |
-| &nbsp;&nbsp;↳  Reorder entries | `reorder {collection} entries` |
-| &nbsp;&nbsp;↳  Edit other author's entries | `edit other authors {collection} entries` |
+| Permission                                                | Handle                                       |
+| --------------------------------------------------------- | -------------------------------------------- |
+| Access the Control Panel                                  | `access cp`                                  |
+| Configure Sites                                           | `configure sites`                            |
+| Configure Fields                                          | `configure fields`                           |
+| Configure Form Fields                                     | `configure form fields`                      |
+| Manage Preferences                                        | `manage preferences`                         |
+| Access site                                               | `access {site} site`                         |
+| Create, edit, and delete collections                      | `configure collections`                      |
+| View entries                                              | `view {collection} entries`                  |
+| ↳  Edit entries                                           | `edit {collection} entries`                  |
+| &nbsp;&nbsp;↳  Create entries                             | `create {collection} entries`                |
+| &nbsp;&nbsp;↳  Delete entries                             | `delete {collection} entries`                |
+| &nbsp;&nbsp;↳  Publish entries                            | `publish {collection} entries`               |
+| &nbsp;&nbsp;↳  Reorder entries                            | `reorder {collection} entries`               |
+| &nbsp;&nbsp;↳  Edit other author's entries                | `edit other authors {collection} entries`    |
 | &nbsp;&nbsp;&nbsp;&nbsp;↳  Publish other author's entries | `publish other authors {collection} entries` |
-| &nbsp;&nbsp;&nbsp;&nbsp;↳  Delete other author's entries | `delete other authors {collection} entries` |
-| Create, edit, and delete navs | `configure navs` |
-| ↳  View nav | `view {nav} nav` |
-| &nbsp;&nbsp;↳  Edit nav | `edit {nav} nav` |
-| Edit global variables | `edit {global} globals` |
-| View asset container | `view {container} assets` |
-| ↳  Upload assets | `upload {container} assets` |
-| ↳  Edit assets | `edit {container} assets` |
-| &nbsp;&nbsp;↳  Move assets | `move {container} assets` |
-| &nbsp;&nbsp;↳  Rename assets | `rename {container} assets` |
-| &nbsp;&nbsp;↳  Delete assets | `delete {container} assets` |
-| View available updates | `view updates` |
-| &nbsp;&nbsp;↳  Perform updates | `perform updates` |
-| View users | `view users` |
-| ↳ Edit users | `edit users` |
-| &nbsp;&nbsp;↳ Create users | `create users` |
-| &nbsp;&nbsp;↳ Delete users | `delete users` |
-| &nbsp;&nbsp;↳ Change passwords | `change passwords` |
-| &nbsp;&nbsp;↳ Edit user groups | `edit user groups` |
-| &nbsp;&nbsp;↳ Edit roles | `edit roles` |
-| &nbsp;&nbsp;↳ Impersonate users | `impersonate users` |
-| Configure forms | `configure forms` |
-| View form submissions | `view {form} form submissions` |
-| &nbsp;&nbsp;↳ Delete form submissions | `delete {form} form submissions` |
+| &nbsp;&nbsp;&nbsp;&nbsp;↳  Delete other author's entries  | `delete other authors {collection} entries`  |
+| Create, edit, and delete navs                             | `configure navs`                             |
+| ↳  View nav                                               | `view {nav} nav`                             |
+| &nbsp;&nbsp;↳  Edit nav                                   | `edit {nav} nav`                             |
+| Create, edit and delete global sets                       | `configure globals`                          |
+| Edit global variables                                     | `edit {global} globals`                      |
+| Create, edit and delete taxonomies                        | `configure taxonomies`                       |
+| View terms                                                | `view {taxonomy} terms`                      |
+| ↳ Edit terms                                              | `edit {taxonomy} terms`                      |
+| &nbsp;&nbsp;↳  Create terms                               | `create {taxonomy} terms`                    |
+| &nbsp;&nbsp;↳  Delete terms                               | `delete {taxonomy} terms`                    |
+| Configure asset containers                                | `configure asset containers`                 |
+| View asset container                                      | `view {container} assets`                    |
+| ↳  Upload assets                                          | `upload {container} assets`                  |
+| ↳  Edit folders                                           | `edit {container} folders`                   |
+| ↳  Edit assets                                            | `edit {container} assets`                    |
+| &nbsp;&nbsp;↳  Move assets                                | `move {container} assets`                    |
+| &nbsp;&nbsp;↳  Rename assets                              | `rename {container} assets`                  |
+| &nbsp;&nbsp;↳  Delete assets                              | `delete {container} assets`                  |
+| View users                                                | `view users`                                 |
+| ↳ Edit users                                              | `edit users`                                 |
+| &nbsp;&nbsp;↳ Create users                                | `create users`                               |
+| &nbsp;&nbsp;↳ Delete users                                | `delete users`                               |
+| &nbsp;&nbsp;↳ Change passwords                            | `change passwords`                           |
+| &nbsp;&nbsp;↳ Assign user groups                          | `assign user groups`                         |
+| &nbsp;&nbsp;↳ Assign roles                                | `assign roles`                               |
+| Edit user groups                                          | `edit user groups`                           |
+| Edit roles                                                | `edit roles`                                 |
+| Impersonate users                                         | `impersonate users`                          |
+| View updates                                              | `view updates`                               |
+| Configure forms                                           | `configure forms`                            |
+| View form submissions                                     | `view {form} form submissions`               |
+| &nbsp;&nbsp;↳ Delete form submissions                     | `delete {form} form submissions`             |
+| Configure addons                                          | `configure addons`                           |
+| Edit addon settings                                       | `edit {addon} settings`                      |
+| Access utility                                            | `access {utility} utility`                   |
+| Resolve Duplicate IDs                                     | `resolve duplicate ids`                      |
+| View GraphQL                                              | `view graphql`                               |
 
 ### Author permissions
 
