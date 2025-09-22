@@ -131,6 +131,18 @@ export default defineConfig({
 ```
 :::
 
+To avoid needing to run the development script every time you visit the Control Panel, you may wish to build your CSS & JS.
+
+```
+npm run build
+```
+
+You may need to symlink your addon's `resources/dist` directory the first time so it points to your addon's directory:
+
+```
+ln -s ./addons/your/addon/resources/dist public/vendor/package
+```
+
 ### Vue Devtools
 Vue Devtools are disabled by default, for security reasons. 
 
