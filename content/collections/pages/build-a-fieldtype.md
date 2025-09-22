@@ -8,9 +8,7 @@ intro: "Fieldtypes determine the user interface and storage format for your [fie
 ---
 ## Prerequisites
 
-Fieldtypes have a JavaScript component, so you will need to have a JavaScript entry file that gets loaded in the Control Panel.
-
-The best way to do that is to use [Vite](/extending/control-panel#using-vite).
+Fieldtypes have a JavaScript component, so you will need to have a JavaScript entry file that gets loaded in the Control Panel. We recommend using [Vite](https://github.com/statamic/cms/pull/12533) for this.
 
 Throw an `alert('It works!')` into your JS file. Once you see that appear in the browser, you're ready to build your fieldtype!  
 
@@ -46,68 +44,64 @@ The `make:fieldtype` command would have generated a Vue component into `resource
 You should register this Vue component within your JS entry file (`cp.js`):
 
 ``` js
-import Fieldtype from './components/fieldtypes/TogglePassword.vue';
+import UppercaseFieldtype from './components/fieldtypes/Uppercase.vue';
 
 Statamic.booting(() => {
     // Should be named [snake_case_handle]-fieldtype
-    Statamic.$components.register('toggle_password-fieldtype', Fieldtype);
+    Statamic.$components.register('uppercase-fieldtype', UppercaseFieldtype);
 });
 ```
 
-Your component has only two requirements.
-
-- It must expect a `value` prop. This is how it "gets" the value.
-- It must emit an `input` event whenever the value updates. This is how it tells the form the value has changed.
+Your component should use our `Fieldtype` composable for defining props & emits, updating the field value and accessing meta.
 
 Other than that, your component can do whatever you like!
 
 :::best-practice
-**Do not** modify the `value` prop directly. Instead, call `this.update(value)` (or `this.updateDebounced(value)`) and let the Vuex store handle the update appropriately.
+**Do not** modify the `value` prop directly. Instead, call `update(value)` (or `updateDebounced(value)`) from the composable and let Statamic handle the update appropriately.
 :::
 
 
 ### Example Vue component
 
-For this example we will create a password field with a "show" toggle control:
+For this example we will create an input field with a button to make the text uppercase:
 
 <figure>
-    <img src="/img/example-password-fieldtype.png" alt="An example fieldtype that reveals a password field" class="p-4 bg-white" width="477">
+    <img src="/img/uppercase-fieldtype-example.gif" alt="An example fieldtype with a button to make the text uppercase" class="p-4 bg-white" width="477">
     <figcaption>Follow along and you could make this!</figcaption>
 </figure>
 
 
 ``` vue
+<script setup>
+import { Fieldtype } from '@statamic/cms';
+import { Input, Button } from '@statamic/cms/ui';
+
+const emit = defineEmits(Fieldtype.emits);
+const props = defineProps(Fieldtype.props);
+const { expose, update } = Fieldtype.use(emit, props);
+defineExpose(expose);
+
+function makeItUppercase() {
+    update(props.value.toUpperCase());
+}
+</script>
+
 <template>
     <div>
-        <text-input :type="inputType" :value="value" @input="updateDebounced" />
-        <label><input type="checkbox" v-model="show" /> Show Password</label>
+        <Input :model-value="value" @update:model-value="update" />
+        <Button @click="makeItUppercase">Make it upper case!</Button>
     </div>
 </template>
-
-<script>
-export default {
-    mixins: [Fieldtype],
-    data() {
-        return {
-            show: false
-        };
-    },
-    computed: {
-        inputType() {
-            return this.show ? 'text' : 'password';
-        }
-    }
-};
-</script>
 ```
 
 #### What's happening?
-1. The `Fieldtype` mixin is providing a `value` prop containing the initial value of the field and it passes it along to a text field.
-2. When you type into the text field, an `updateDebounced` method is called which emits the `input` event with the new value.
+
+1. The `Fieldtype` composable is providing the `emits` and `props` we need to define, as well as the `expose, update` and `updateDebounced` methods.
+2. When you type into the text field, an `update` method is called which emits an event. Statamic listens to that event and updates the `value` prop.
 
 Those are the two requirements satisfied. ✅
 
-In addition to that, we are toggling the type between text and password so you can see what you're typing.
+In addition to that, when the button is clicked, we're converting the string to uppercase and calling `update` in our function.
 
 ## PHP Class
 
@@ -297,17 +291,20 @@ public function preload()
 }
 ```
 
-This can be accessed in the Vue component using the `meta` property.
+This can be accessed in the Vue component using the `meta` prop.
 
 ``` js
-return this.meta; // { foo: bar }
+return props.meta; // { foo: bar }
 ```
 
 If you have a need to update this meta data on the _JavaScript side_, use the `updateMeta` method. This will persist the value back to Vuex store and communicate the update to the appropriate places.
 
 ``` js
-this.updateMeta({ foo: 'baz' });
-this.meta; // { foo: 'baz' }
+const props = defineProps(Fieldtype.props);
+const { updateMeta } = Fieldtype.use(emit, props);
+
+updateMeta({ foo: 'baz' });
+props.meta; // { foo: 'baz' }
 ```
 
 ### Example use cases -
@@ -324,14 +321,12 @@ When [Replicator](/fieldtypes/replicator) (or [Bard](/fieldtypes/bard)) sets are
 
 By default, Statamic will do its best to display your fields value. However, if you have a value more complex than a simple string or array, you may want to customize it.
 
-You may customize the preview text by adding a `replicatorPreview` computed value to your Vue component. For example:
+You may customize the preview text by calling `defineReplicatorPreview` from your Vue component. For example:
 
 ``` js
-computed: {
-    replicatorPreview() {
-        return this.value.join('+');
-    }
-}
+const { defineReplicatorPreview } = Fieldtype.use(emit, props);
+
+defineReplicatorPreview(() => props.value.join('+'));
 ```
 
 :::tip
@@ -355,30 +350,29 @@ If you need extra control or functionality, fieldtypes may have an additional "i
 
 
 ``` js
-import Fieldtype from './TogglePasswordIndexFieldtype.vue';
+import UppercaseIndexFieldtype from './UppercaseIndexFieldtype.vue';
 
 // Should be named [snake_case_handle]-fieldtype-index
-Statamic.$components.register('toggle_password-fieldtype-index', Fieldtype);
+Statamic.$components.register('toggle_password-fieldtype-index', UppercaseIndexFieldtype);
 ```
 
 ``` vue
-<template>
-    <div v-html="bullets" />
-</template>
+<script setup>
+import { IndexFieldtype } from '@statamic/cms';
 
-<script>
-export default {
-    mixins: [IndexFieldtype],
-    computed: {
-        bullets() {
-            return '&bull;'.repeat(this.value.length);
-        }
-    }
-}
+const props = defineProps(IndexFieldtype.props);
+
+const numberOfUppercaseCharacters = computed(() => {
+    return [...props.value].filter(char => char >= 'A' && char <= 'Z').length;
+});
 </script>
+
+<template>
+    <div>String contains {{ numberOfUppercaseCharacters }} uppercase characters.</div>
+</template>
 ```
 
-The `IndexFieldtype` mixin will provide you with a `value` prop so you can display it however you'd like. Continuing our example above, we will replace the value with bullets.
+The `IndexFieldtype` composable will provide you with a `value` prop so you can display it however you'd like. Continuing our example above, we will calculate how many characters of the given string are uppercase.
 
 ## Augmentation
 
@@ -400,11 +394,9 @@ public function augment($value)
 If you find yourself needing to access other form field values, configs, etc., you can reach into the publish form store from within your Vue component: 
 
 ```js
-inject: ['storeName'],
+import { injectPublishContext } from '@statamic/ui';
+const { values } = injectPublishContext();
 
-computed: {
-    formValues() {
-        return this.$store.state.publish[this.storeName].values;
-    },
-},
+// Do what you need to with values
+console.log(values.value.title)
 ```
