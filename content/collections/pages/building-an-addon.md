@@ -237,39 +237,7 @@ protected $commands = [
 ## Assets
 
 ### CSS and Javascript
-The method of adding assets will differ slightly depending on whether you are using Vite or another build process. We recommend Vite.
-
-#### Using Vite (recommended) {#using-vite}
-
-In your service provider, you may register your Vite config like this, adjusting the paths appropriately.
-
-``` php
-protected $vite = [
-    'input' => [
-        'resources/js/cp.js',
-        'resources/css/cp.css'
-    ],
-    'publicDirectory' => 'resources/dist',
-];
-```
-
-[Get more in-depth about how to use Vite in your addon](/extending/vite-in-addons)
-
-#### Using Webpack/Mix
-
-In your service provider, you may register any number of stylesheets or scripts by providing their full paths.
-
-``` php
-protected $scripts = [
-    __DIR__.'/../resources/js/example.js'
-];
-
-protected $stylesheets = [
-    __DIR__.'/../resources/css/example.css'
-];
-```
-
-Statamic will load the respective files in the Control Panel. It will assume they exist in `public/vendor/[vendor]/[package].js` and `css` directories.
+We recommend using Vite to build CSS and JavaScript for your addon. For full setup instructions, please see our [Vite Tooling](/addons/vite-tooling) docs.
 
 ### Publishables
 
@@ -299,16 +267,6 @@ protected $publishAfterInstall = false;
 ```
 
 This may be useful if you need more control around groups of assets to be published, or if you're using custom [post-install commands](#post-install-commands).
-
-### Assets during development
-
-During development, if you're using Vite, the assets will be loaded through a Vite server and should "just work".
-
-If you're using Webpack/Mix, rather than constantly running `vendor:publish`, consider symlinking your addon's `resource` directory:
-
-``` shell
-ln -s /path/to/addons/example/resources public/vendor/package
-```
 
 ## Routing
 
