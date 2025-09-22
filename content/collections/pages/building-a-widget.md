@@ -14,7 +14,36 @@ You can generate a widget with a console command:
 php please make:widget LocalWeather
 ```
 
-This will automagically set up the widget and create a base template file at `resources/views/widgets/local_weather.blade.php`.
+This will automagically create a class in `app/Widgets` and a Blade view in `resources/views/widgets`.
+
+The PHP class is responsible for returning the view and the view is responsible for what the user sees on the page.
+
+```php
+// app/Widgets/LocalWeather.php
+
+<?php  
+  
+namespace App\Widgets;  
+  
+use Statamic\Widgets\Widget;  
+  
+class LocalWeather extends Widget  
+{
+    public function html()  
+    {  
+        return view('widgets.local_weather');  
+    }  
+}
+```
+```blade
+<ui-widget title="LocalWeather">  
+    <div class="px-4 py-3">  
+        <p>👋 Hello world!</p>  
+    </div>  
+</ui-widget>
+```
+
+The [`<ui-widget>`](/ui-components/widget) component accepts a `title` and an optional `icon` prop. 
 
 ## Configuring
 
