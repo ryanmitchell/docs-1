@@ -310,11 +310,23 @@ Entry::query()
     ->get();
 ```
 
-You can use `whereJsonDoesntContain()` to query the absence of a value or values in a JSON array:
+If you want to check for **any** value being present, use `whereJsonOverlaps`.
+
+```php
+Entry::query()
+    ->whereJsonOverlaps('my_array_field->sub_field', ['statamic', 'is', 'rad']) // [tl! ~~]
+    ->get();
+```
+
+You can use `whereJsonDoesntContain()` and `whereJsonDoesntOverlap()` to query the absence of a value or values in a JSON array:
 
 ```php
 Entry::query()
     ->whereJsonDoesntContain('my_array_field->sub_field', 'statamic') // [tl! ~~]
+    ->get();
+    
+Entry::query()
+    ->whereJsonDoesntOverlap('my_array_field->sub_field', 'statamic') // [tl! ~~]
     ->get();
 ```
 
