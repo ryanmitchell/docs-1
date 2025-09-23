@@ -25,11 +25,11 @@ Keep in mind: Live Preview does not work using the `array` cache driver.
 You can customize the list of device sizes in `config/statamic/live_preview.php`.
 
 ``` php
-    'devices' => [
-        'Laptop' => ['width' => 1440, 'height' => 900],
-        'Tablet' => ['width' => 1024, 'height' => 786],
-        'Mobile' => ['width' => 375, 'height' => 812],
-    ],
+'devices' => [
+	'Laptop' => ['width' => 1440, 'height' => 900],
+    'Tablet' => ['width' => 1024, 'height' => 786],
+    'Mobile' => ['width' => 375, 'height' => 812],
+],
 ```
 
 <figure>
@@ -102,6 +102,32 @@ preview_targets:
 You may use the entry's variables in the URL, just like defining a route.
 
 If you don't define any targets, it will use the entry's URL.
+
+### Auto-refreshing
+
+:::tip
+If you're using Statamic in a headless environment, please refer to the [Auto-refreshing](#auto-refreshing-1) section below.
+:::
+
+When the `refresh` option is enabled, a full refresh will occur whenever a change is made.
+
+When its disabled, Statamic will attempt to update the iframe's HTML automatically. If you're using Alpine or Livewire, its morphing function will be used.
+
+If you need to override how the iframe is updated, you may define a `StatamicLivePreviewMorph` closure:
+
+```js
+window.StatamicLivePreviewMorph = (from, to) => {
+    // Whatever you need to do...
+};
+```
+
+You may opt-out of this behavior if you wish:
+
+```php
+// config/statamic/live_preview.php
+
+'hot_reload_contents' => true,
+```
 
 ## Headless / front-end frameworks
 
