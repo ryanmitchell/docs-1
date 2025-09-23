@@ -310,7 +310,7 @@ Entry::query()
     ->get();
 ```
 
-If you want to check for **any** value being present, use whereJsonOverlaps.
+If you want to check for **any** value being present, use `whereJsonOverlaps`.
 
 ```php
 Entry::query()
@@ -324,7 +324,7 @@ You can use `whereJsonDoesntContain()` and `whereJsonDoesntOverlap()` to query t
 Entry::query()
     ->whereJsonDoesntContain('my_array_field->sub_field', 'statamic') // [tl! ~~]
     ->get();
-
+    
 Entry::query()
     ->whereJsonDoesntOverlap('my_array_field->sub_field', 'statamic') // [tl! ~~]
     ->get();
