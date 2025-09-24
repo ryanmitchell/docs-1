@@ -12,7 +12,8 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^3.6.4",
-        "statamic/cms": "dev-master",
+        "statamic-rad-pack/meilisearch": "dev-statamic-6",
+        "statamic/cms": "dev-master as v6.0.0-alpha.8",
         "torchlight/engine": "^0.1.0"
     },
     "require-dev": {
