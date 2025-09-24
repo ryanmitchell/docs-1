@@ -2,10 +2,12 @@
 
 Route::permanentRedirect('extending/actions', '/backend-apis/actions');
 Route::permanentRedirect('extending/addons', '/addons/building-an-addon');
+Route::permanentRedirect('extending/augmentation', '/frontend/augmentation#digging-deeper');
 Route::permanentRedirect('extending/bard', '/fieldtypes/bard');
 Route::permanentRedirect('extending/blink-cache', '/backend-apis/blink-cache');
 Route::permanentRedirect('extending/breadcrumbs', '/control-panel/cp-navigation#breadcrumbs');
 Route::permanentRedirect('extending/command-palette', '/control-panel/command-palette');
+Route::permanentRedirect('extending/control-panel', '/control-panel/css-javascript');
 Route::permanentRedirect('extending/cp-navigation', '/control-panel/cp-navigation');
 Route::permanentRedirect('extending/data', '/backend-apis/data');
 Route::permanentRedirect('extending/dictionaries', '/fieldtypes/dictionaries');
@@ -30,6 +32,7 @@ Route::permanentRedirect('extending/publish-forms', '/control-panel/publish-form
 Route::permanentRedirect('extending/query-scopes-and-filters', '/backend-apis/query-scopes-and-filters');
 Route::permanentRedirect('extending/relationship-fieldtypes', '/fieldtypes/relationship-fieldtypes');
 Route::permanentRedirect('extending/repositories', '/backend-apis/repositories');
+Route::permanentRedirect('extending/search', '/frontend/search#digging-deeper');
 Route::permanentRedirect('extending/slugs', '/vue-components/slugs');
 Route::permanentRedirect('extending/stacks', '/vue-components/stacks');
 Route::permanentRedirect('extending/tags', '/tags/building-a-tag');
