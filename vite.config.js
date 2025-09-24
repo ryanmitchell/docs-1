@@ -15,7 +15,6 @@ export default defineConfig({
         }),
         vue(),
     ],
-    publicDir: "public",
     server: {
         fs: {
             allow: [".."],
