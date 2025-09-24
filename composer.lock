@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a31a7c729dcc695a965763ca21fb970",
+    "content-hash": "e7da2be2246c8a240b64a3f22d4f2597",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -3531,16 +3531,16 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v3.1.2",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "5bd79e0e88e8757f23e757bcedd1e37fa818cf68"
+                "reference": "d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/5bd79e0e88e8757f23e757bcedd1e37fa818cf68",
-                "reference": "5bd79e0e88e8757f23e757bcedd1e37fa818cf68",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77",
+                "reference": "d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77",
                 "shasum": ""
             },
             "require": {
@@ -3596,7 +3596,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "time": "2025-09-24T01:22:14+00:00"
+            "time": "2025-09-24T15:06:41+00:00"
         },
         {
             "name": "phiki/phiki",
@@ -4320,16 +4320,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.10",
+            "version": "v0.12.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22"
+                "reference": "cd23863404a40ccfaf733e3af4db2b459837f7e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6e80abe6f2257121f1eb9a4c55bf29d921025b22",
-                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/cd23863404a40ccfaf733e3af4db2b459837f7e7",
+                "reference": "cd23863404a40ccfaf733e3af4db2b459837f7e7",
                 "shasum": ""
             },
             "require": {
@@ -4392,9 +4392,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.10"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.12"
             },
-            "time": "2025-08-04T12:39:37+00:00"
+            "time": "2025-09-20T13:46:31+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5106,16 +5106,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "dev-master",
+            "version": "v6.0.0-alpha.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "2fe4171f74294493d86107cf2293c0af5f7b79eb"
+                "reference": "b00170f82b867ee1db850db12038dd8d2c0a3dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/2fe4171f74294493d86107cf2293c0af5f7b79eb",
-                "reference": "2fe4171f74294493d86107cf2293c0af5f7b79eb",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/b00170f82b867ee1db850db12038dd8d2c0a3dde",
+                "reference": "b00170f82b867ee1db850db12038dd8d2c0a3dde",
                 "shasum": ""
             },
             "require": {
@@ -5221,7 +5221,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/master"
+                "source": "https://github.com/statamic/cms/tree/v6.0.0-alpha.9"
             },
             "funding": [
                 {
@@ -5229,7 +5229,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-23T22:13:27+00:00"
+            "time": "2025-09-24T18:31:23+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -9977,16 +9977,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.38",
+            "version": "11.5.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5bd0e4f64a2261b7ade7054c51547beaf2d99e43"
+                "reference": "b42782bcb947d2c197aea42ce9714ee2d974b283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5bd0e4f64a2261b7ade7054c51547beaf2d99e43",
-                "reference": "5bd0e4f64a2261b7ade7054c51547beaf2d99e43",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b42782bcb947d2c197aea42ce9714ee2d974b283",
+                "reference": "b42782bcb947d2c197aea42ce9714ee2d974b283",
                 "shasum": ""
             },
             "require": {
@@ -10010,7 +10010,7 @@
                 "sebastian/comparator": "^6.3.2",
                 "sebastian/diff": "^6.0.2",
                 "sebastian/environment": "^7.2.1",
-                "sebastian/exporter": "^6.3.0",
+                "sebastian/exporter": "^6.3.2",
                 "sebastian/global-state": "^7.0.2",
                 "sebastian/object-enumerator": "^6.0.1",
                 "sebastian/type": "^5.1.3",
@@ -10058,7 +10058,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.38"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.41"
             },
             "funding": [
                 {
@@ -10082,7 +10082,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-11T10:34:07+00:00"
+            "time": "2025-09-24T06:32:10+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -10549,16 +10549,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "6.3.0",
+            "version": "6.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3"
+                "reference": "70a298763b40b213ec087c51c739efcaa90bcd74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/3473f61172093b2da7de1fb5782e1f24cc036dc3",
-                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/70a298763b40b213ec087c51c739efcaa90bcd74",
+                "reference": "70a298763b40b213ec087c51c739efcaa90bcd74",
                 "shasum": ""
             },
             "require": {
@@ -10572,7 +10572,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.1-dev"
+                    "dev-main": "6.3-dev"
                 }
             },
             "autoload": {
@@ -10615,15 +10615,27 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3.0"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3.2"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/exporter",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2024-12-05T09:17:50+00:00"
+            "time": "2025-09-24T06:12:51+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -12045,18 +12057,10 @@
             "time": "2024-04-29T21:42:39+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "statamic/cms",
-            "version": "9999999-dev",
-            "alias": "v6.0.0-alpha.8",
-            "alias_normalized": "6.0.0.0-alpha8"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "statamic-rad-pack/meilisearch": 20,
-        "statamic/cms": 20
+        "statamic-rad-pack/meilisearch": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
