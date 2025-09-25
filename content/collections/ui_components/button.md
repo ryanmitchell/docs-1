@@ -32,7 +32,7 @@ Use the `variant` prop to change the appearance of the button.
 
 ## Sizes
 
-<p>Use the <code>size</code> prop to change the size of the button.</p>
+Use the `size` prop to change the size of the button.
 
 ```component
 <ui-button>Base</ui-button>
