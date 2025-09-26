@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7da2be2246c8a240b64a3f22d4f2597",
+    "content-hash": "d2dda76cee7d576747f04e77ef9353fb",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1842,6 +1842,72 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2025-09-04T14:58:12+00:00"
+        },
+        {
+            "name": "laravel/pint",
+            "version": "v1.25.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pint.git",
+                "reference": "5016e263f95d97670d71b9a987bd8996ade6d8d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/5016e263f95d97670d71b9a987bd8996ade6d8d9",
+                "reference": "5016e263f95d97670d71b9a987bd8996ade6d8d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-tokenizer": "*",
+                "ext-xml": "*",
+                "php": "^8.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.87.2",
+                "illuminate/view": "^11.46.0",
+                "larastan/larastan": "^3.7.1",
+                "laravel-zero/framework": "^11.45.0",
+                "mockery/mockery": "^1.6.12",
+                "nunomaduro/termwind": "^2.3.1",
+                "pestphp/pest": "^2.36.0"
+            },
+            "bin": [
+                "builds/pint"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "An opinionated code formatter for PHP.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "format",
+                "formatter",
+                "lint",
+                "linter",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pint/issues",
+                "source": "https://github.com/laravel/pint"
+            },
+            "time": "2025-09-19T02:57:12+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -5353,6 +5419,116 @@
                 }
             ],
             "time": "2025-02-21T23:40:49+00:00"
+        },
+        {
+            "name": "stillat/documentation-search",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stillat/documentation-search.git",
+                "reference": "3277eaea0326f36abe260097772630d9bcd7965e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stillat/documentation-search/zipball/3277eaea0326f36abe260097772630d9bcd7965e",
+                "reference": "3277eaea0326f36abe260097772630d9bcd7965e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "laravel/pint": "^1.13",
+                "php": "^8.1",
+                "statamic/cms": "^4 || ^5 || ^6",
+                "stillat/statamic-template-resolver": "^1.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.14 || ^9",
+                "pestphp/pest": "^2.24",
+                "pestphp/pest-plugin-laravel": "^2.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stillat\\DocumentationSearch\\ServiceProvider"
+                    ]
+                },
+                "statamic": {
+                    "name": "Documentation Search for Statamic",
+                    "description": "Documentation Search provides a custom Statamic Search provider, targeted at documentation websites."
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stillat\\DocumentationSearch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/Stillat/documentation-search/issues",
+                "source": "https://github.com/Stillat/documentation-search/tree/v1.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JohnathonKoster",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-09-25T23:37:08+00:00"
+        },
+        {
+            "name": "stillat/statamic-template-resolver",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stillat/statamic-template-resolver.git",
+                "reference": "4f417223f33a39cb694a8da4d1fb172709f8c0e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stillat/statamic-template-resolver/zipball/4f417223f33a39cb694a8da4d1fb172709f8c0e0",
+                "reference": "4f417223f33a39cb694a8da4d1fb172709f8c0e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "statamic/cms": "^4 || ^5 || ^6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": []
+                },
+                "statamic": {
+                    "name": "Statamic Template Resolver",
+                    "description": "Provides utilities to resolve templates based on an entry's collection or blueprint handles, with support for a fallback template."
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stillat\\StatamicTemplateResolver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/Stillat/statamic-template-resolver/issues",
+                "source": "https://github.com/Stillat/statamic-template-resolver/tree/v1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JohnathonKoster",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-09-25T23:34:06+00:00"
         },
         {
             "name": "symfony/clock",
