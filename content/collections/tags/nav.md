@@ -166,7 +166,7 @@ You specify what kind you need by using the second tag part:
 ```
 ::
 
-If you use the tag on it's own without a second part, it will assume you want the `pages` collection. That's a super common thing to do, and the `statamic/statamic` repo comes bundled with it.
+If you use the tag on its own without a second part, it will assume you want the `pages` collection. That's a super common thing to do, and the `statamic/statamic` repo comes bundled with it.
 
 ::tabs
 
