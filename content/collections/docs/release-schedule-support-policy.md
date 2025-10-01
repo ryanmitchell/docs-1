@@ -53,14 +53,14 @@ Statamic and its other first-party packages follow [Semantic Versioning](https:/
          <td>10-12</td>
          <td>8.2-8.4</td>
          <td>May 2024</td>
-         <td>Q3 2025</td>
+         <td>Q4 2025</td>
          <td>Nov 2025</td>
       </tr>
        <tr>
          <td>6</td>
          <td>11-12</td>
          <td>8.3-8.4</td>
-         <td>Q3 2025</td>
+         <td>Q4 2025</td>
          <td>TBD</td>
          <td>TBD</td>
       </tr>
