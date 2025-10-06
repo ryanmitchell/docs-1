@@ -78,6 +78,9 @@ class Toc extends Modifier
 
             $title = trim(strip_tags($title));
 
+            // Remove the "#" suffix from titles.
+            $title = str($title)->replaceLast('#', '')->__toString();
+
             // Handle nested list structure based on heading levels
             if ($i > 0) {
                 if ($prevlvl < $lvl) {
