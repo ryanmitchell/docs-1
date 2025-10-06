@@ -40,17 +40,19 @@ The solution is simple. Just as you should never share a cache between different
 
 ### How to avoid sharing file cache
 
-To avoid sharing the file cache between your deployment releases, create a `cache` folder at the top level in your app, bypassing the default `storage` folder, as it _is_ shared between releases. Configure your app to use a custom cache store location by changing `stores.file.path` in `config/cache.php`:
+There are two ways to avoid sharing a file cache between your deployment releases:
 
-```php
-'stores' => [
-    'file' => [
-        'driver' => 'file',
-        'path' => storage_path('framework/cache/data'), // [tl! --]
-        'path' => base_path('cache'), // [tl! ++]
+1. Some services, like Laravel Forge, may allow you to configure the "shared paths" between deployments. If your application allows for it, you could remove the `storage` directory from your site's shared paths, ensuring each release has its own `storage` folder.
+2. Another option is to create a `cache` folder at the top level of your app, bypassing the shared `storage` folder. Configure your app to use a custom cache store location by changing `stores.file.path` in `config/cache.php`:
+    ```php
+    'stores' => [
+        'file' => [
+            'driver' => 'file',
+            'path' => storage_path('framework/cache/data'), // [tl! --]
+            'path' => base_path('cache'), // [tl! ++]
+        ],
     ],
-],
-```
+    ```
 
 ### How to avoid sharing Redis cache
 
