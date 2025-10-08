@@ -27,6 +27,7 @@ use Statamic\Facades\Entry;
 | `query()` | Query Builder |
 | `whereCollection($handle)` | Get all Entries in a `Collection` |
 | `whereInCollection([$handles])` | Get all Entries in an array of `Collections` |
+| `whereInId([$ids])` | Get all entries in array of IDs. Entries returned in the same order as `$ids` |
 | `make()` | Makes a new entry instance |
 
 ## Querying
@@ -60,6 +61,14 @@ Entry::findByUri('/blog/my-first-post');
 :::tip
 **What is the difference between `URI` and `URL`?** `URL` includes the site root (e.g. `/fr/` in a multisite), if there is one, while `URI` is site agnostic and will not. As you may have surmised, when you only have a single site — they are identical.
 :::
+
+#### Get entries by IDs
+
+If you already know the IDs of the entries you want to find, you can call the `whereInId` method. The entries will be returned in the same order you provided them.
+
+```php
+Entry::whereInId([3, 1, 2]);
+```
 
 #### Get all entries in a collection
 

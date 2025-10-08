@@ -55,6 +55,7 @@ class SearchEntriesCreatedListener
 
         foreach ($event->sections as $section) {
             $data = $section->searchEntry->data();
+            $data['search_title'] = str($data['search_title'] ?? '')->replaceEnd('#', '')->__toString();
 
             $category = match (true) {
                 $collection === 'Pages' => ($event->entry->parent() ? $event->entry->parent()?->title.' » ' : null).$data['origin_title'],
@@ -89,7 +90,7 @@ class SearchEntriesCreatedListener
             }
 
             $data['hierarchy_lvl0'] = $category;
-            $data['hierarchy_lvl1'] = implode(' » ', $parentHeadings);
+            $data['hierarchy_lvl1'] = str(implode(' » ', $parentHeadings))->replaceEnd('#', '')->__toString();
 
             if ($data['is_root']) {
                 $data['content'] = strip_tags($event->entry->intro ?? $event->entry->description ?? $data['search_content']);

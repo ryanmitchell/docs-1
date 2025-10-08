@@ -18,14 +18,15 @@ return [
     'configs' => [
 
         'default' => [
-            'heading_permalink' => [
-                'symbol' => '',
-                'id_prefix' => '',
-                'fragment_prefix' => '',
-                'apply_id_to_heading' => true,
-                'html_class' => 'c-anchor',
-                'aria_hidden' => false,
-            ],
+             'heading_permalink' => [
+                 'id_prefix' => '',
+                 'fragment_prefix' => '',
+                 'apply_id_to_heading' => true,
+                 'html_class' => 'c-anchor',
+                 'aria_hidden' => false,
+                 'insert' => 'after',
+                 'symbol' => '#',
+             ],
         ],
 
     ],
