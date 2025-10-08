@@ -30,7 +30,7 @@ class SearchEntriesCreatedListener
         }
 
         foreach (array_reverse($hierarchy) as $level) {
-            $levels[$level->level] = $level->text;
+            $levels[$level->level] = str($level->text)->replaceEnd('#', '')->__toString();
         }
 
         return $levels;
