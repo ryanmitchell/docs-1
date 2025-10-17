@@ -78,7 +78,7 @@ fi
 
 If you're using [Static Caching](/static-caching), you may want to uncomment the `static:clear` and `static:warm` commands.
 
-If you're using the [Git Automation](/git-automation), you may want to [add this snippet](https://statamic.dev/git-automation#customizing-commits) to the very top of your deploy script to prevent Control Panel content changes triggering full deployments.
+If you're using the [Git Automation](/git-automation), you may want to [add this snippet](/git-automation#customizing-commits) to the very top of your deploy script to prevent Control Panel content changes triggering full deployments.
 
 If you're using the [Eloquent Driver](https://github.com/statamic/eloquent-driver), you may want to comment out the `$FORGE_PHP please stache:warm` command and replace it with `$FORGE_PHP please cache:clear`.
 
