@@ -39,7 +39,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: var(--spacing-s-1);
+        gap: var(--spacing-s-4);
         max-width: var(--max-width-1);
         margin-inline: auto;
         padding: var(--spacing-s-1) var(--spacing-s-3) var(--spacing-l-1);

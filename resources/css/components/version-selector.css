@@ -20,7 +20,7 @@
             /* Select Styling. Inspiration - https://moderncss.dev/custom-select-styles-with-pure-css/ */
             appearance: none;
             background: var(--background);
-            background-image: url(/img/dropdown.svg);
+            background-image: url(../../../public/img/dropdown.svg);
             background-repeat: no-repeat;
             background-size: 0.6em;
             background-position: 83% 50%;
