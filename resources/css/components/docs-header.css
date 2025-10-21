@@ -17,15 +17,15 @@
         z-index: var(--z-index-nav);
         --background-position: 5rem;
         --gradient: var(--color-gradient-blue-2);
-        --background-image: url('/img/paper-tear.png');
+        --background-image: url('../../../public/img/paper-tear.png');
         /* Page preference is "dark" */
         html:has(#color-scheme option[value="dark"]:checked) & {
-            --background-image: url('/img/paper-tear-dark-mode.png');
+            --background-image: url('../../../public/img/paper-tear-dark-mode.png');
         }
         /* Page preference is "system", and system preference is "dark" */
         @media (prefers-color-scheme: dark) {
             html:has(#color-scheme option[value="system"]:checked) & {
-                --background-image: url('/img/paper-tear-dark-mode.png');
+                --background-image: url('../../../public/img/paper-tear-dark-mode.png');
             }
         }
         background: var(--background-image) no-repeat 0% var(--background-position), var(--gradient);
@@ -176,15 +176,15 @@
     /* Custom */
     @media (width >= 2100px) {
         .c-docs-header {
-            --background-image: url('/img/paper-tear-large.png');
+            --background-image: url('../../../public/img/paper-tear-large.png');
             /* Page preference is "dark" */
             html:has(#color-scheme option[value="dark"]:checked) & {
-                --background-image: url('/img/paper-tear-large-dark-mode.png');
+                --background-image: url('../../../public/img/paper-tear-large-dark-mode.png');
             }
             /* Page preference is "system", and system preference is "dark" */
             @media (prefers-color-scheme: dark) {
                 html:has(#color-scheme option[value="system"]:checked) & {
-                    --background-image: url('/img/paper-tear-large-dark-mode.png');
+                    --background-image: url('../../../public/img/paper-tear-large-dark-mode.png');
                 }
             }
             --background-position: 7.75rem;
