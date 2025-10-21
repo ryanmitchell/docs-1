@@ -67,7 +67,7 @@
 
     /* ul*/
     .o-scroll-spy-timeline__toc {
-        --item-padding: var(--spacing-4xs);
+        --item-padding: var(--spacing-3xs);
         &, ul {
             gap: unset;
         }
@@ -85,7 +85,7 @@
                 position: absolute;
                 z-index: var(--z-index-below-body);
                 top: 0;
-                left: calc(0% - var(--spacing-m));
+                left: calc(0% - var(--spacing-lg));
                 transform: scaleY(0);
                 transform-origin: top;
 

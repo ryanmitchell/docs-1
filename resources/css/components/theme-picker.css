@@ -81,15 +81,15 @@
             min-block-size: 2.5rem;
             border: none;
             margin: 0;
-            margin-inline-start: var(--spacing-4xs);
-            padding: var(--spacing-3xs);
-            padding-inline-start: var(--spacing-2xs);
+            margin-inline-start: var(--spacing-3xs);
+            padding: var(--spacing-2xs);
+            padding-inline-start: var(--spacing-xs);
             color: var(--color-primary-text);
             font-size: var(--font-size-s-1);
             border-radius: 50px;
             box-shadow: 0px 0px 1px var(--color-pink);
-            border-inline: var(--spacing-xs) solid var(--color-body-background);
-            border-inline-start-width: var(--spacing-4xs);
+            border-inline: var(--spacing-sm) solid var(--color-body-background);
+            border-inline-start-width: var(--spacing-3xs);
         }
     }
 }

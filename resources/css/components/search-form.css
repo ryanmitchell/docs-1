@@ -24,7 +24,7 @@
         & input,
         #docsearch button {
             margin: 0;
-            padding-inline: 3.5em var(--spacing-m);
+            padding-inline: 3.5em var(--spacing-lg);
             /* Custom */
             @media (width < 500px) {
                 padding-inline-end: max(2.5rem, 10vw);
@@ -37,7 +37,7 @@
         }
     }
     .c-search-form__icon {
-        left: var(--spacing-s-1);
+        left: var(--spacing-md);
         pointer-events: none;
         font-size: 1.3em;
     }

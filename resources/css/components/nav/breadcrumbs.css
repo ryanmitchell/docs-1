@@ -27,7 +27,7 @@
             list-style: none;
             display: flex;
             align-items: center;
-            gap: var(--spacing-m);
+            gap: var(--spacing-lg);
             /* For Safari */
             inline-size: 100%;
             /* --mq-grid-before */
@@ -47,7 +47,7 @@
             }
             /* --mq-grid-after to --mq-nav-open-before */
             @media (width >= 1000px) and (width < 1100px) {
-                padding-inline: var(--spacing-lg);
+                padding-inline: var(--spacing-xl);
             }
         }
         & li {
@@ -95,7 +95,7 @@
             }
             button:last-child {
                 position: relative;
-                margin-inline-start: var(--spacing-2xs);
+                margin-inline-start: var(--spacing-xs);
                 &::before {
                     content: '';
                     position: absolute;
@@ -109,7 +109,7 @@
         }
         /* --mq-nav-open-after */
         @media (width >= 1100px) {
-            padding-inline: var(--spacing-lg);
+            padding-inline: var(--spacing-xl);
         }
     }
 }

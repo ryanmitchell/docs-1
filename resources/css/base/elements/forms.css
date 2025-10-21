@@ -91,7 +91,7 @@
     /* Checkbox and Radio labels */
     [type="checkbox"] + label,
     [type="radio"] + label {
-        padding-block-end: var(--spacing-xs);
+        padding-block-end: var(--spacing-sm);
     }
 
     [type="submit"] {
@@ -127,12 +127,12 @@
 
     input:not[type="hidden"] + .c-form__notes {
         /* e.g. 'Login' button followed by 'Forgotten your password?' */
-        padding-block: var(--spacing-lg) 0;
+        padding-block: var(--spacing-xl) 0;
     }
 
     .c-form__notes {
-        padding-block-end: var(--spacing-m);
-        padding-inline: var(--spacing-lg);
+        padding-block-end: var(--spacing-lg);
+        padding-inline: var(--spacing-xl);
         & p {
             color: var(--color-gray-reading);
         }
@@ -153,7 +153,7 @@
 
     /* We use a class of fieldset since the `fieldset` element is not always present */
     .c-form__fieldset {
-        padding: 0 var(--spacing-lg);
+        padding: 0 var(--spacing-xl);
         /* Override default */
         margin: 0;
         border: 0;
@@ -161,7 +161,7 @@
 
     .c-form__fieldset.js__formHideLabelsUntilFocused {
         /* Decrease to account for hidden labels at the top */
-        padding-block-start: var(--spacing-s-1);
+        padding-block-start: var(--spacing-md);
     }
 
     /* Exceptions */
@@ -287,7 +287,7 @@
     /* if you just want a vertically stacked form */
     .c-form-rows {
         display: grid;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-xl);
         padding-block-end: var(--spacing-l-2);
 
         & input {
@@ -360,9 +360,9 @@
 =================================================== */
 @layer components {
     .c-alert {
-        padding: var(--spacing-s) var(--spacing-s-1);
+        padding: var(--spacing-s) var(--spacing-md);
         border-radius: var(--border-radius-l-2);
-        margin-block-end: var(--spacing-s-1);
+        margin-block-end: var(--spacing-md);
         text-transform: uppercase;
         letter-spacing: var(--letter-spacing-s);
         font-family: var(--font-family-system);
@@ -608,7 +608,7 @@
             opacity: 1;
             /* Make up for the labels which other fields don't have */
             padding-block-start: var(--spacing-l-1);
-            padding-block-end: var(--spacing-m);
+            padding-block-end: var(--spacing-lg);
         }
     }
 }

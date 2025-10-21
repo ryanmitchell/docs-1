@@ -26,11 +26,11 @@
     align-items: center;
     /* Custom */
     @media (width >= 1030px) {
-        padding-inline-end: var(--spacing-s-1);
+        padding-inline-end: var(--spacing-md);
     }
     svg {
         font-size: 2em;
-        margin-inline-end: var(--spacing-4xs);
+        margin-inline-end: var(--spacing-3xs);
     }
     input {
         /* Hide the radio */
@@ -41,7 +41,7 @@
         }
     }
     label {
-        padding: var(--spacing-3xs) var(--spacing-2xs);
+        padding: var(--spacing-2xs) var(--spacing-xs);
         font-size: var(--font-size-s-1);
         line-height: var(--font-size-s-1-line-height);
         cursor: pointer;

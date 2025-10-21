@@ -33,7 +33,7 @@
                     background: linear-gradient(to bottom, #70D50B 0%,#70B927 100%);
                 }
                 &:not(:last-child) {
-                    padding-block-end: var(--spacing-s-1);
+                    padding-block-end: var(--spacing-md);
                 }
                 &::after {
                     content: "";

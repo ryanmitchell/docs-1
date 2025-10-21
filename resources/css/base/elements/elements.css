@@ -47,7 +47,7 @@
     mark {
         background: var(--color-green);
         /* e.g. >> /static-caching */
-        padding-inline: var(--spacing-4xs);
+        padding-inline: var(--spacing-3xs);
     }
     /* https://twitter.com/bramus/status/1452572001697153029 */
     /* html,
@@ -69,11 +69,11 @@
         font-weight: var(--font-family-code-weight-light);
         + p:not(ol p, ul p) {
             /* Not on this page e.g. >> /extending/vite-in-addons */
-            padding-block-start: var(--spacing-xs);
+            padding-block-start: var(--spacing-sm);
         }
         /* Put some space between paragraphs and code blocks, except if it's in a tip */
         p:has(+ &):not(.c-tip p, ol p) {
-            margin-block-end: var(--spacing-m);
+            margin-block-end: var(--spacing-lg);
         }
         li & {
             /* Make code in bullet points slightly smaller */
@@ -161,7 +161,7 @@
         margin-inline: 0;
         & img {
             /* Push the caption away from the image */
-            margin-block-end: var(--spacing-3xs);
+            margin-block-end: var(--spacing-2xs);
         }
     }
     /*
@@ -178,26 +178,26 @@
     }
     /* Don't affect nav */
     .s-main li:not(:last-child) {
-        padding-block-end: var(--spacing-3xs);
+        padding-block-end: var(--spacing-2xs);
     }
     dl,
     dt,dd,
     th,
     td {
-        padding-block-end: var(--spacing-2xs);
+        padding-block-end: var(--spacing-xs);
     }
     p {
-        margin-block-end: var(--spacing-m);
+        margin-block-end: var(--spacing-lg);
         /* --mq-nav-open-before */
         @media (width < 1100px) {
             /* Decrease */
-            margin-block-end: var(--spacing-s-1);
+            margin-block-end: var(--spacing-md);
         }
         &:last-child {
             margin-block-end: 0;
         }
         &:has(+ blockquote) {
-            margin-block-end: var(--spacing-lg);
+            margin-block-end: var(--spacing-xl);
         }
     }
     a {
@@ -227,7 +227,7 @@
         padding-inline-start: 0;
     }
     p + ul {
-        padding-block-start: var(--spacing-2xs);
+        padding-block-start: var(--spacing-xs);
     }
     strong {
         font-weight: var(--font-family-ui-weight-heavy);
@@ -241,7 +241,7 @@
     }
     :is(h1, h2, h3, h4, h5, h6, p) svg {
         vertical-align: baseline;
-        margin-inline-end: var(--spacing-3xs);
+        margin-inline-end: var(--spacing-2xs);
     }
     /* GROUP ELEMENTS / FRAMEWORK / MAIN
     =================================================== */
@@ -268,7 +268,7 @@
                 "sidebar-1 breadcrumbs sidebar-2"
                 "sidebar-1 content     sidebar-2"
             ;
-            gap: var(--spacing-l-1) var(--spacing-m);
+            gap: var(--spacing-l-1) var(--spacing-lg);
             max-width: var(--max-width-1);
             margin-inline: auto;
             margin-block-end: var(--spacing-l-3);
@@ -278,11 +278,11 @@
             grid-template-columns: 22fr 70fr 8fr;
             /* Decrease */
             row-gap: var(--spacing-l-1);
-            padding-inline: var(--spacing-s-1) var(--spacing-lg);
+            padding-inline: var(--spacing-md) var(--spacing-xl);
             /* --mq-wide-before */
             @media (width < 1650px) {
                 column-gap: 0;
-                padding-inline-start: var(--spacing-3xs);
+                padding-inline-start: var(--spacing-2xs);
             }
             /* --mq-nav-open-after */
             @media (width >= 1250px) {
@@ -356,16 +356,16 @@
     /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / HIGH PRIORITY / VERTICAL SPACING
     =================================================== */
     h1 {
-        padding-block-end: var(--spacing-m);
+        padding-block-end: var(--spacing-lg);
     }
     h2 {
         /* E.g. h2 following article intro text */
-        padding-block-end: var(--spacing-m);
+        padding-block-end: var(--spacing-lg);
     }
     * + h2,
     article + article {
         /* E.g. h2 following article intro text */
-        padding-block: var(--spacing-xs) var(--spacing-m);
+        padding-block: var(--spacing-sm) var(--spacing-lg);
         &:has(+ h3) {
             /* e.g. >> /assets */
             padding-block-end: 0;
@@ -375,22 +375,22 @@
     =================================================== */
     h3 {
         /* e.g. >> /contributing */
-        padding-block: var(--spacing-s-1) var(--spacing-xs);
+        padding-block: var(--spacing-md) var(--spacing-sm);
     }
     h4 {
         /* e.g. >> /content-managers-guide */
-        padding-block: var(--spacing-s-1) var(--spacing-m);
+        padding-block: var(--spacing-md) var(--spacing-lg);
         &:has(code) {
             /* e.g. >> /forms */
-            padding-block-start: var(--spacing-m);
+            padding-block-start: var(--spacing-lg);
         }
     }
     h5 {
-        padding-block: var(--spacing-l-1) var(--spacing-m);
+        padding-block: var(--spacing-l-1) var(--spacing-lg);
     }
 }
 @layer components {
-    /* Put these at the component level e.g. so we make sure we override something like .c-site-footer li { padding-block-end: var(--spacing-3xs); } */
+    /* Put these at the component level e.g. so we make sure we override something like .c-site-footer li { padding-block-end: var(--spacing-2xs); } */
     /* Nested lists */
     ol ol,
     ol ol li:last-child,
@@ -411,7 +411,7 @@
     .c-bordered-image {
         &:has(+ h2) {
             /* Increase e.g. >> /assets */
-            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-xs));
+            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-sm));
         }
     }
     /* Decrease bottom padding/margin elements previous to hr */
@@ -439,7 +439,7 @@
         --distance: var(--spacing-l-1);
         margin-block-start: var(--distance);
         p:has(+ &) {
-            padding-block-end: var(--spacing-s-1);
+            padding-block-end: var(--spacing-md);
         }
         figure:has(+ &) + h2 {
             /* e.g. >> /quick-start-guide */
@@ -501,7 +501,7 @@
         }
         & svg:last-child {
             /* subnav arrow */
-            margin-inline-start: var(--spacing-4xs);
+            margin-inline-start: var(--spacing-3xs);
             width: 0.7rem;
             color: var(--color-primary-text);
 

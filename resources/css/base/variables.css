@@ -1,15 +1,15 @@
 :root {
     /* GROUP VARIABLES -- SPACING
     =================================================== */
-    --spacing-4xs: 0.15rem;
-    --spacing-3xs: 0.5rem;
-    --spacing-2xs: 0.75rem;
-    --spacing-xs: 0.975rem;
-    --spacing-s-1: 1.35rem;
+    --spacing-3xs: 0.15rem;
+    --spacing-2xs: 0.5rem;
+    --spacing-xs: 0.75rem;
+    --spacing-sm: 0.975rem;
+    --spacing-md: 1.35rem;
 
-    --spacing-m: 1.55rem;
-    --spacing-lg: 1.8rem;
-    --spacing-lg-static: 1.8rem;
+    --spacing-lg: 1.55rem;
+    --spacing-xl: 1.8rem;
+    --spacing-xl-static: 1.8rem;
     /* Based on e.g. >> Home on mobile */
     --spacing-l-1: 1.9rem;
 
@@ -271,7 +271,7 @@
         /* GROUP VARIABLES -- SPACING
         ===================================================  */
         /* Based on nav sidebar and toc spacing */
-        --spacing-lg: 2.2rem;
+        --spacing-xl: 2.2rem;
     }
     /* --mq-root-variable-adjustments-2 */
     @media (min-width: 730px) {
@@ -289,7 +289,7 @@
         --button-spacing-vertical: 0.9rem;
         --button-spacing-inline: 1.25rem;
         /* Decrease */
-        --spacing-s-1: 1.2rem;
+        --spacing-md: 1.2rem;
         --font-size-ui-rem: 0.85rem;
         --max-width-text: 48rem;
     }

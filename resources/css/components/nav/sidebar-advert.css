@@ -21,7 +21,7 @@
             opacity: 0.95;
         }
         h2 {
-            padding-block: var(--spacing-l-1) var(--spacing-xs);
+            padding-block: var(--spacing-l-1) var(--spacing-sm);
             font-size: var(--font-size-s-2);
             font-family: var(--font-family-ui);
             font-weight: var(--font-family-ui-weight-normal);
@@ -30,7 +30,7 @@
             color: inherit;
         }
         p {
-            margin-block-end: var(--spacing-2xs);
+            margin-block-end: var(--spacing-xs);
             font-weight: var(--font-family-ui-weight-medium);
             line-height: var(--font-size-s-1-line-height);
             text-wrap: balance;

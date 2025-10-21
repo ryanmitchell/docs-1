@@ -9,7 +9,7 @@
         }
         &:has(+ h2) {
             /* e.g. >> /collections and /configuration */
-            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-xs))!important;
+            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-sm))!important;
         }
         &:has(+ h3) {
             /* e.g. >> /collections and /configuration */
@@ -37,7 +37,7 @@
 
     pre code.torchlight {
         display: block;
-        padding-block: var(--spacing-m);
+        padding-block: var(--spacing-lg);
         background: var(--color-code-block-background)!important;
         font-size: .9rem;
         /* Custom */
@@ -49,7 +49,7 @@
         min-width: max-content;
         &:has(.tl-files-file) {
             font-size: 0.9em;
-            padding-inline: var(--spacing-2xs);
+            padding-inline: var(--spacing-xs);
             background: var(--color-purple-light-2)!important;
         }
     }
@@ -96,8 +96,8 @@
         opacity: .5;
         padding: .25rem;
         position: absolute;
-        right: var(--spacing-xs);
-        top: var(--spacing-4xs);
+        right: var(--spacing-sm);
+        top: var(--spacing-3xs);
         text-transform: uppercase;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -179,7 +179,7 @@
         /* The last line with a folder */
         /* Commented out based on e.g. >> /extending/vite-in-addons */
         /* :nth-last-child(1 of .line:has(&)) {
-            margin-block-end: var(--spacing-3xs);
+            margin-block-end: var(--spacing-2xs);
         } */
     }
     .tl-files-folder:before {

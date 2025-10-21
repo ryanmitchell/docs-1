@@ -28,11 +28,11 @@
         &:not(.watch) {
             position: relative;
             z-index: var(--z-index-above-body);
-            padding: var(--spacing-m) var(--spacing-l-1) var(--spacing-3xs);
+            padding: var(--spacing-lg) var(--spacing-l-1) var(--spacing-2xs);
 
             /* Custom */
             @media (width < 550px) {
-                padding-inline: var(--spacing-m);
+                padding-inline: var(--spacing-lg);
             }
             margin-block: var(--spacing-l-2);
             font-family: var(--font-family-ui);
@@ -61,15 +61,15 @@
             =================================================== */
             &:has(+ h2) {
                 /* e.g. >> /updating */
-                margin-block-end: var(--spacing-m);
+                margin-block-end: var(--spacing-lg);
             }
             h2:has(+ &) + & {
                 /* e.g. >> /tags/children */
-                margin-block-start: var(--spacing-4xs);
+                margin-block-start: var(--spacing-3xs);
             }
             header:has(+ &) + & {
                 /* e.g. >> /updating */
-                margin-block-start: var(--spacing-m);
+                margin-block-start: var(--spacing-lg);
             }
         }
     }
@@ -77,8 +77,8 @@
     .c-tip__title,
     .hint-title {
         display: inline-block;
-        padding: var(--spacing-4xs) var(--spacing-s-1);
-        margin-block-end: var(--spacing-m);
+        padding: var(--spacing-3xs) var(--spacing-md);
+        margin-block-end: var(--spacing-lg);
         font-size: var(--font-size-l-1-uppercase);
         text-transform: uppercase;
     }

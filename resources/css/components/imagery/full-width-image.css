@@ -32,7 +32,7 @@
 @layer components {
     .c-full-width-image {
         &:not(:last-child) {
-            margin-block-end: calc(var(--spacing-l-1) + var(--spacing-3xs));
+            margin-block-end: calc(var(--spacing-l-1) + var(--spacing-2xs));
         }
         img {
             @container style(--color-scheme: dark) {
@@ -45,7 +45,7 @@
         }
         figcaption {
             display: inline-block;
-            padding: var(--spacing-2xs) var(--spacing-s-1);
+            padding: var(--spacing-xs) var(--spacing-md);
             background: var(--color-yellow-light-3);
             /* Page preference is "dark" */
             html:has(#color-scheme option[value="dark"]:checked) & {

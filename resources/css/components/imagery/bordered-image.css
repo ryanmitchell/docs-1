@@ -58,9 +58,9 @@
     .c-bordered-image {
         position: relative;
         /* e.g. >> /collections and /stache */
-        margin-block-start: var(--spacing-lg);
+        margin-block-start: var(--spacing-xl);
         &:not(:last-child) {
-            margin-block-end: calc(var(--spacing-l-1) + var(--spacing-3xs));
+            margin-block-end: calc(var(--spacing-l-1) + var(--spacing-2xs));
         }
         img {
             margin-block-end: 0;
@@ -69,7 +69,7 @@
         }
         figcaption {
             display: inline-block;
-            padding: var(--spacing-2xs) var(--spacing-s-1);
+            padding: var(--spacing-xs) var(--spacing-md);
             background: var(--color-yellow-light-2);
             /* --mq-nav-open-after */
             @media (width >= 1100px) {
