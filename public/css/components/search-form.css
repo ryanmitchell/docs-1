@@ -129,7 +129,6 @@
         max-width: 12.5vw;
     }
     .c-docs-header__search {
-        min-width: 50%;
         .docsearch-btn {
             min-width: 42vw;
         }
