@@ -39,11 +39,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        > * {
+            flex-basis: 100%;
+        }
         gap: var(--spacing-s-1);
         max-width: var(--max-width-1);
         margin-inline: auto;
         padding: var(--spacing-s-1) var(--spacing-s-3) var(--spacing-l-1);
         margin-block-end: var(--spacing-s-3);
+
+        .c-version-selector {
+            text-align: right;
+        }
 
         /* GROUP COMPONENTS / NAV / CURRENT PAGE
         =================================================== */
