@@ -14,9 +14,9 @@
     .c-icon-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 12em), 1fr));
-        gap: var(--spacing-l-1) var(--spacing-md);
+        gap: var(--spacing-2xl) var(--spacing-md);
         &:not(:last-child) {
-            padding-block-end: var(--spacing-l-3);
+            padding-block-end: var(--spacing-4xl);
         }
         text-align: center;
 

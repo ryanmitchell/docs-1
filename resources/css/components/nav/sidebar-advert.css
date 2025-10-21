@@ -4,7 +4,7 @@
     .c-sidebar-advert {
         &:first-child {
             /* I.e. when the toc is hidden with {{ $hide_toc = 'yes' }} */
-            padding-block-start: var(--spacing-l-1);
+            padding-block-start: var(--spacing-2xl);
         }
         padding-inline-start: 3.85rem;
         padding-inline-start: 2.85rem;
@@ -21,7 +21,7 @@
             opacity: 0.95;
         }
         h2 {
-            padding-block: var(--spacing-l-1) var(--spacing-sm);
+            padding-block: var(--spacing-2xl) var(--spacing-sm);
             font-size: var(--font-size-s-2);
             font-family: var(--font-family-ui);
             font-weight: var(--font-family-ui-weight-normal);

@@ -84,7 +84,7 @@
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                gap: var(--spacing-l-2);
+                gap: var(--spacing-3xl);
                 font-size: var(--font-size-s-2);
                 overscroll-behavior-y: contain;
                 /* Need to cut this short a little to force scrolling when there are a lot of items. */
@@ -259,9 +259,9 @@
                     background: var(--popover-backdrop);
                 }
                 & ul {
-                    padding: var(--spacing-l-3) var(--spacing-xs);
+                    padding: var(--spacing-4xl) var(--spacing-xs);
                     & ul {
-                        padding: 0 var(--spacing-l-2);
+                        padding: 0 var(--spacing-3xl);
                     }
                 }
             }

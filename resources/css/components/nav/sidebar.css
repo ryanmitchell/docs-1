@@ -251,9 +251,9 @@
                     background: var(--popover-backdrop);
                 }
                 & ul {
-                    padding: var(--spacing-l-3) var(--spacing-xs);
+                    padding: var(--spacing-4xl) var(--spacing-xs);
                     & ul {
-                        padding: 0 var(--spacing-l-2);
+                        padding: 0 var(--spacing-3xl);
                     }
                 }
             }

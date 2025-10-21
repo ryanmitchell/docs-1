@@ -43,12 +43,12 @@
     .c-tiles-with-description {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 13em), 1fr));
-        gap: calc(var(--spacing-l-1) + var(--spacing-3xs)) var(--spacing-2xs);
+        gap: calc(var(--spacing-2xl) + var(--spacing-3xs)) var(--spacing-2xs);
         /* Custom */
         @media (width >= 530px) {
             column-gap: var(--spacing-sm);
         }
-        padding-block-end: var(--spacing-l-2);
+        padding-block-end: var(--spacing-3xl);
     }
     .c-tiles-with-description__item {
         max-width: 21rem;

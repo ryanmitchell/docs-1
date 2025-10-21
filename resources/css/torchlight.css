@@ -9,11 +9,11 @@
         }
         &:has(+ h2) {
             /* e.g. >> /collections and /configuration */
-            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-sm))!important;
+            margin-block-end: calc(var(--spacing-3xl) + var(--spacing-sm))!important;
         }
         &:has(+ h3) {
             /* e.g. >> /collections and /configuration */
-            margin-block-end: var(--spacing-l-1)!important;
+            margin-block-end: var(--spacing-2xl)!important;
         }
         margin-top: 1rem;
         overflow-x: auto;

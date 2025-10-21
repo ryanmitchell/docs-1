@@ -42,7 +42,7 @@
         gap: var(--spacing-2xs);
         max-width: var(--max-width-1);
         margin-inline: auto;
-        padding: var(--spacing-md) var(--spacing-xs) var(--spacing-l-1);
+        padding: var(--spacing-md) var(--spacing-xs) var(--spacing-2xl);
         margin-block-end: var(--spacing-xs);
 
         .c-version-selector {
@@ -246,7 +246,7 @@
                 /* animation: unset; */
                 /* [/2] But in the end I made the "compressed" header the default for browsers that don't support scroll-driven-animations */
                 padding-block: var(--spacing-xs) var(--spacing-sm);
-                margin-block-end: var(--spacing-l-2);
+                margin-block-end: var(--spacing-3xl);
             }
         }
     }

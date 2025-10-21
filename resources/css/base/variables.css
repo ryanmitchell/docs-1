@@ -11,17 +11,17 @@
     --spacing-xl: 1.8rem;
     --spacing-xl-static: 1.8rem;
     /* Based on e.g. >> Home on mobile */
-    --spacing-l-1: 1.9rem;
+    --spacing-2xl: 1.9rem;
 
     /* Smaller values for mobile */
-    --spacing-l-2: min(12vw, 2.5rem);
+    --spacing-3xl: min(12vw, 2.5rem);
     /* Increased at higher MQs */
-    --spacing-l-2-horizontal: min(12vw, 3.5rem);
-    --spacing-l-3: min(15vw, 4.7rem);
-    --spacing-l-4: min(18vw, 7.5rem);
+    --spacing-3xl-horizontal: min(12vw, 3.5rem);
+    --spacing-4xl: min(15vw, 4.7rem);
+    --spacing-5xl: min(18vw, 7.5rem);
 
     /* e.g. footer padding */
-    --spacing-vh-s: min(18vw, 10vh);
+    --spacing-vh-sm: min(18vw, 10vh);
 
     --button-spacing-vertical: 1rem;
     --button-spacing-inline: 1.5rem;
@@ -281,7 +281,7 @@
     /* --mq-root-variable-adjustments-2-portrait */
     @media (min-width: 730px) and (orientation: portrait) {
         /* e.g. iPad */
-        --spacing-l-4: 5rem;
+        --spacing-5xl: 5rem;
     }
     /* --mq-text-bump-1-after */
     @media (width >= 1025px) and (width < 1441px) {

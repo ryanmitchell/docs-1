@@ -68,7 +68,7 @@
         }
         border-collapse: collapse;
         border-spacing: 0;
-        margin-block: var(--spacing-l-1);
+        margin-block: var(--spacing-2xl);
         font-family: var(--font-family-ui);
 
         td {
@@ -164,9 +164,9 @@
             /* Make sure we can see the shadow */
             padding-inline-start: 0.2rem;
             /* Balance out between the container and table so that the scrollbar appears halfway between the component and the following element */
-            margin-block-end: calc(var(--spacing-l-1) / 2);
+            margin-block-end: calc(var(--spacing-2xl) / 2);
             table {
-                margin-block-end: calc(var(--spacing-l-1) / 2);
+                margin-block-end: calc(var(--spacing-2xl) / 2);
             }
             -ms-overflow-style: -ms-autohiding-scrollbar;
             -webkit-overflow-scrolling: touch;

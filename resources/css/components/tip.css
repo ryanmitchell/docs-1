@@ -28,13 +28,13 @@
         &:not(.watch) {
             position: relative;
             z-index: var(--z-index-above-body);
-            padding: var(--spacing-lg) var(--spacing-l-1) var(--spacing-2xs);
+            padding: var(--spacing-lg) var(--spacing-2xl) var(--spacing-2xs);
 
             /* Custom */
             @media (width < 550px) {
                 padding-inline: var(--spacing-lg);
             }
-            margin-block: var(--spacing-l-2);
+            margin-block: var(--spacing-3xl);
             font-family: var(--font-family-ui);
             &:hover .c-tip__mascot {
                 animation: wiggle 0.5s linear;

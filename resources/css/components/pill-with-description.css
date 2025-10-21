@@ -23,7 +23,7 @@
 */
 @layer components {
     .c-pill-with-description {
-        margin-block-end: var(--spacing-l-1);
+        margin-block-end: var(--spacing-2xl);
         /* e.g. >> /tags/form-create – handle|is|in|form|formset */
         overflow: scroll;
         &:has(+ &) {

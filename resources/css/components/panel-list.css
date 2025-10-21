@@ -28,8 +28,8 @@
 @layer components {
     .c-panel-list {
         font-family: var(--font-family-code);
-        padding: var(--spacing-l-1) var(--spacing-l-2);
-        margin-block-start: calc(var(--spacing-l-2) - 0.75rem);
+        padding: var(--spacing-2xl) var(--spacing-3xl);
+        margin-block-start: calc(var(--spacing-3xl) - 0.75rem);
         background: var(--color-purple-light-2);
         &:has(svg) {
             /* Check if there's any SVGs first because we want to affect e.g. >> /reference/fieldtypes but not /reference/modifiers */
@@ -50,7 +50,7 @@
                 @media (width >= 800px) {
                     column-count: 3;
                 }
-                gap: var(--spacing-l-3);
+                gap: var(--spacing-4xl);
                 a {
                     /* Decrease */
                     font-size: var(--font-size-s-2);

@@ -35,11 +35,11 @@
         max-width: var(--max-width-1);
         /* If it's the first entry-content on the page then push it away from the header */
         :is(main) > section > article &:first-child {
-            padding-block-start: var(--spacing-vh-s);
+            padding-block-start: var(--spacing-vh-sm);
         }
         /* The last entry-content but not if it's the last main item. */
         main > *:not(:last-child) &:last-child {
-            padding-block-end: var(--spacing-l-4);
+            padding-block-end: var(--spacing-5xl);
         }
         /* If it's the last item set padding to 0 */
         main > section:last-child &:last-child {
@@ -144,7 +144,7 @@
             --padding-inline-start: min(1.5rem, 5vw);
             padding-inline-start: var(--padding-inline-start);
             /* e.g. >> /upgrade-guide */
-            padding-block: var(--spacing-3xs) var(--spacing-l-1);
+            padding-block: var(--spacing-3xs) var(--spacing-2xl);
             li {
                 padding-inline-start: var(--spacing-3xs);
                 position: relative;
@@ -219,16 +219,16 @@
         p {
             /* e.g. >> /quick-start-guide */
             + ol {
-                padding-block: var(--spacing-md) var(--spacing-l-1);
+                padding-block: var(--spacing-md) var(--spacing-2xl);
             }
             /* e.g. >> /quick-start-guide */
             + ul {
-                padding-block: var(--spacing-3xs) var(--spacing-l-1);
+                padding-block: var(--spacing-3xs) var(--spacing-2xl);
             }
         }
         /* Followed by some kind of image component (or paragraph like /javascript-frameworks). Not when the h1 is an only child, e.g. /modifiers/add */
         > :is(header, p):has(+ * img, + p):not:has(h1:only-child) {
-            margin-block-end: calc(var(--spacing-l-1));
+            margin-block-end: calc(var(--spacing-2xl));
         }
 
         .external {

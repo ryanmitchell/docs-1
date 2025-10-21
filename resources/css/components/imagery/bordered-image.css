@@ -60,7 +60,7 @@
         /* e.g. >> /collections and /stache */
         margin-block-start: var(--spacing-xl);
         &:not(:last-child) {
-            margin-block-end: calc(var(--spacing-l-1) + var(--spacing-2xs));
+            margin-block-end: calc(var(--spacing-2xl) + var(--spacing-2xs));
         }
         img {
             margin-block-end: 0;
@@ -92,7 +92,7 @@
         }
         /* Custom */
         @media (width >= 768px) {
-            padding: var(--spacing-l-2);
+            padding: var(--spacing-3xl);
             &::before {
                 position: absolute;
                 z-index: var(--z-index-below-body);
@@ -103,7 +103,7 @@
             }
             &:has(figcaption) {
                 /* Increase. Make a bit more room for the caption */
-                padding-block-end: calc(var(--spacing-l-2) + 1rem);
+                padding-block-end: calc(var(--spacing-3xl) + 1rem);
             }
             figcaption {
                 position: absolute;

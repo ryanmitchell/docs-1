@@ -18,7 +18,7 @@
 @layer components {
     .c-doc-tabs {
         --button-radius: var(--border-radius-l-1);
-        margin-block: var(--spacing-3xs) var(--spacing-l-1);
+        margin-block: var(--spacing-3xs) var(--spacing-2xl);
         /* e.g. p followed by .c-docs-tabs e.g. >> /collections */
         padding-block-start: var(--spacing-sm);
         border-radius: var(--button-radius);

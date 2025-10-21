@@ -288,7 +288,7 @@
     .c-form-rows {
         display: grid;
         gap: var(--spacing-xl);
-        padding-block-end: var(--spacing-l-2);
+        padding-block-end: var(--spacing-3xl);
 
         & input {
             width: 100%;
@@ -607,7 +607,7 @@
         .u-hide-labels-until-focused__always-show label {
             opacity: 1;
             /* Make up for the labels which other fields don't have */
-            padding-block-start: var(--spacing-l-1);
+            padding-block-start: var(--spacing-2xl);
             padding-block-end: var(--spacing-lg);
         }
     }

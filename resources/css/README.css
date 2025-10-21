@@ -41,7 +41,7 @@
             align-content: center;
             text-align: center;
             /* Minimum vertical padding of --carousel-product-fake-celing if it exists, with a fallback if it doesn't
-            padding: var(--carousel-product-fake-ceiling, var(--spacing-l-3)) var(--spacing-xl);
+            padding: var(--carousel-product-fake-ceiling, var(--spacing-4xl)) var(--spacing-xl);
 
             & > * {
                 text-wrap: balance;
@@ -165,7 +165,7 @@
 ===================================================  */
 /* Cound be useful to use the max value for increasing spacing on hero text elements, e.g.
 
-    padding-inline-start: max(var(--spacing-l-1), 7vw);
+    padding-inline-start: max(var(--spacing-2xl), 7vw);
 
 */
 
