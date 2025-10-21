@@ -91,6 +91,17 @@
             display: flex;
         }
     }
+    .c-docs-header__extra {
+        display: flex;
+        align-content: center;
+        gap: var(--spacing-s-3);
+        /* --mq-nav-open-after */
+        @media (width >= 1250px) {
+            /* Increase */
+            gap: var(--spacing-l-2);
+            border: 3px solid blue!important;
+        }
+    }
     /* GROUP COMPONENTS / SITE HEADER / SITE LOGO / MQs
     =================================================== */
     /* --mq-nav-open-before */
