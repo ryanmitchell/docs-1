@@ -39,9 +39,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        > * {
-            flex-basis: 100%;
-        }
         gap: var(--spacing-s-1);
         max-width: var(--max-width-1);
         margin-inline: auto;
@@ -171,6 +168,12 @@
             html:has(#color-scheme option[value="system"]:checked) .c-docs-header__inner::before {
                 opacity: 0.05;
             }
+        }
+    }
+    /* Custom */
+    @media (width >= 1200px) {
+        .c-docs-header__inner > * {
+            flex-basis: 100%;
         }
     }
     /* Custom */
