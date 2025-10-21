@@ -1,4 +1,23 @@
 :root {
+    /* GROUP VARIABLES -- LAYOUT -- GRID
+    =================================================== */
+    /* --mq-grid-after */
+    @media (width >= 1000px) {
+        --grid-template-columns-main: auto auto auto;
+    }
+    /* --mq-nav-open-after */
+    @media (width >= 1100px) {
+        --grid-template-columns-main: 22fr 70fr 8fr;
+    }
+    /* --mq-nav-open-after */
+    @media (width >= 1250px) {
+        --grid-template-columns-main: 21fr 61fr 18fr;
+    }
+    /* --mq-text-bump-2-after */
+    @media (width >= 1441px) {
+        --grid-template-columns-main: 22.5fr 60fr 17.5fr;
+    }
+
     /* GROUP VARIABLES -- SPACING
     =================================================== */
     --spacing-3xs: 0.15rem;
