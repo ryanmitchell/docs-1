@@ -30,7 +30,7 @@
         margin-block: var(--spacing-2xs) var(--spacing-lg);
         background: var(--color-gradient-full-light-3);
         border: var(--border-solid);
-        border-radius: var(--border-radius-l-1);
+        border-radius: var(--border-radius-lg);
         font-family: var(--font-family-ui);
         font-size: var(--font-size-s-1);
         line-height: var(--font-size-s-1-line-height);

@@ -82,7 +82,7 @@
             /* height: 100%; */
             font-family: var(--font-family-ui);
             box-shadow: var(--box-shadow-not-t-light);
-            border-radius: var(--border-radius-m);
+            border-radius: var(--border-radius-md);
         }
         & li {
             display: flex;

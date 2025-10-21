@@ -64,7 +64,7 @@
         }
         img {
             margin-block-end: 0;
-            border-radius: var(--border-radius-s);
+            border-radius: var(--border-radius-sm);
             border: 1px solid var(--color-black);
         }
         figcaption {
@@ -79,7 +79,7 @@
             font-weight: var(--font-family-ui-weight-normal);
             font-size: var(--font-size-s-1);
             line-height: var(--font-size-s-1-line-height);
-            border-radius: var(--border-radius-s);
+            border-radius: var(--border-radius-sm);
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
@@ -99,7 +99,7 @@
                 inset: 0;
                 content: "";
                 background: var(--color-gradient-full-light-2);
-                border-radius: var(--border-radius-l-3);
+                border-radius: var(--border-radius-2xl);
             }
             &:has(figcaption) {
                 /* Increase. Make a bit more room for the caption */
@@ -109,7 +109,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                border-radius: 0 var(--border-radius-l-2);
+                border-radius: 0 var(--border-radius-xl);
             }
         }
     }

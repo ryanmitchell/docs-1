@@ -194,7 +194,7 @@
     /* GROUP ELEMENTS / TABLES / (MODIFICATIONS) / BORDERED
     =================================================== */
     table {
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
         box-shadow: var(--box-shadow-pink-light);
     }
     /* GROUP ELEMENTS / TABLES / (JAY ADDED) / (CROSS POLLINATED)

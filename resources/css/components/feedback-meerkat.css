@@ -30,7 +30,7 @@
         }
         padding: var(--spacing-xl);
         background: var(--color-gradient-burnt);
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
 
         position: relative;
         &::before {

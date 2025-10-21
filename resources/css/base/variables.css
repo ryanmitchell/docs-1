@@ -226,13 +226,13 @@
     /* GROUP VARIABLES -- DECORATION -- BORDER RADIUS
     =================================================== */
     /* e.g. .c-full-width-image */
-    --border-radius-s: 5px;
-    --border-radius-m: 8px;
-    --border-radius-l-1: 20px;
+    --border-radius-sm: 5px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 20px;
     /* e.g. >> Home > .c-tiles-with-description */
-    --border-radius-l-2: 25px;
+    --border-radius-xl: 25px;
     /* e.g. .c-bordered-image */
-    --border-radius-l-3: 50px;
+    --border-radius-2xl: 50px;
 
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BORDERS - ordered from light to dark variants
     =================================================== */

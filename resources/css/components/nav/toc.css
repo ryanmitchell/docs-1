@@ -148,7 +148,7 @@
                             }
                         }
                         a {
-                            border-radius: var(--border-radius-m);
+                            border-radius: var(--border-radius-md);
                             &:hover {
                                 background: var(--color-pink-light-4);
                             }

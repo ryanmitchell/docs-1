@@ -80,7 +80,7 @@
             font-size: var(--font-size-s-1);
             background: var(--color-gradient-full-light-5);
             border: var(--border-solid);
-            border-radius: var(--border-radius-l-1);
+            border-radius: var(--border-radius-lg);
             border-top-left-radius: 0;
         }
         p {

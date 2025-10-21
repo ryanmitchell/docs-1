@@ -28,7 +28,7 @@
         line-height: 2;
         > * {
             padding: var(--spacing-3xs) var(--spacing-2xs);
-            border-radius: var(--border-radius-s);
+            border-radius: var(--border-radius-sm);
         }
     }
     .c-syntax-explainer__1 {

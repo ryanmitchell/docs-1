@@ -84,7 +84,7 @@
     [type="submit"] {
         background: linear-gradient(to top left, var(--color-black) 0%,var(--color-black-light) 100%);
         color: var(--color-green);
-        border-radius: var(--border-radius-s);
+        border-radius: var(--border-radius-sm);
         font-weight: var(--font-family-ui-weight-medium);
         @container style(--color-scheme: dark) {
             background: var(--color-dark-mode-gray-dark);
@@ -103,7 +103,7 @@
     /* 2 */
     .c-btn--2 {
         background: var(--color-gray-background);
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
     }
 
     /* Inline */

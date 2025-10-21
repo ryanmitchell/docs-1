@@ -42,7 +42,7 @@
                     left: 0;
                     inline-size: calc(var(--size) - 0.2rem);
                     border: 3px solid var(--color-red-bright);
-                    border-radius: var(--border-radius-s);
+                    border-radius: var(--border-radius-sm);
                 }
                 &::marker {
                     position: relative;

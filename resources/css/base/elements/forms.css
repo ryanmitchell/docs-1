@@ -361,7 +361,7 @@
 @layer components {
     .c-alert {
         padding: var(--spacing-s) var(--spacing-md);
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
         margin-block-end: var(--spacing-md);
         text-transform: uppercase;
         letter-spacing: var(--letter-spacing-s);
@@ -542,7 +542,7 @@
         /* In case you don't have --box-shadow-s-light-b */
         /* --box-shadow-s-light-b: 0 10px 9px -8px hsla(0, 0%, 0%, 0.09); */
         box-shadow: var(--box-shadow-s-light-b);
-        border-radius: var(--border-radius-l-3);
+        border-radius: var(--border-radius-2xl);
     }
 
     .s-input-style--8 textarea {

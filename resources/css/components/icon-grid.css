@@ -101,7 +101,7 @@
         margin-inline: auto;
         background: var(--color-gradient-full-light-2);
         border: var(--border-dashed-red);
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
     }
 }
 @layer utilities {

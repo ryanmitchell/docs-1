@@ -76,7 +76,7 @@
         align-content: center;
         padding: var(--spacing-md) var(--spacing-lg);
         background: var(--color-gradient-blue-light-1);
-        border-radius: var(--border-radius-l-2);
+        border-radius: var(--border-radius-xl);
         font-family: var(--font-family-ui);
         --color-link: var(--color-primary-text);
         &:has(a):not(:has(img)) {
@@ -87,7 +87,7 @@
                 /* Put the padding on the link instead to make it appear smaller */
                 border: 1px dashed var(--color-primary-text);
                 padding: var(--spacing-sm) var(--spacing-lg);
-                border-radius: var(--border-radius-l-1);
+                border-radius: var(--border-radius-lg);
                 /* Custom hover effect */
                 &:hover {
                     color: inherit!important;
@@ -117,7 +117,7 @@
                 inline-size: 2.65rem;
                 block-size: 2.65rem;
                 /* e.g. a GitHub avatar */
-                border-radius: var(--border-radius-s);
+                border-radius: var(--border-radius-sm);
             }
         }
         span {

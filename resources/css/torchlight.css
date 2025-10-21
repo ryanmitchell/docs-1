@@ -1,7 +1,7 @@
 @layer plugins {
     pre {
         &, /* code*/.torchlight {
-            border-radius: calc(var(--border-radius-l-1) / 1.125);
+            border-radius: calc(var(--border-radius-lg) / 1.125);
         }
         line-height: 2;
         &:not(.c-doc-tabs &) {
@@ -278,7 +278,7 @@
         top: 0.75rem;
         right: 0.75rem;
         border: 1px solid hsl(0deg 0% 100% / 20%);
-        border-radius: var(--border-radius-m);
+        border-radius: var(--border-radius-md);
         color: white;
         cursor: pointer;
         display: flex;
