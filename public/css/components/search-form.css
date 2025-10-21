@@ -70,6 +70,10 @@
     }
     .docsearch-btn {
         padding: var(--button-spacing);
+        /* Custom */
+        @media (width < 450px) {
+            padding-inline: 1.15rem;
+        }
         height: unset;
         > * {
             margin-inline-end: unset;
@@ -103,8 +107,8 @@
     #docsearch .docsearch-btn-placeholder {
         /* Override Meilsearch hiding the text on lower MQs */
         display: inline-block!important;
-        /* Custom */
-        @media (width < 500px) {
+        /* --mq-nav-expanded-before */
+        @media (width < 680px) {
             &::after {
                 content: unset;
             }
@@ -112,17 +116,22 @@
     }
 }
 /* Custom */
-@media (width < 500px) {
+/* --mq-nav-expanded-before */
+@media (width < 680px) {
     #docsearch {
         /* Hide when short on space */
         .docsearch-btn-keys {
             display: none;
         }
     }
+    .c-docs-header .o-logo {
+        min-width: 3em;
+        max-width: 12.5vw;
+    }
     .c-docs-header__search {
-        min-width: 60%;
+        min-width: 50%;
         .docsearch-btn {
-            min-width: 43vw;
+            min-width: 42vw;
         }
     }
 }

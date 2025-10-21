@@ -1,5 +1,16 @@
 @layer components {
     .c-version-selector {
+        /* Custom */
+        @media (width < 615px) {
+            /* Restrict the selector width with an ellipisis when space is tight */
+            width: 5.5rem;
+            select {
+                white-space: nowrap;
+                /* 'overflow' value must be different from 'visible' */
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
         select {
             --background: var(--color-body-background);
             transition: opacity 0.2s ease-in 0s;
@@ -11,8 +22,13 @@
             background: var(--background);
             background-image: url(/img/dropdown.svg);
             background-repeat: no-repeat;
-            background-size: 0.75em;
-            background-position: 87% 50%;
+            background-size: 0.6em;
+            background-position: 83% 50%;
+            /* --mq-nav-expanded-before */
+            @media (width >= 680px) {
+                background-size: 0.75em;
+                background-position: 87% 50%;
+            }
             /* Fallback for Safari */
             block-size: 2.25rem;
             min-block-size: 2.25rem;

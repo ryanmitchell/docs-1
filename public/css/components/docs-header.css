@@ -39,7 +39,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: var(--spacing-s-1);
+        gap: var(--spacing-s-4);
         max-width: var(--max-width-1);
         margin-inline: auto;
         padding: var(--spacing-s-1) var(--spacing-s-3) var(--spacing-l-1);
@@ -73,6 +73,11 @@
     .c-docs-header__nav-dots {
         font-size: 1.7em;
         padding-inline: 0 var(--spacing-s-4);
+        /* --mq-nav-expanded-before */
+        @media (width < 680px) {
+            /* Hide when space gets tight in the header */
+            display: none;
+        }
         svg {
             color: var(--color-primary-text);
         }
@@ -93,13 +98,15 @@
     }
     .c-docs-header__extra {
         display: flex;
-        align-content: center;
-        gap: var(--spacing-s-3);
+        align-items: center;
+        /* --mq-nav-expanded-before */
+        @media (width >= 680px) {
+            gap: var(--spacing-s-3);
+        }
         /* --mq-nav-open-after */
         @media (width >= 1250px) {
             /* Increase */
             gap: var(--spacing-l-2);
-            border: 3px solid blue!important;
         }
     }
     /* GROUP COMPONENTS / SITE HEADER / SITE LOGO / MQs
