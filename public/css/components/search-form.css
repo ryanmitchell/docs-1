@@ -107,8 +107,8 @@
     #docsearch .docsearch-btn-placeholder {
         /* Override Meilsearch hiding the text on lower MQs */
         display: inline-block!important;
-        /* --mq-nav-expanded-before */
-        @media (width < 680px) {
+        /* Custom */
+        @media (width < 520px) {
             &::after {
                 content: unset;
             }
