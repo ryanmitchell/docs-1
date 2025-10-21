@@ -50,7 +50,7 @@
                 max-height: 70vh;
                 display: flex;
                 flex-direction: column;
-                gap: var(--spacing-s-5);
+                gap: var(--spacing-s-4);
                 list-style: none;
                 font-size: var(--font-size-s-2);
                 border-radius: var(--border-radius-l-2);
