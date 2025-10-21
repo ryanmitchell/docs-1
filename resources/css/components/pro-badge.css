@@ -72,7 +72,7 @@
         }
 
         + p {
-            margin-block-start: var(--spacing-l);
+            margin-block-start: var(--spacing-lg);
         }
         h2:has(+ &) {
             padding-block-end: var(--spacing-2xs);
@@ -108,7 +108,7 @@
         }
         /* --mq-grid-after */
         @media (width >= 1000px) {
-            bottom: var(--spacing-l);
+            bottom: var(--spacing-lg);
         }
     }
 }

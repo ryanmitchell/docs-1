@@ -52,7 +52,7 @@
                 }
                 ol, ul {
                     /* e.g. >> /extending/modifiers */
-                    padding-block-end: var(--spacing-l);
+                    padding-block-end: var(--spacing-lg);
                 }
             }
         }

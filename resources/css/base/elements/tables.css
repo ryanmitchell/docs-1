@@ -90,7 +90,7 @@
             padding-block-start: var(--spacing-m);
         }
         &:last-child td {
-            padding-block-end: var(--spacing-l);
+            padding-block-end: var(--spacing-lg);
         }
     }
 

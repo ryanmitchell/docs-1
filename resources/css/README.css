@@ -41,7 +41,7 @@
             align-content: center;
             text-align: center;
             /* Minimum vertical padding of --carousel-product-fake-celing if it exists, with a fallback if it doesn't
-            padding: var(--carousel-product-fake-ceiling, var(--spacing-l-3)) var(--spacing-l);
+            padding: var(--carousel-product-fake-ceiling, var(--spacing-l-3)) var(--spacing-lg);
 
             & > * {
                 text-wrap: balance;

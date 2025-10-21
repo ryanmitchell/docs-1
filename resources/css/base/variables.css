@@ -8,8 +8,8 @@
     --spacing-s-1: 1.35rem;
 
     --spacing-m: 1.55rem;
-    --spacing-l: 1.8rem;
-    --spacing-l-static: 1.8rem;
+    --spacing-lg: 1.8rem;
+    --spacing-lg-static: 1.8rem;
     /* Based on e.g. >> Home on mobile */
     --spacing-l-1: 1.9rem;
 
@@ -271,7 +271,7 @@
         /* GROUP VARIABLES -- SPACING
         ===================================================  */
         /* Based on nav sidebar and toc spacing */
-        --spacing-l: 2.2rem;
+        --spacing-lg: 2.2rem;
     }
     /* --mq-root-variable-adjustments-2 */
     @media (min-width: 730px) {

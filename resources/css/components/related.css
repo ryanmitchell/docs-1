@@ -40,7 +40,7 @@
 @layer components {
     .c-related {
         --background-image-height: 4rem;
-        padding: var(--background-image-height) var(--spacing-l);
+        padding: var(--background-image-height) var(--spacing-lg);
         margin-block-start: var(--spacing-l-2);
         background: var(--color-gradient-blue-light-1);
         /* Custom */

@@ -132,7 +132,7 @@
         max-width: var(--max-width-1);
         margin-inline: auto;
         background: var(--color-black-off);
-        padding: 3rem var(--spacing-l) var(--spacing-vh-s);
+        padding: 3rem var(--spacing-lg) var(--spacing-vh-s);
         &:has(> :only-child) {
             /* e.g. Sans Off / Sans On row */
             padding-block: var(--spacing-m) var(--spacing-l-2);

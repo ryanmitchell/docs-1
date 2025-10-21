@@ -142,7 +142,7 @@
                                 content: '';
                                 border-inline-start: 4px solid var(--color-pink-light-1);
                                 position: absolute;
-                                left: calc(0% + var(--spacing-l));
+                                left: calc(0% + var(--spacing-lg));
                                 height: 2em;
                                 transform: translateY(-0.25em);
                             }
@@ -295,7 +295,7 @@
                 ul:not(ul ul) {
                     /* Need to cut this short a little to force scrolling when there are a lot of items. */
                     height: 80dvh;
-                    padding-block-end: var(--spacing-l);
+                    padding-block-end: var(--spacing-lg);
                 }
             }
             /* Custom */

@@ -31,7 +31,7 @@
         padding-inline: var(--spacing-l-1);
         /* --mq-wider-entry-content-after */
         @media (width >= 1500px) {
-            padding-inline: var(--spacing-l);
+            padding-inline: var(--spacing-lg);
         }
     }
 }

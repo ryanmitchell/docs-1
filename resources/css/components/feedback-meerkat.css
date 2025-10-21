@@ -28,7 +28,7 @@
         @media (width < 500px) {
             margin-block-start: 6.5rem;
         }
-        padding: var(--spacing-l);
+        padding: var(--spacing-lg);
         background: var(--color-gradient-burnt);
         border-radius: var(--border-radius-l-2);
 

@@ -93,7 +93,7 @@
         display: grid;
         justify-content: center;
         align-content: center;
-        padding: var(--spacing-l);
+        padding: var(--spacing-lg);
         /* Custom */
         @media (width < 600px) {
             max-width: 17rem;

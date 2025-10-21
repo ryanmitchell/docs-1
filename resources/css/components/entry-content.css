@@ -61,7 +61,7 @@
             margin-inline: auto;
         }
         /* Based on e.g. >> Home on mobile */
-        padding-inline: var(--spacing-l);
+        padding-inline: var(--spacing-lg);
         font-family: var(--font-family-prose);
 
         /* e.g. .o-badge-heading */
@@ -97,7 +97,7 @@
             /* Rem because sometimes there are lists within lists e.g. >> /taxonomies */
             font-size: var(--font-size-m-rem);
             /* e.g. >> /upgrade-guide */
-            /* margin-block: var(--spacing-l); */
+            /* margin-block: var(--spacing-lg); */
             &:has(+ :is(h2, h3, h4, h5, h6)) {
                 padding-block-end: var(--spacing-s-1);
             }
@@ -242,7 +242,7 @@
             font-style: italic;
             font-weight: var(--font-family-main-weight-medium);
             padding-inline-start: var(--spacing-m);
-            margin-block-end: var(--spacing-l);
+            margin-block-end: var(--spacing-lg);
             border-inline-start: 3px solid var(--color-primary-accent);
         }
         /* Use this if you want to embed entry content in a component that already handles inline padding */
@@ -252,7 +252,7 @@
 
         /* --mq-wider-entry-content-after */
         @media (width >= 1500px) {
-            padding-inline: var(--spacing-l);
+            padding-inline: var(--spacing-lg);
         }
     }
 }

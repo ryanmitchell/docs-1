@@ -197,7 +197,7 @@
             margin-block-end: 0;
         }
         &:has(+ blockquote) {
-            margin-block-end: var(--spacing-l);
+            margin-block-end: var(--spacing-lg);
         }
     }
     a {
@@ -278,7 +278,7 @@
             grid-template-columns: 22fr 70fr 8fr;
             /* Decrease */
             row-gap: var(--spacing-l-1);
-            padding-inline: var(--spacing-s-1) var(--spacing-l);
+            padding-inline: var(--spacing-s-1) var(--spacing-lg);
             /* --mq-wide-before */
             @media (width < 1650px) {
                 column-gap: 0;

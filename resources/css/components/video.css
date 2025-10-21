@@ -64,6 +64,6 @@
 @layer scope {
     .c-entry-content:has(.c-video:last-child) {
         /* We need this if the video is the last item in the entry-content because of collapsing margins */
-        padding-block-end: var(--spacing-l);
+        padding-block-end: var(--spacing-lg);
     }
 }

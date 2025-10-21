@@ -28,7 +28,7 @@
         overflow: scroll;
         &:has(+ &) {
             /* Slightly Decrease if it's followed by another .c-pill-with-description */
-            margin-block-end: var(--spacing-l);
+            margin-block-end: var(--spacing-lg);
         }
         header {
             display: inline-flex;

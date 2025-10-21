@@ -118,7 +118,7 @@
                 }
                 /* --mq-text-bump-2-after */
                 @media (width >= 1441px) {
-                    padding-inline: var(--spacing-l);
+                    padding-inline: var(--spacing-lg);
                 }
             }
 
@@ -284,7 +284,7 @@
                 inline-size: 100%;
                 max-width: var(--max-width-1);
                 margin-inline: auto;
-                padding-block-end: var(--spacing-l);
+                padding-block-end: var(--spacing-lg);
             }
             .c-nav-sidebar-with-popover-api__mobile-button {
                 display: none;
@@ -296,7 +296,7 @@
                 @media (width < 1441px) {
                     max-width: 15.5rem;
                 }
-                padding-block-end: var(--spacing-l);
+                padding-block-end: var(--spacing-lg);
             }
         }
     }

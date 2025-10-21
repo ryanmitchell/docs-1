@@ -127,12 +127,12 @@
 
     input:not[type="hidden"] + .c-form__notes {
         /* e.g. 'Login' button followed by 'Forgotten your password?' */
-        padding-block: var(--spacing-l) 0;
+        padding-block: var(--spacing-lg) 0;
     }
 
     .c-form__notes {
         padding-block-end: var(--spacing-m);
-        padding-inline: var(--spacing-l);
+        padding-inline: var(--spacing-lg);
         & p {
             color: var(--color-gray-reading);
         }
@@ -153,7 +153,7 @@
 
     /* We use a class of fieldset since the `fieldset` element is not always present */
     .c-form__fieldset {
-        padding: 0 var(--spacing-l);
+        padding: 0 var(--spacing-lg);
         /* Override default */
         margin: 0;
         border: 0;
@@ -287,7 +287,7 @@
     /* if you just want a vertically stacked form */
     .c-form-rows {
         display: grid;
-        gap: var(--spacing-l);
+        gap: var(--spacing-lg);
         padding-block-end: var(--spacing-l-2);
 
         & input {
