@@ -70,13 +70,6 @@
             fill: var(--color-logo-wordmark);
         }
     }
-    .c-docs-header__nav-dots {
-        font-size: 1.7em;
-        padding-inline: 0 var(--spacing-s-4);
-        svg {
-            color: var(--color-primary-text);
-        }
-    }
     .c-docs-header__search {
         display: flex;
         align-items: center;

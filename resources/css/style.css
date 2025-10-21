@@ -40,7 +40,6 @@ scope;
 @import './components/theme-picker.css';
 @import './components/version-selector.css';
 /* Components > Global > Navigation */
-@import './components/nav/dots.css';
 @import './components/nav/sidebar.css';
 @import './components/nav/sidebar-advert.css';
 @import './components/nav/toc.css';
