@@ -53,8 +53,8 @@
                 gap: var(--spacing-4xl);
                 a {
                     /* Decrease */
-                    font-size: var(--font-size-s-2);
-                    line-height: var(--font-size-s-2-line-height);
+                    font-size: var(--font-size-xs);
+                    line-height: var(--font-size-xs-line-height);
                 }
                 li {
                     padding-block-end: var(--spacing-2xs);
@@ -78,8 +78,8 @@
             .c-panel-list:has(svg) &:not(:hover) {
                 text-decoration: none;
             }
-            font-size: var(--font-size-s-1-fixed);
-            line-height: var(--font-size-s-1-line-height);
+            font-size: var(--font-size-sm-fixed);
+            line-height: var(--font-size-sm-line-height);
         }
    }
 }

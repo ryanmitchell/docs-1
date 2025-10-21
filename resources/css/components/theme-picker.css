@@ -85,7 +85,7 @@
             padding: var(--spacing-2xs);
             padding-inline-start: var(--spacing-xs);
             color: var(--color-primary-text);
-            font-size: var(--font-size-s-1);
+            font-size: var(--font-size-sm);
             border-radius: 50px;
             box-shadow: 0px 0px 1px var(--color-pink);
             border-inline: var(--spacing-sm) solid var(--color-body-background);

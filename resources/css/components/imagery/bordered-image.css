@@ -77,8 +77,8 @@
                 background: var(--color-gradient-burnt-right);
             }
             font-weight: var(--font-family-ui-weight-normal);
-            font-size: var(--font-size-s-1);
-            line-height: var(--font-size-s-1-line-height);
+            font-size: var(--font-size-sm);
+            line-height: var(--font-size-sm-line-height);
             border-radius: var(--border-radius-sm);
             border-top-left-radius: 0;
             border-top-right-radius: 0;

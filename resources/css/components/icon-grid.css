@@ -44,8 +44,8 @@
 
         p {
             font-family: var(--font-family-code);
-            font-size: var(--font-size-s-2);
-            line-height: var(--font-size-s-2-line-height);
+            font-size: var(--font-size-xs);
+            line-height: var(--font-size-xs-line-height);
         }
 
         header + & {
@@ -81,7 +81,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-family: var(--font-family-ui);
-        font-size: var(--font-size-s-2);
+        font-size: var(--font-size-xs);
         letter-spacing: 1px;
         text-transform: uppercase;
         div {

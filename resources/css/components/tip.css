@@ -79,11 +79,11 @@
         display: inline-block;
         padding: var(--spacing-3xs) var(--spacing-md);
         margin-block-end: var(--spacing-lg);
-        font-size: var(--font-size-l-1-uppercase);
+        font-size: var(--font-size-lg-uppercase);
         text-transform: uppercase;
     }
     .c-tip__title--long {
-        font-size: var(--font-size-m-uppercase);
+        font-size: var(--font-size-md-uppercase);
     }
     /* img*/
     .c-tip__mascot {

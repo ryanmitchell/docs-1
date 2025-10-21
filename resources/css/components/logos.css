@@ -108,8 +108,8 @@
         }
         /* [2] */
         &:has(span) {
-            font-size: var(--font-size-m);
-            line-height: var(--font-size-m-line-height);
+            font-size: var(--font-size-md);
+            line-height: var(--font-size-md-line-height);
             /* Reduce to compensate for the increased image height */
             padding-block: var(--spacing-sm);
             :is(img, svg) {

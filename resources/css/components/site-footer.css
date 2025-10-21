@@ -182,8 +182,8 @@
             padding-inline: var(--spacing-3xl);
         }
         font-family: var(--font-family-code);
-        font-size: var(--font-size-s-2);
-        line-height: var(--font-size-s-2-line-height);
+        font-size: var(--font-size-xs);
+        line-height: var(--font-size-xs-line-height);
 
         img {
             max-height: 1rem;

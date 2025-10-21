@@ -22,7 +22,7 @@
         }
         h2 {
             padding-block: var(--spacing-2xl) var(--spacing-sm);
-            font-size: var(--font-size-s-2);
+            font-size: var(--font-size-xs);
             font-family: var(--font-family-ui);
             font-weight: var(--font-family-ui-weight-normal);
             letter-spacing: 1px;
@@ -32,11 +32,11 @@
         p {
             margin-block-end: var(--spacing-xs);
             font-weight: var(--font-family-ui-weight-medium);
-            line-height: var(--font-size-s-1-line-height);
+            line-height: var(--font-size-sm-line-height);
             text-wrap: balance;
             a {
                 text-decoration: underline;
-                font-size: var(--font-size-s-2);
+                font-size: var(--font-size-xs);
                 font-family: var(--font-family-ui);
                 font-weight: var(--font-family-ui-weight-normal);
                 text-transform: uppercase;

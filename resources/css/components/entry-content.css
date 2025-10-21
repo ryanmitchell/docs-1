@@ -23,7 +23,7 @@
         p:not(table *) {
             max-width: var(--max-width-reading);
             /* Rem instead of em because of p tags inside li tags e.g. e.g. >> /fields */
-            font-size: var(--font-size-m-rem);
+            font-size: var(--font-size-md-rem);
         }
         strong {
             font-weight: var(--font-family-prose-weight-strong);
@@ -75,8 +75,8 @@
             p,
             /* Or if there's no article intro text in the header, instead make the first following paragraph an "intro" style text e.g. >> /reference/widgets */
             &:has(:not(p)) + article > p:first-child {
-                font-size: var(--font-size-l-1);
-                line-height: var(--font-size-l-1-line-height);
+                font-size: var(--font-size-lg);
+                line-height: var(--font-size-lg-line-height);
                 max-width: var(--max-width-content);
                 margin-block-end: var(--spacing-lg);
             }
@@ -95,7 +95,7 @@
 
         ol, ul {
             /* Rem because sometimes there are lists within lists e.g. >> /taxonomies */
-            font-size: var(--font-size-m-rem);
+            font-size: var(--font-size-md-rem);
             /* e.g. >> /upgrade-guide */
             /* margin-block: var(--spacing-xl); */
             &:has(+ :is(h2, h3, h4, h5, h6)) {
@@ -198,7 +198,7 @@
                     content: counter(item);
                     counter-increment: item;
                     color: light-dark(var(--color-primary-text), var(--color-body-background));
-                    font-size: var(--font-size-s-1);
+                    font-size: var(--font-size-sm);
                     font-weight: var(--font-family-prose-weight-strong);
                     margin-inline-end: min(var(--spacing-md), 3vw);
                     background: var(--color-yellow-light-1);

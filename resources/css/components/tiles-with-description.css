@@ -106,9 +106,9 @@
         .c-tiles-with-description__item p {
             text-align: left;
             /* Decrease */
-            font-size: var(--font-size-s-2);
+            font-size: var(--font-size-xs);
             font-weight: var(--font-family-ui-weight-normal);
-            line-height: var(--font-size-s-2-line-height);
+            line-height: var(--font-size-xs-line-height);
         }
     }
     /* Custom */

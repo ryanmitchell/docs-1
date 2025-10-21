@@ -106,7 +106,7 @@
                 font-family: var(--font-family-prose);
                 /* Custom */
                 font-size: clamp(1.35em, 6vw, 1.1em);
-                line-height: var(--font-size-l-2-line-height);
+                line-height: var(--font-size-xl-line-height);
                 text-decoration: none;
                 border-radius: 50px;
                 &:not(:has(input:checked)) {
@@ -127,7 +127,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-2xs);
-                font-size: var(--font-size-s-2);
+                font-size: var(--font-size-xs);
                 overscroll-behavior-y: contain;
                 /* Need to cut this short a little to force scrolling when there are a lot of items. */
                 &:not(ul ul) {

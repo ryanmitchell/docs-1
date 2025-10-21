@@ -63,8 +63,8 @@
             }
             font-family: var(--font-family-ui);
             font-weight: var(--font-family-ui-weight-heavy);
-            font-size: var(--font-size-s-1);
-            line-height: var(--font-size-s-1-line-height);
+            font-size: var(--font-size-sm);
+            line-height: var(--font-size-sm-line-height);
             letter-spacing: 0.25px;
             text-transform: uppercase;
             text-align: center;
@@ -92,7 +92,7 @@
         gap: var(--spacing-2xs);
         padding: var(--spacing-3xs) var(--spacing-2xs);
         background: linear-gradient(to right, var(--color-yellow-light-4) 0%,var(--color-yellow-light-2) 100%);
-        font-size: var(--font-size-s-2);
+        font-size: var(--font-size-xs);
         rotate: -2.5deg;
 
         img {

@@ -32,14 +32,14 @@
         border: var(--border-solid);
         border-radius: var(--border-radius-lg);
         font-family: var(--font-family-ui);
-        font-size: var(--font-size-s-1);
-        line-height: var(--font-size-s-1-line-height);
+        font-size: var(--font-size-sm);
+        line-height: var(--font-size-sm-line-height);
         font-weight: var(--font-family-ui-weight-strong);
         text-transform: uppercase;
         > * {
             padding: var(--spacing-xs) var(--spacing-md);
             margin: 0;
-            font-size: var(--font-size-s-1);
+            font-size: var(--font-size-sm);
             &:not(:last-child) {
                 border-inline-end: var(--border-solid);
             }
