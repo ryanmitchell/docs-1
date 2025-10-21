@@ -34,7 +34,7 @@
         }
 
         h2, h3 {
-            padding-block: var(--spacing-s-2) var(--spacing-s-5);
+            padding-block: var(--spacing-xs) var(--spacing-4xs);
             font-family: var(--font-family-ui);
             font-size: var(--font-size-ui);
             font-weight: var(--font-family-ui-weight-heavy);
@@ -85,7 +85,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         div {
-            padding: var(--spacing-s-4) var(--spacing-s-1);
+            padding: var(--spacing-3xs) var(--spacing-s-1);
         }
     }
     .c-icon-grid__icon {

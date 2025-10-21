@@ -95,7 +95,7 @@
             }
             button:last-child {
                 position: relative;
-                margin-inline-start: var(--spacing-s-3);
+                margin-inline-start: var(--spacing-2xs);
                 &::before {
                     content: '';
                     position: absolute;

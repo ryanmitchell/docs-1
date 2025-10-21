@@ -91,7 +91,7 @@
     /* Checkbox and Radio labels */
     [type="checkbox"] + label,
     [type="radio"] + label {
-        padding-block-end: var(--spacing-s-2);
+        padding-block-end: var(--spacing-xs);
     }
 
     [type="submit"] {

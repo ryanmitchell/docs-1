@@ -36,7 +36,7 @@
             [popover] {
                 max-width: 14rem;
                 &:popover-open {
-                    margin-block-start: var(--spacing-s-5);
+                    margin-block-start: var(--spacing-4xs);
                 }
             }
         }
@@ -114,7 +114,7 @@
                         display: flex;
                         flex-wrap: wrap;
                         align-items: center;
-                        gap: var(--spacing-s-2);
+                        gap: var(--spacing-xs);
                         /* Reset */
                         margin-inline-end: 0;
                         padding: 0;
@@ -131,7 +131,7 @@
                     }
 
                     ul {
-                        gap: var(--spacing-s-5);
+                        gap: var(--spacing-4xs);
                         max-height: unset;
                         padding: 0 3rem;
                         font-size: var(--font-size-ui-rem);
@@ -160,7 +160,7 @@
                             a {
                                 /* Indent the subnav */
                                 margin-inline-start: 0.3rem;
-                                padding-inline: var(--spacing-s-4);
+                                padding-inline: var(--spacing-3xs);
                                 /* Make it slightly smaller to improve comprehension when the TOC is busy e.g. /tags/form-create */
                                 font-size: 0.83rem;
                             }
@@ -175,7 +175,7 @@
                     }
                     padding: var(--spacing-m);
                     /* Just clear the outline state of the parent so it looks cleaner when tabbing through with a keyboard */
-                    margin-block-start: var(--spacing-s-5);
+                    margin-block-start: var(--spacing-4xs);
                     letter-spacing: 1px;
                     & a, button {
                         outline-offset: unset;
@@ -192,8 +192,8 @@
             gap: var(--spacing-s-1);
             align-items: center;
             justify-content: space-between;
-            padding: var(--spacing-s-3) var(--spacing-m);
-            margin-block-end: var(--spacing-s-2);
+            padding: var(--spacing-2xs) var(--spacing-m);
+            margin-block-end: var(--spacing-xs);
             font-family: var(--font-family-prose);
             font-size: var(--font-size-l-2);
             background: var(--color-body-background);
@@ -223,7 +223,7 @@
             }
             display: inline-block;
             float: right;
-            padding-inline: var(--spacing-s-3);
+            padding-inline: var(--spacing-2xs);
             /* Pull the button over to the right when we're on mobile */
             text-align: right;
             ul {
@@ -259,7 +259,7 @@
                     background: var(--popover-backdrop);
                 }
                 & ul {
-                    padding: var(--spacing-l-3) var(--spacing-s-3);
+                    padding: var(--spacing-l-3) var(--spacing-2xs);
                     & ul {
                         padding: 0 var(--spacing-l-2);
                     }
@@ -279,7 +279,7 @@
                 }
             }
             .c-nav-toc-with-popover-api-category-heading {
-                gap: var(--spacing-s-3);
+                gap: var(--spacing-2xs);
                 &:has(img) {
                     inline-size: 100%;
                 }

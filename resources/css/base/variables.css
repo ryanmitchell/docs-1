@@ -1,10 +1,10 @@
 :root {
     /* GROUP VARIABLES -- SPACING
     =================================================== */
-    --spacing-s-5: 0.15rem;
-    --spacing-s-4: 0.5rem;
-    --spacing-s-3: 0.75rem;
-    --spacing-s-2: 0.975rem;
+    --spacing-4xs: 0.15rem;
+    --spacing-3xs: 0.5rem;
+    --spacing-2xs: 0.75rem;
+    --spacing-xs: 0.975rem;
     --spacing-s-1: 1.35rem;
 
     --spacing-m: 1.55rem;

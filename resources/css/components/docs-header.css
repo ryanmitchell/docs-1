@@ -39,11 +39,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: var(--spacing-s-4);
+        gap: var(--spacing-3xs);
         max-width: var(--max-width-1);
         margin-inline: auto;
-        padding: var(--spacing-s-1) var(--spacing-s-3) var(--spacing-l-1);
-        margin-block-end: var(--spacing-s-3);
+        padding: var(--spacing-s-1) var(--spacing-2xs) var(--spacing-l-1);
+        margin-block-end: var(--spacing-2xs);
 
         .c-version-selector {
             text-align: right;
@@ -60,7 +60,7 @@
         .o-logo {
             display: flex;
             align-items: center;
-            gap: var(--spacing-s-2);
+            gap: var(--spacing-xs);
         }
         .o-logomark {
             width: 1em;
@@ -78,11 +78,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: var(--spacing-s-4);
+        gap: var(--spacing-3xs);
         /* Custom */
         @media (width >= 700px) {
             /* Increase */
-            gap: var(--spacing-s-3);
+            gap: var(--spacing-2xs);
         }
         .c-theme-picker {
             display: flex;
@@ -96,7 +96,7 @@
             margin-block-end: var(--spacing-m);
             @supports (animation-timeline: auto) {
                 /* Less space because the header is not compressed until we scroll further down */
-                margin-block-end: var(--spacing-s-2);
+                margin-block-end: var(--spacing-xs);
                 /* --mq-grid-after */
                 @media (width >= 1000px) {
                     /* Increase */
@@ -226,7 +226,7 @@
     }
     @keyframes compress-header {
        100% {
-            padding-block: var(--spacing-s-3);
+            padding-block: var(--spacing-2xs);
        }
     }
     .c-docs-header__inner {
@@ -245,7 +245,7 @@
                 /* [1] I had this option at first to make the "torn" header the default */
                 /* animation: unset; */
                 /* [/2] But in the end I made the "compressed" header the default for browsers that don't support scroll-driven-animations */
-                padding-block: var(--spacing-s-3) var(--spacing-s-2);
+                padding-block: var(--spacing-2xs) var(--spacing-xs);
                 margin-block-end: var(--spacing-l-2);
             }
         }

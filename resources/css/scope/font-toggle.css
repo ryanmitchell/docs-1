@@ -30,7 +30,7 @@
     }
     svg {
         font-size: 2em;
-        margin-inline-end: var(--spacing-s-5);
+        margin-inline-end: var(--spacing-4xs);
     }
     input {
         /* Hide the radio */
@@ -41,7 +41,7 @@
         }
     }
     label {
-        padding: var(--spacing-s-4) var(--spacing-s-3);
+        padding: var(--spacing-3xs) var(--spacing-2xs);
         font-size: var(--font-size-s-1);
         line-height: var(--font-size-s-1-line-height);
         cursor: pointer;

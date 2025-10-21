@@ -9,7 +9,7 @@
         }
         &:has(+ h2) {
             /* e.g. >> /collections and /configuration */
-            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-s-2))!important;
+            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-xs))!important;
         }
         &:has(+ h3) {
             /* e.g. >> /collections and /configuration */
@@ -49,7 +49,7 @@
         min-width: max-content;
         &:has(.tl-files-file) {
             font-size: 0.9em;
-            padding-inline: var(--spacing-s-3);
+            padding-inline: var(--spacing-2xs);
             background: var(--color-purple-light-2)!important;
         }
     }
@@ -96,8 +96,8 @@
         opacity: .5;
         padding: .25rem;
         position: absolute;
-        right: var(--spacing-s-2);
-        top: var(--spacing-s-5);
+        right: var(--spacing-xs);
+        top: var(--spacing-4xs);
         text-transform: uppercase;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -179,7 +179,7 @@
         /* The last line with a folder */
         /* Commented out based on e.g. >> /extending/vite-in-addons */
         /* :nth-last-child(1 of .line:has(&)) {
-            margin-block-end: var(--spacing-s-4);
+            margin-block-end: var(--spacing-3xs);
         } */
     }
     .tl-files-folder:before {

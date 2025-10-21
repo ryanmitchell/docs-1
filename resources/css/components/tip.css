@@ -28,7 +28,7 @@
         &:not(.watch) {
             position: relative;
             z-index: var(--z-index-above-body);
-            padding: var(--spacing-m) var(--spacing-l-1) var(--spacing-s-4);
+            padding: var(--spacing-m) var(--spacing-l-1) var(--spacing-3xs);
 
             /* Custom */
             @media (width < 550px) {
@@ -65,7 +65,7 @@
             }
             h2:has(+ &) + & {
                 /* e.g. >> /tags/children */
-                margin-block-start: var(--spacing-s-5);
+                margin-block-start: var(--spacing-4xs);
             }
             header:has(+ &) + & {
                 /* e.g. >> /updating */
@@ -77,7 +77,7 @@
     .c-tip__title,
     .hint-title {
         display: inline-block;
-        padding: var(--spacing-s-5) var(--spacing-s-1);
+        padding: var(--spacing-4xs) var(--spacing-s-1);
         margin-block-end: var(--spacing-m);
         font-size: var(--font-size-l-1-uppercase);
         text-transform: uppercase;

@@ -47,7 +47,7 @@
     mark {
         background: var(--color-green);
         /* e.g. >> /static-caching */
-        padding-inline: var(--spacing-s-5);
+        padding-inline: var(--spacing-4xs);
     }
     /* https://twitter.com/bramus/status/1452572001697153029 */
     /* html,
@@ -69,7 +69,7 @@
         font-weight: var(--font-family-code-weight-light);
         + p:not(ol p, ul p) {
             /* Not on this page e.g. >> /extending/vite-in-addons */
-            padding-block-start: var(--spacing-s-2);
+            padding-block-start: var(--spacing-xs);
         }
         /* Put some space between paragraphs and code blocks, except if it's in a tip */
         p:has(+ &):not(.c-tip p, ol p) {
@@ -161,7 +161,7 @@
         margin-inline: 0;
         & img {
             /* Push the caption away from the image */
-            margin-block-end: var(--spacing-s-4);
+            margin-block-end: var(--spacing-3xs);
         }
     }
     /*
@@ -178,13 +178,13 @@
     }
     /* Don't affect nav */
     .s-main li:not(:last-child) {
-        padding-block-end: var(--spacing-s-4);
+        padding-block-end: var(--spacing-3xs);
     }
     dl,
     dt,dd,
     th,
     td {
-        padding-block-end: var(--spacing-s-3);
+        padding-block-end: var(--spacing-2xs);
     }
     p {
         margin-block-end: var(--spacing-m);
@@ -227,7 +227,7 @@
         padding-inline-start: 0;
     }
     p + ul {
-        padding-block-start: var(--spacing-s-3);
+        padding-block-start: var(--spacing-2xs);
     }
     strong {
         font-weight: var(--font-family-ui-weight-heavy);
@@ -241,7 +241,7 @@
     }
     :is(h1, h2, h3, h4, h5, h6, p) svg {
         vertical-align: baseline;
-        margin-inline-end: var(--spacing-s-4);
+        margin-inline-end: var(--spacing-3xs);
     }
     /* GROUP ELEMENTS / FRAMEWORK / MAIN
     =================================================== */
@@ -282,7 +282,7 @@
             /* --mq-wide-before */
             @media (width < 1650px) {
                 column-gap: 0;
-                padding-inline-start: var(--spacing-s-4);
+                padding-inline-start: var(--spacing-3xs);
             }
             /* --mq-nav-open-after */
             @media (width >= 1250px) {
@@ -365,7 +365,7 @@
     * + h2,
     article + article {
         /* E.g. h2 following article intro text */
-        padding-block: var(--spacing-s-2) var(--spacing-m);
+        padding-block: var(--spacing-xs) var(--spacing-m);
         &:has(+ h3) {
             /* e.g. >> /assets */
             padding-block-end: 0;
@@ -375,7 +375,7 @@
     =================================================== */
     h3 {
         /* e.g. >> /contributing */
-        padding-block: var(--spacing-s-1) var(--spacing-s-2);
+        padding-block: var(--spacing-s-1) var(--spacing-xs);
     }
     h4 {
         /* e.g. >> /content-managers-guide */
@@ -390,7 +390,7 @@
     }
 }
 @layer components {
-    /* Put these at the component level e.g. so we make sure we override something like .c-site-footer li { padding-block-end: var(--spacing-s-4); } */
+    /* Put these at the component level e.g. so we make sure we override something like .c-site-footer li { padding-block-end: var(--spacing-3xs); } */
     /* Nested lists */
     ol ol,
     ol ol li:last-child,
@@ -411,7 +411,7 @@
     .c-bordered-image {
         &:has(+ h2) {
             /* Increase e.g. >> /assets */
-            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-s-2));
+            margin-block-end: calc(var(--spacing-l-2) + var(--spacing-xs));
         }
     }
     /* Decrease bottom padding/margin elements previous to hr */
@@ -501,7 +501,7 @@
         }
         & svg:last-child {
             /* subnav arrow */
-            margin-inline-start: var(--spacing-s-5);
+            margin-inline-start: var(--spacing-4xs);
             width: 0.7rem;
             color: var(--color-primary-text);
 

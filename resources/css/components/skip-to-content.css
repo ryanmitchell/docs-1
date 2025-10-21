@@ -22,7 +22,7 @@
     .c-skip-to-content {
         background: var(--color-green);
         color: var(--color-black-static);
-        padding: var(--spacing-s-2) var(--spacing-s-1);
+        padding: var(--spacing-xs) var(--spacing-s-1);
         text-decoration-color: var(--color-black-static);
         font-weight: var(--font-family-ui-weight-medium);
         outline: 0;

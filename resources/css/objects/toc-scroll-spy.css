@@ -67,7 +67,7 @@
 
     /* ul*/
     .o-scroll-spy-timeline__toc {
-        --item-padding: var(--spacing-s-5);
+        --item-padding: var(--spacing-4xs);
         &, ul {
             gap: unset;
         }

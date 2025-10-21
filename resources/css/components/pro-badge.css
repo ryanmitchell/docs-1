@@ -75,7 +75,7 @@
             margin-block-start: var(--spacing-l);
         }
         h2:has(+ &) {
-            padding-block-end: var(--spacing-s-3);
+            padding-block-end: var(--spacing-2xs);
         }
     }
     .c-pro-badge__artwork img {
@@ -89,8 +89,8 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: var(--spacing-s-4);
-        padding: var(--spacing-s-5) var(--spacing-s-4);
+        gap: var(--spacing-3xs);
+        padding: var(--spacing-4xs) var(--spacing-3xs);
         background: linear-gradient(to right, var(--color-yellow-light-4) 0%,var(--color-yellow-light-2) 100%);
         font-size: var(--font-size-s-2);
         rotate: -2.5deg;

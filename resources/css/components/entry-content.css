@@ -135,7 +135,7 @@
             }
             ul& {
                 /* e.g. >> /graphql */
-                padding-block-end: var(--spacing-s-3);
+                padding-block-end: var(--spacing-2xs);
             }
         }
 
@@ -144,9 +144,9 @@
             --padding-inline-start: min(1.5rem, 5vw);
             padding-inline-start: var(--padding-inline-start);
             /* e.g. >> /upgrade-guide */
-            padding-block: var(--spacing-s-5) var(--spacing-l-1);
+            padding-block: var(--spacing-4xs) var(--spacing-l-1);
             li {
-                padding-inline-start: var(--spacing-s-5);
+                padding-inline-start: var(--spacing-4xs);
                 position: relative;
                 font-size: 0.95em;
                 &::before {
@@ -162,12 +162,12 @@
                 /* Lists within lists e.g. >> /taxonomies */
                 ul li {
                     padding-inline-start: 0;
-                    padding-block-end: var(--spacing-s-5);
+                    padding-block-end: var(--spacing-4xs);
                     &:first-child {
-                        padding-block-start: var(--spacing-s-4);
+                        padding-block-start: var(--spacing-3xs);
                     }
                     &:last-child {
-                        padding-block-end: var(--spacing-s-4);
+                        padding-block-end: var(--spacing-3xs);
                     }
                     &::before {
                         /* Remove the purple dot for lists within lists */
@@ -182,9 +182,9 @@
             li {
                 --size: 1.75rem;
                 list-style: none;
-                padding-inline-start: calc(var(--size) + var(--spacing-s-2));
+                padding-inline-start: calc(var(--size) + var(--spacing-xs));
                 &:not(:last-child) {
-                    padding-block-end: var(--spacing-s-3);
+                    padding-block-end: var(--spacing-2xs);
                 }
                 position: relative;
                 &::before {
@@ -223,7 +223,7 @@
             }
             /* e.g. >> /quick-start-guide */
             + ul {
-                padding-block: var(--spacing-s-5) var(--spacing-l-1);
+                padding-block: var(--spacing-4xs) var(--spacing-l-1);
             }
         }
         /* Followed by some kind of image component (or paragraph like /javascript-frameworks). Not when the h1 is an only child, e.g. /modifiers/add */
