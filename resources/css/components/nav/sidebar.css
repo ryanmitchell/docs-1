@@ -4,6 +4,7 @@
     .c-nav-sidebar-with-popover-api {
         --dropdown-nav-item-padding: 0.25rem;
         position: sticky;
+        max-width: 15rem;
 
         nav,
         nav [popover] {
