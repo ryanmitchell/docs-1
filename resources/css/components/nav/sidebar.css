@@ -74,6 +74,11 @@
                 inline-size: unset;
             }
         }
+        .c-nav-sidebar-with-popover-api__disclosure {
+            position: absolute;
+            left: 0;
+            transition: rotate 0.2s ease-in-out;
+        }
         /* GROUP COMPONENTS / NAV DROPDOWN WITH POPOVER API AND ANCHOR POSITIONING / NAV STYLING
         =================================================== */
         nav {
@@ -97,8 +102,8 @@
                 line-height: var(--font-size-xl-line-height);
                 text-decoration: none;
                 border-radius: 50px;
-                &:not(:has(input:checked)) {
-                    background: var(--color-gradient-full-light-2);
+                &:not(:has(input:checked)) .c-nav-sidebar-with-popover-api__disclosure {
+                    rotate: 90deg;
                 }
                 &:focus-visible {
                     /* Pull the focus outline state in slightly on the category headings so it doesn't disappear into the overflow:hidden; */
