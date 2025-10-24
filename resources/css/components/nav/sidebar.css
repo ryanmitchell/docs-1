@@ -133,7 +133,7 @@
 
                 li {
                     &:not(ul ul li) {
-                        padding-block-end: var(--spacing-3xs);
+                        padding-block-end: 0;
                         &:not(:has(input:checked)) {
                             padding-block-end: var(--spacing-lg);
                         }
