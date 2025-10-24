@@ -19,77 +19,17 @@
     </div>
 
 */
-/* GROUP SCOPE / FONT TOGGLE
-=================================================== */
-.o-font-toggle {
-    display: flex;
-    align-items: center;
-    /* Custom */
-    @media (width >= 1030px) {
-        padding-inline-end: var(--spacing-md);
-    }
-    svg {
-        font-size: 2em;
-        margin-inline-end: var(--spacing-3xs);
-    }
-    input {
-        /* Hide the radio */
-        display: none;
-        /* Gray-out labels that are not checked */
-        &:not(:checked) + label {
-            color: var(--color-gray-aa);
-        }
-    }
-    label {
-        padding: var(--spacing-2xs) var(--spacing-xs);
-        font-size: var(--font-size-sm);
-        line-height: var(--font-size-sm-line-height);
-        cursor: pointer;
-        border: 1px solid hsl(0deg 0% 40%);
-        input:first-of-type + & {
-            border-top-left-radius: var(--border-radius-md);
-            border-bottom-left-radius: var(--border-radius-md);
-        }
-        input:last-of-type + & {
-            border-top-right-radius: var(--border-radius-md);
-            border-bottom-right-radius: var(--border-radius-md);
-        }
-        &:has(+ input) {
-            border-inline-end: 0;
-        }
-    }
-}
+
 /* GROUP SCOPE / FONT TOGGLE / SANS CHANGES
 =================================================== */
 :root:has(footer .o-font-toggle #font-sans-on:checked) {
     /* Tweak text scale to compensate for a different font */
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- OUTSIDE SCALE
     =================================================== */
-    --font-size-md: clamp(0.9em, 4vw, 1.03em);
-    --font-size-md-rem: clamp(0.9rem, 4vw, 1.03rem);
-    /* e.g. >> Home > Lead Text */
-    --font-size-lg: clamp(1em, 4vw, 1.12em);
-    --font-size-lg-line-height: 1.55;
-    /* GROUP VARIABLES -- DECORATION -- COLORS -- THEME
-    =================================================== */
-    /* Make slightly lighter to compensate for a naturally heavier font */
-    --color-black-prose: light-dark(hsl(210deg 3.85% 16%), hsl(0deg 0% 90%));
-    --font-family-prose-weight-medium: 450;
-    --font-family-prose-weight-strong: 600;
-    --max-width-reading: 50.5rem;
-    --max-width-content: 50.5rem;
 
     @layer scope {
         .c-entry-content {
-            --font-size-sm-line-height: 1.4;
-            --font-family-ui-weight-normal: 300;
     
-            font-family: var(--font-family-ui);
-            font-weight: var(--font-family-ui-weight-normal);
-    
-            p, li {
-                color: var(--color-black-prose);
-            }
         }
     }
 }

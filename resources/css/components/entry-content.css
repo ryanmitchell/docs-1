@@ -51,6 +51,12 @@
         }
     }
     .c-entry-content {
+        --font-size-sm-line-height: 1.4;
+        --font-family-ui-weight-normal: 300;
+
+        font-family: var(--font-family-ui);
+        font-weight: var(--font-family-ui-weight-normal);
+        
         max-width: var(--max-width-content);
         margin-inline: auto;
         /* Based on e.g. >> Home on mobile */
@@ -99,6 +105,10 @@
                 line-height: inherit;
                 padding-block-end: 0;
             }
+        }
+
+        p, li {
+            color: var(--color-black-prose);
         }
 
         li :is(ol, ul) {

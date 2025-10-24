@@ -58,6 +58,8 @@
     --color-black: hsl(210deg 3.85% 5%);
     /* Stays the same for both light and dark mode */
     --color-black-static: hsl(210deg 3.85% 0%);
+    /* Make slightly lighter to compensate for a naturally heavier font */
+    --color-black-prose: light-dark(hsl(210deg 3.85% 16%), hsl(0deg 0% 90%));
     --color-black-light: #334155;
     /* e.g. .c-site-footer */
     --color-black-off: hsl(207deg 5% 10%);
@@ -171,8 +173,8 @@
     --font-family-ui-weight-heavy: 650;
 
     --font-family-prose-weight-normal: 400;
-    --font-family-prose-weight-medium: 500;
-    --font-family-prose-weight-strong: 700;
+    --font-family-prose-weight-medium: 450;
+    --font-family-prose-weight-strong: 600;
 
     --font-family-code-weight-light: 500;
     --font-family-code-weight-normal: 650;
@@ -205,13 +207,13 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- OUTSIDE SCALE
     =================================================== */
     /* -m is just above 1rem */
-    --font-size-md: clamp(1em, 4vw, 1.065rem);
-    --font-size-md-rem: clamp(1rem, 4vw, 1.065rem);
+    --font-size-md: clamp(0.9em, 4vw, 1.03em);
+    --font-size-md-rem: clamp(0.9rem, 4vw, 1.03rem);
     /* e.g. .c-tip, with more characters, such as "Best Practice" */
     --font-size-md-uppercase: 1.075em;
     /* e.g. >> Home > Lead Text */
-    --font-size-lg: clamp(1em, 4vw, 1.14em);
-    --font-size-lg-line-height: 1.5;
+    --font-size-lg: clamp(1em, 4vw, 1.12em);
+    --font-size-lg-line-height: 1.55;
     /* e.g. .c-tip, just a few characters, such as "Hot Tip!" */
     --font-size-lg-uppercase: 1.125em;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- AUGMENTED FOURTH

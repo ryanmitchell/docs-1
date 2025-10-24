@@ -206,12 +206,6 @@
             }
         }
 
-        .o-font-toggle {
-            color: var(--color-link);
-            /* Optically align with the column above */
-            margin-inline-start: -1.8rem;
-        }
-
         p {
             color: var(--color-link);
         }
