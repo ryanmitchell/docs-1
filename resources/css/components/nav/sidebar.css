@@ -4,7 +4,6 @@
     .c-nav-sidebar-with-popover-api {
         --dropdown-nav-item-padding: 0.25rem;
         position: sticky;
-        max-width: 12.5rem;
 
         nav,
         nav [popover] {
@@ -283,15 +282,17 @@
             .c-nav-sidebar-with-popover-api__mobile-button {
                 display: none;
             }
-            .c-nav-sidebar-with-popover-api__desktop ul:not(ul ul) {
-                /* Need to cut this short a little to force scrolling when there are a lot of items. */
-                height: 84dvh;
-                /* --mq-text-bump-2-before */
-                @media (width < 1441px) {
-                    max-width: min(95%, 15.5rem);
-                    /* max-width: 15.5rem; */
+            .c-nav-sidebar-with-popover-api__desktop {
+                ul {
+                    ul {
+                        max-width: min(93%, 12.5rem);
+                    }
+                    &:not(ul ul) {
+                        /* Need to cut this short a little to force scrolling when there are a lot of items. */
+                        height: 84dvh;
+                        padding-block-end: var(--spacing-xl);
+                    }
                 }
-                padding-block-end: var(--spacing-xl);
             }
         }
     }
