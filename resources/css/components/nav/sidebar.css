@@ -4,7 +4,7 @@
     .c-nav-sidebar-with-popover-api {
         --dropdown-nav-item-padding: 0.25rem;
         position: sticky;
-        max-width: 13rem;
+        max-width: 12.5rem;
 
         nav,
         nav [popover] {
@@ -98,7 +98,7 @@
                 gap: var(--spacing-md);
                 align-items: center;
                 justify-content: space-between;
-                padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+                padding: var(--spacing-sm) var(--spacing-md) 1.2rem;
                 padding-inline-end: 0;
                 font-size: var(--font-size-lg);
                 font-weight: var(--font-family-main-weight-normal);
@@ -118,11 +118,10 @@
                 }
             }
 
-            & ul {
+            ul {
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                gap: var(--spacing-xl);
                 font-size: var(--font-size-xs);
                 overscroll-behavior-y: contain;
                 /* Need to cut this short a little to force scrolling when there are a lot of items. */
@@ -132,7 +131,13 @@
                 /* Increase */
                 outline-offset: 5px;
 
-                & li {
+                li {
+                    &:not(ul ul li) {
+                        padding-block-end: var(--spacing-3xs);
+                        &:not(:has(input:checked)) {
+                            padding-block-end: var(--spacing-lg);
+                        }
+                    }
                     position: relative;
                     padding-block-end: 0;
                     a {
@@ -140,7 +145,7 @@
                         max-width: 12rem;
                     }
 
-                    & button {
+                    button {
                         text-align: left;
                         display: flex;
                         flex-wrap: wrap;
@@ -155,12 +160,16 @@
                         }
                     }
 
-                    & ul {
+                    ul {
                         gap: 0;
                         max-height: unset;
                         padding-inline: calc(var(--spacing-md) - var(--dropdown-nav-item-padding));
                         font-size: var(--font-size-ui-rem);
-                        border: 1px solid var(--color-pink-light-2);
+                        border: 1px solid transparent;
+                        /* Switch the border color when the disclosure is open */
+                        label:not(:has(input:checked)) + & {
+                            border-color: var(--color-pink-light-2);
+                        }
                         border-radius: var(--border-radius-lg);
                         & a, button, span {
                             /* Increase the pointer targets a little to improve usability */
@@ -172,9 +181,9 @@
                             font-weight: var(--font-family-main-weight-medium);
                             &::before {
                                 content: '';
-                                border-inline-start: 3px solid var(--color-pink-light-1);
+                                border-inline-start: 3.5px solid var(--color-pink-light-1);
                                 position: absolute;
-                                left: calc(0% - var(--spacing-xs));
+                                left: calc(0% - var(--spacing-xs) - var(--dropdown-nav-item-padding) * 1.5);
                                 height: 1.5em;
                             }
                         }
