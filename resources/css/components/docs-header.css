@@ -82,7 +82,7 @@
         /* Custom */
         @media (width >= 700px) {
             /* Increase */
-            gap: var(--spacing-xs);
+            gap: var(--spacing-2xs);
         }
         .c-theme-picker {
             display: flex;
