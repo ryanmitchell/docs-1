@@ -16,7 +16,7 @@
 */
 @layer components {
     .c-spaced {
-        font-weight: var(--font-family-prose-weight-strong);
+        font-weight: var(--font-family-serif-weight-strong);
         letter-spacing: 1px;
         text-transform: uppercase;
     }

@@ -75,7 +75,6 @@ scope;
 @import './utilities/hiders.css';
 @import './utilities/label.css';
 @import './torchlight.css';
-@import './scope/font-toggle.css';
 
 @source "../../resources/views";
 @source "../../content";

@@ -6,7 +6,6 @@ import './collapsible-side-menu.js';
 import './anchors.js';
 import './cookies.js';
 import './color-scheme-preferences.js';
-import './font-preferences.js';
 import './external-links.js';
 import './dl.js';
 import './tables.js';

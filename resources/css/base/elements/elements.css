@@ -306,8 +306,8 @@
     h1, .h1, h1 a, .h1 a, h2, .h2, h2 a, .h2 a, h3, .h3, h3 a, .h3 a {
         /* Not when headings are inside li, which they sometimes are, e.g. /tips */
         &:not(li *) {
-            font-family: var(--font-family-prose);
-            font-weight: var(--font-family-prose-weight-normal);
+            font-family: var(--font-family-serif);
+            font-weight: var(--font-family-serif-weight-normal);
             /* https://app.typographychecklist.com/ 91 - Use discretionary ligatures and swashes in headlines */
             font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "swsh";
             /* Override iOS Safari's user agent stylesheet */
@@ -320,8 +320,8 @@
         color: initial;
     }
     h4, h4 a, h5, h5 a, h6, h6 a {
-        font-family: var(--font-family-prose);
-        font-weight: var(--font-family-prose-weight-normal);
+        font-family: var(--font-family-serif);
+        font-weight: var(--font-family-serif-weight-normal);
         /* Override iOS Safari's user agent stylesheet */
         text-decoration: none;
         color: inherit; /* If you use a link inside a heading, inherit the colour so it's not the default browser-purple */
@@ -537,7 +537,7 @@
 @layer elements {
     /* Don't target components like .c-icon-grid on /installing */
     .c-entry-content a:not([class^="c-"] *) {
-        font-weight: var(--font-family-prose-weight-medium);
+        font-weight: var(--font-family-serif-weight-medium);
         &[target="_blank"] {
             /* To handle the external link icon e.g. <a href="https://aws.amazon.com/s3" target="_blank">Amazon S3 bucket{{ svg src="external-link" }}</a> */
             display: inline-flex;

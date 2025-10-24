@@ -161,7 +161,7 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- FONTS
     =================================================== */
     --font-family-ui: "Lexend", sans-serif;
-    --font-family-prose: p22-mackinac-pro, serif;
+    --font-family-serif: p22-mackinac-pro, serif;
     --font-family-code: "Source Code Pro", serif;
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
@@ -172,9 +172,9 @@
     --font-family-ui-weight-strong: 550;
     --font-family-ui-weight-heavy: 650;
 
-    --font-family-prose-weight-normal: 400;
-    --font-family-prose-weight-medium: 450;
-    --font-family-prose-weight-strong: 600;
+    --font-family-serif-weight-normal: 400;
+    --font-family-serif-weight-medium: 450;
+    --font-family-serif-weight-strong: 600;
 
     --font-family-code-weight-light: 500;
     --font-family-code-weight-normal: 650;

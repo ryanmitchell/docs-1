@@ -26,7 +26,7 @@
             font-size: var(--font-size-md-rem);
         }
         strong {
-            font-weight: var(--font-family-prose-weight-strong);
+            font-weight: var(--font-family-serif-weight-strong);
         }
     }
 }
@@ -53,15 +53,13 @@
     .c-entry-content {
         --font-size-sm-line-height: 1.4;
         --font-family-ui-weight-normal: 300;
-
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-normal);
         
         max-width: var(--max-width-content);
         margin-inline: auto;
         /* Based on e.g. >> Home on mobile */
         padding-inline: var(--spacing-xl);
-        font-family: var(--font-family-prose);
+        font-family: var(--font-family-ui);
+        font-weight: var(--font-family-ui-weight-normal);
 
         /* e.g. .o-badge-heading */
         > :has(h1),
@@ -202,7 +200,7 @@
                     counter-increment: item;
                     color: light-dark(var(--color-primary-text), var(--color-body-background));
                     font-size: var(--font-size-sm);
-                    font-weight: var(--font-family-prose-weight-strong);
+                    font-weight: var(--font-family-serif-weight-strong);
                     margin-inline-end: min(var(--spacing-md), 3vw);
                     background: var(--color-yellow-light-1);
                     border-radius: 50%;
@@ -212,7 +210,7 @@
 
         a {
             /* Improve legibility */
-            font-weight: var(--font-family-prose-weight-medium);
+            font-weight: var(--font-family-serif-weight-medium);
             &:has(.external):not(.c-icon-grid *) {
                 /* Needed for external link icons Safari 18.3.1 */
                 display: inline-flex;
