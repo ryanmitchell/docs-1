@@ -66,7 +66,7 @@
         .c-nav-sidebar-with-popover-api__close-button {
             position: absolute;
             z-index: var(--z-index-above-body);
-            right: 1.5rem;
+            right: 0.5rem;
             top: 0.5rem;
             margin-inline-end: 0;
             padding: var(--spacing-xs);
@@ -236,7 +236,6 @@
             }
             nav {
                 background: var(--color-dropdown-nav-background);
-                width: min(85%, 24rem);
                 &::backdrop {
                     transition: all 0.5s var(--animation-timing-function-hipster) 0s;
                 }
@@ -245,7 +244,7 @@
                     background: var(--popover-backdrop);
                 }
                 & ul {
-                    padding: var(--spacing-2xl) var(--spacing-xs);
+                    padding: var(--spacing-2xl) var(--spacing-md);
                     & ul {
                         padding: 0 var(--spacing-3xl);
                     }
@@ -289,7 +288,7 @@
                 height: 84dvh;
                 /* --mq-text-bump-2-before */
                 @media (width < 1441px) {
-                    max-width: min(96%, 15.5rem);
+                    max-width: min(95%, 15.5rem);
                     /* max-width: 15.5rem; */
                 }
                 padding-block-end: var(--spacing-xl);
