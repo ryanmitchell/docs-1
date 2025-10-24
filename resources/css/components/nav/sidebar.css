@@ -289,7 +289,8 @@
                 height: 84dvh;
                 /* --mq-text-bump-2-before */
                 @media (width < 1441px) {
-                    max-width: 15.5rem;
+                    max-width: min(96%, 15.5rem);
+                    /* max-width: 15.5rem; */
                 }
                 padding-block-end: var(--spacing-xl);
             }

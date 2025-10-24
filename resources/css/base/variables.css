@@ -8,6 +8,7 @@
     /* --mq-toc-open-after */
     @media (width >= 1250px) {
         --grid-template-columns-main: 15fr 70fr 15fr;
+        --grid-template-columns-main: 18fr 64fr 18fr;
     }
 
     /* GROUP VARIABLES -- SPACING

@@ -75,7 +75,12 @@
 @layer utilities {
     .o-toggle-subnav {
         + ul {
-            padding-block: var(--spacing-xs);
+            padding-block: var(--spacing-2xs);
+            /* --mq-text-bump-2-after */
+            @media (width > 1441px) {
+                /* Increase */
+                padding-block: var(--spacing-xs);
+            }
         }
         &:has(input:checked) + ul {
             .o-current-menu-item::before {

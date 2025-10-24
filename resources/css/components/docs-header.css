@@ -130,7 +130,7 @@
             }
         }
         .c-docs-header__inner {
-            padding: 1rem var(--spacing-xl) 3rem;
+            padding: 1rem var(--spacing-lg) 3rem;
             margin-block-end: 2rem;
             .o-logomark {
                 /* Decrease */
