@@ -94,11 +94,11 @@
                 display: flex;
                 max-width: 14rem;
                 white-space: nowrap;
-                max-height: 1rem;
                 gap: var(--spacing-md);
                 align-items: center;
                 justify-content: space-between;
-                padding: var(--spacing-sm) var(--spacing-md) 1.2rem;
+                /* Nudge so the nav aligns horizontally with the breadcrumbs */
+                padding-block: 0.55rem var(--spacing-2xs);
                 padding-inline-end: 0;
                 font-size: var(--font-size-lg);
                 line-height: var(--font-size-lg-line-height);

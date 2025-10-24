@@ -51,6 +51,8 @@
         .c-nav-toc-with-popover-api__mobile-button {
             padding: 1.2rem;
             margin: 0;
+            /* Nudge so the nav aligns horizontally with the breadcrumbs */
+            transform: translateY(-0.5rem);
             background: var(--color-dropdown-nav-background);
             border-radius: 40%;
             box-shadow: var(--box-shadow-not-t-medium);
@@ -193,7 +195,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 calc(var(--dropdown-nav-item-padding) + 3rem);
-            margin-block-end: var(--spacing-sm);
+            /* Nudge so the nav aligns horizontally with the breadcrumbs */
+            margin-block: 0.5rem var(--spacing-xs);
             font-size: var(--font-size-lg);
             line-height: var(--font-size-lg-line-height);
             font-weight: var(--font-family-main-weight-normal);
