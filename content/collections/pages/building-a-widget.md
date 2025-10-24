@@ -52,7 +52,6 @@ Widgets can be added to the dashboard by modifying the `widgets` array in the `c
 ``` php
 // config/statamic/cp.php
 'widgets' => [
-  'getting_started',
   [ // [tl! focus:start]
       'type' => 'local_weather',
       'width' => 100,

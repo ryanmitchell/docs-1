@@ -50,7 +50,6 @@ Widgets can be added to the dashboard by modifying the `widgets` array in the `c
 // config/statamic/cp.php
 
 'widgets' => [
-  'getting_started',
   [ // [tl! focus:start]
       'type' => 'collection',
       'collection' => 'blog',

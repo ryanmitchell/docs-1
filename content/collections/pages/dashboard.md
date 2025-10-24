@@ -26,7 +26,6 @@ Widgets can be added to the dashboard by modifying the `widgets` array in `confi
 
 ``` php
 'widgets' => [
-    'getting_started',
     [
         'type' => 'collection',
         'collection' => 'blog',
@@ -36,7 +35,7 @@ Widgets can be added to the dashboard by modifying the `widgets` array in `confi
         'type' => 'collection',
         'collection' => 'pages',
         'width' => 50
-    ]
+    ],
 ],
 ```
 
@@ -47,4 +46,20 @@ You may use the same widget multiple times, configured in different ways.
 Each widget may have a `width` defined as a percentage.
 `25`, `33`, `50`, `66`, `75`, and `100` (the default).
 
-For widgets not requiring any configuration you can provide the string instead of an array, like the `getting_started` widget in the above example.
+For widgets not requiring any configuration you can provide the string instead of an array, like this:
+
+``` php
+'widgets' => [
+    'updater', // [tl! focus]
+    [
+        'type' => 'collection',
+        'collection' => 'blog',
+        'width' => 50
+    ],
+    [
+        'type' => 'collection',
+        'collection' => 'pages',
+        'width' => 50
+    ],
+],
+```
