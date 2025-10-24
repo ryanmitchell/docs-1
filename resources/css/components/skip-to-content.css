@@ -24,7 +24,7 @@
         color: var(--color-black-static);
         padding: var(--spacing-sm) var(--spacing-md);
         text-decoration-color: var(--color-black-static);
-        font-weight: var(--font-family-ui-weight-medium);
+        font-weight: var(--font-family-main-weight-medium);
         outline: 0;
         text-box: text;
     }

@@ -52,14 +52,14 @@
     }
     .c-entry-content {
         --font-size-sm-line-height: 1.4;
-        --font-family-ui-weight-normal: 300;
+        --font-family-main-weight-normal: 300;
         
         max-width: var(--max-width-content);
         margin-inline: auto;
         /* Based on e.g. >> Home on mobile */
         padding-inline: var(--spacing-xl);
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-normal);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-family-main-weight-normal);
 
         /* e.g. .o-badge-heading */
         > :has(h1),

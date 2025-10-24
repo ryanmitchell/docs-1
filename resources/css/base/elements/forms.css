@@ -67,7 +67,7 @@
         padding-block-end: 1rem;
         /* Fixed */
         font-size: 16px;
-        font-weight: var(--font-family-ui-weight-heavy);
+        font-weight: var(--font-family-main-weight-heavy);
         /* Override line-height set on body */
         line-height: 1;
     }
@@ -402,7 +402,7 @@
         padding-block-start: var(--spacing-s);
         font-size: 0.9em;
         text-transform: uppercase;
-        font-family: var(--font-family-ui);
+        font-family: var(--font-family-main);
         color: hsl(0deg 0% 0% / 50%);
     }
 }

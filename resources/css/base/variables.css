@@ -160,17 +160,17 @@
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- FONTS
     =================================================== */
-    --font-family-ui: "Lexend", sans-serif;
+    --font-family-main: "Lexend", sans-serif;
     --font-family-serif: p22-mackinac-pro, serif;
     --font-family-code: "Source Code Pro", serif;
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
-    --font-family-ui-weight-light: 250;
-    --font-family-ui-weight-normal: 350;
-    --font-family-ui-weight-medium: 500;
-    --font-family-ui-weight-strong: 550;
-    --font-family-ui-weight-heavy: 650;
+    --font-family-main-weight-light: 250;
+    --font-family-main-weight-normal: 350;
+    --font-family-main-weight-medium: 500;
+    --font-family-main-weight-strong: 550;
+    --font-family-main-weight-heavy: 650;
 
     --font-family-serif-weight-normal: 400;
     --font-family-serif-weight-medium: 450;
@@ -339,9 +339,9 @@
         /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
         =================================================== */
         /* Trim heavier weights */
-        --font-family-ui-weight-medium: 450;
-        --font-family-ui-weight-strong: 500;
-        --font-family-ui-weight-heavy: 750;
+        --font-family-main-weight-medium: 450;
+        --font-family-main-weight-strong: 500;
+        --font-family-main-weight-heavy: 750;
         /* GROUP VARIABLES -- DARK MODE -- COLORS
         =================================================== */
         /* Thin out fonts */
@@ -472,9 +472,9 @@
             /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
             =================================================== */
             /* Trim heavier weights */
-            --font-family-ui-weight-medium: 450;
-            --font-family-ui-weight-strong: 500;
-            --font-family-ui-weight-heavy: 750;
+            --font-family-main-weight-medium: 450;
+            --font-family-main-weight-strong: 500;
+            --font-family-main-weight-heavy: 750;
             /* GROUP VARIABLES -- DARK MODE -- COLORS
             =================================================== */
             /* Thin out fonts */

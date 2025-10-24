@@ -69,15 +69,15 @@
         border-collapse: collapse;
         border-spacing: 0;
         margin-block: var(--spacing-2xl);
-        font-family: var(--font-family-ui);
+        font-family: var(--font-family-main);
 
         td {
             line-height: var(--font-size-md-line-height);
-            font-weight: var(--font-family-ui-weight-normal);
+            font-weight: var(--font-family-main-weight-normal);
         }
 
         .c-entry-content & strong {
-            font-weight: var(--font-family-ui-weight-strong);
+            font-weight: var(--font-family-main-weight-strong);
         }
     }
 
@@ -110,7 +110,7 @@
     table tr td:first-child {
         &, & * {
             /* Make the first "column" stand out. The * selector is there just in case there's also code, e.g. /content-queries */
-            font-weight: var(--font-family-ui-weight-heavy);
+            font-weight: var(--font-family-main-weight-heavy);
             code {
                 font-weight: var(--font-family-code-weight-strong);
             }

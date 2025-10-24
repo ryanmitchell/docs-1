@@ -21,10 +21,10 @@
         display: inline-block;
         z-index: var(--z-index-above-body);
         color: light-dark(var(--color-primary-text), var(--color-body-background));
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-medium);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-family-main-weight-medium);
         @container style(--color-scheme: dark) {
-            font-weight: var(--font-family-ui-weight-heavy);
+            font-weight: var(--font-family-main-weight-heavy);
         }
         &::before {
             content: '';

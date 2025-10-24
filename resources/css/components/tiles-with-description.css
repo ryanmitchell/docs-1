@@ -53,7 +53,7 @@
     .c-tiles-with-description__item {
         max-width: 21rem;
         margin-inline: auto;
-        font-family: var(--font-family-ui);
+        font-family: var(--font-family-main);
         p {
             padding-inline: var(--spacing-lg);
             /* padding-inline: var(--spacing-md); */
@@ -107,7 +107,7 @@
             text-align: left;
             /* Decrease */
             font-size: var(--font-size-xs);
-            font-weight: var(--font-family-ui-weight-normal);
+            font-weight: var(--font-family-main-weight-normal);
             line-height: var(--font-size-xs-line-height);
         }
     }

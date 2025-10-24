@@ -86,7 +86,7 @@
             color: var(--color-primary-text);
             & * {
                 line-height: 1.5;
-                font-weight: var(--font-family-ui-weight-light);
+                font-weight: var(--font-family-main-weight-light);
             }
             .c-nav-sidebar-with-popover-api-category-heading {
                 display: flex;
@@ -99,7 +99,7 @@
                 padding: var(--spacing-sm) var(--spacing-md);
                 padding-inline-end: 0;
                 font-size: var(--font-size-lg);
-                font-weight: var(--font-family-ui-weight-normal);
+                font-weight: var(--font-family-main-weight-normal);
                 line-height: var(--font-size-lg-line-height);
                 text-transform: uppercase;
                 text-decoration: none;
@@ -176,7 +176,7 @@
                         }
                         .o-current-menu-item {
                             text-decoration: none;
-                            font-weight: var(--font-family-ui-weight-medium);
+                            font-weight: var(--font-family-main-weight-medium);
                             &::before {
                                 content: '';
                                 border-inline-start: 3px solid var(--color-pink-light-1);

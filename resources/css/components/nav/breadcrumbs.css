@@ -70,7 +70,7 @@
             letter-spacing: 0.5px;
         }
         button {
-            font-weight: var(--font-family-ui-weight-strong);
+            font-weight: var(--font-family-main-weight-strong);
             margin-inline-end: 0;
         }
         /* GROUP COMPONENTS / BREADCRUMBS / MQs

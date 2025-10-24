@@ -23,22 +23,22 @@
         h2 {
             padding-block: var(--spacing-2xl) var(--spacing-sm);
             font-size: var(--font-size-xs);
-            font-family: var(--font-family-ui);
-            font-weight: var(--font-family-ui-weight-normal);
+            font-family: var(--font-family-main);
+            font-weight: var(--font-family-main-weight-normal);
             letter-spacing: 1px;
             text-transform: uppercase;
             color: inherit;
         }
         p {
             margin-block-end: var(--spacing-xs);
-            font-weight: var(--font-family-ui-weight-medium);
+            font-weight: var(--font-family-main-weight-medium);
             line-height: var(--font-size-sm-line-height);
             text-wrap: balance;
             a {
                 text-decoration: underline;
                 font-size: var(--font-size-xs);
-                font-family: var(--font-family-ui);
-                font-weight: var(--font-family-ui-weight-normal);
+                font-family: var(--font-family-main);
+                font-weight: var(--font-family-main-weight-normal);
                 text-transform: uppercase;
                 text-decoration-color: var(--color-text-underline-light);
             }

@@ -54,7 +54,7 @@
             display: inline-block;
             padding: var(--spacing-xs) var(--spacing-md);
             background: var(--color-gradient-full-light-2);
-            font-weight: var(--font-family-ui-weight-normal);
+            font-weight: var(--font-family-main-weight-normal);
             border-radius: var(--border-radius-lg);
             border-top-right-radius: 0;
             border-top-left-radius: 0;

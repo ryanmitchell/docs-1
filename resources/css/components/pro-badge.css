@@ -61,8 +61,8 @@
             &, &:hover {
                 color: var(--color-primary-text)!important;
             }
-            font-family: var(--font-family-ui);
-            font-weight: var(--font-family-ui-weight-heavy);
+            font-family: var(--font-family-main);
+            font-weight: var(--font-family-main-weight-heavy);
             font-size: var(--font-size-sm);
             line-height: var(--font-size-sm-line-height);
             letter-spacing: 0.25px;

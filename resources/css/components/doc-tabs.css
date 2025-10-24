@@ -63,8 +63,8 @@
     .c-doc-tabs p:not(.c-tip *),
     .c-doc-tabs__tabs {
         font-size: unset;
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-strong);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-family-main-weight-strong);
     }
     .c-doc-tabs__tabs {
         display: inline-flex;
@@ -94,7 +94,7 @@
     }
     button.c-doc-tabs__active {
         background: var(--color-gradient-blue-1);
-        font-weight: var(--font-family-ui-weight-heavy);
+        font-weight: var(--font-family-main-weight-heavy);
     }
 }
 @layer plugins {

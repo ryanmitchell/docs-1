@@ -24,7 +24,7 @@
         --button-spacing: var(--button-spacing-vertical) var(--button-spacing-inline);
         padding: var(--button-spacing);
         font-size: var(--font-size-sm);
-        font-weight: var(--font-family-ui-weight-heavy);
+        font-weight: var(--font-family-main-weight-heavy);
         text-decoration-line: none;
         /* Hover states with a slight delay, but focus without any because keyboard users want quick feedback. Do not use 'all' because it resizes slowly when resizing the browser window */
         transition: background-color 0.2s ease 0s;
@@ -85,7 +85,7 @@
         background: linear-gradient(to top left, var(--color-black) 0%,var(--color-black-light) 100%);
         color: var(--color-green);
         border-radius: var(--border-radius-sm);
-        font-weight: var(--font-family-ui-weight-medium);
+        font-weight: var(--font-family-main-weight-medium);
         @container style(--color-scheme: dark) {
             background: var(--color-dark-mode-gray-dark);
         }
@@ -111,7 +111,7 @@
         padding: 0;
         text-decoration-line: underline;
         text-decoration-thickness: 3px;
-        font-weight: var(--font-family-ui-weight-heavy);
+        font-weight: var(--font-family-main-weight-heavy);
     }
 
     /* Small */

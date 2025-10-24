@@ -88,7 +88,7 @@
         background: var(--docsearch-key-gradient);
         height: 1.5rem;
         padding-inline: 0.3rem;
-        font-family: var(--font-family-ui);
+        font-family: var(--font-family-main);
         font-size: var(--font-size-sm);
         /* Page preference is "dark" */
         html:has(#color-scheme option[value="dark"]:checked) & {
@@ -199,10 +199,10 @@
     margin-block-end: 0;
 }
 .docsearch-modal-search-hits-item-title {
-    font-weight: var(--font-family-ui-weight-strong)!important;
+    font-weight: var(--font-family-main-weight-strong)!important;
 }
 .docsearch-modal-search-hits-item-text {
-    font-weight: var(--font-family-ui-weight-normal)!important;
+    font-weight: var(--font-family-main-weight-normal)!important;
 }
 @container style(--color-scheme: dark) {
     .docsearch-modal-search-hits-category {

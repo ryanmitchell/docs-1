@@ -102,10 +102,10 @@
         }
 
         h2 {
-            font-family: var(--font-family-ui);
+            font-family: var(--font-family-main);
             font-size: var(--font-size-xl);
             line-height: var(--font-size-xl-line-height);
-            font-weight: var(--font-family-ui-weight-medium);
+            font-weight: var(--font-family-main-weight-medium);
         }
 
         .c-btn {

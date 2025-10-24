@@ -11,8 +11,8 @@
     body {
         min-height: 100vh;
 
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-normal);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-family-main-weight-normal);
         /* https://app.typographychecklist.com/ - 23. Use standard ligatures but avoid using discretionary ligatures in body text */
         font-feature-settings: "kern", "liga", "clig", "calt";
         /* https://css-tricks.com/scrollbar-reflowing/ */
@@ -230,7 +230,7 @@
         padding-block-start: var(--spacing-xs);
     }
     strong {
-        font-weight: var(--font-family-ui-weight-heavy);
+        font-weight: var(--font-family-main-weight-heavy);
     }
     /* Only target our own name-spaced components so that we don't affect plugins */
     :is([class^="c-"], [class^="o-"]) svg {
@@ -300,8 +300,8 @@
     }
     figcaption {
         /* e.g. >> Docs Home */
-        font-family: var(--font-family-ui);
-        font-weight: var(--font-family-ui-weight-medium);
+        font-family: var(--font-family-main);
+        font-weight: var(--font-family-main-weight-medium);
     }
     h1, .h1, h1 a, .h1 a, h2, .h2, h2 a, .h2 a, h3, .h3, h3 a, .h3 a {
         /* Not when headings are inside li, which they sometimes are, e.g. /tips */

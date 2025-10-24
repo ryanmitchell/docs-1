@@ -35,7 +35,7 @@
                 padding-inline: var(--spacing-lg);
             }
             margin-block: var(--spacing-3xl);
-            font-family: var(--font-family-ui);
+            font-family: var(--font-family-main);
             &:hover .c-tip__mascot {
                 animation: wiggle 0.5s linear;
             }
@@ -51,7 +51,7 @@
             p {
                 max-width: 96%;
                 font-size: unset;
-                font-weight: var(--font-family-ui-weight-medium);
+                font-weight: var(--font-family-main-weight-medium);
                 /* Custom */
                 @media (width < 500px) {
                     font-size: 0.9rem;

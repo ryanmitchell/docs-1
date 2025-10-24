@@ -80,7 +80,7 @@
             align-items: center;
             gap: var(--spacing-md);
             /* height: 100%; */
-            font-family: var(--font-family-ui);
+            font-family: var(--font-family-main);
             box-shadow: var(--box-shadow-not-t-light);
             border-radius: var(--border-radius-md);
         }
@@ -94,7 +94,7 @@
                 color: var(--color-gray-aa);
             }
             &:last-child a {
-                font-weight: var(--font-family-ui-weight-strong);
+                font-weight: var(--font-family-main-weight-strong);
                 line-height: 1.5;
                 margin-inline-end: 0;
                 text-decoration: underline;
@@ -108,7 +108,7 @@
             color: var(--color-gray-aa);
             text-transform: uppercase;
             font-size: 0.775em;
-            font-weight: var(--font-family-ui-weight-normal);
+            font-weight: var(--font-family-main-weight-normal);
             text-box: trim-start cap;
             line-height: 1;
             letter-spacing: 0.5px;

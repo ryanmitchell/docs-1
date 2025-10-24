@@ -31,10 +31,10 @@
         background: var(--color-gradient-full-light-3);
         border: var(--border-solid);
         border-radius: var(--border-radius-lg);
-        font-family: var(--font-family-ui);
+        font-family: var(--font-family-main);
         font-size: var(--font-size-sm);
         line-height: var(--font-size-sm-line-height);
-        font-weight: var(--font-family-ui-weight-strong);
+        font-weight: var(--font-family-main-weight-strong);
         text-transform: uppercase;
         > * {
             padding: var(--spacing-xs) var(--spacing-md);
