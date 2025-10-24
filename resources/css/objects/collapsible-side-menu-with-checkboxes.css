@@ -75,8 +75,7 @@
 @layer utilities {
     .o-toggle-subnav {
         + ul {
-            padding-block: 0.75rem 0.25rem;
-            
+            padding-block: var(--spacing-xs);
         }
         &:has(input:checked) + ul {
             .o-current-menu-item::before {
