@@ -12,6 +12,11 @@
                 <ol>
                     {{ nav:breadcrumbs include_home="false" }}
                         <li>
+                            {{# Output the parent for the homepage #}}
+                            {{ if current_uri == '/' }}
+                                <a href="{{ url }}">Getting Started</a>
+                                </li><li>{{ svg src='breadcrumb-chevron' }}
+                            {{ /if }}
                             {{ unless first }}{{ svg src='breadcrumb-chevron' }}{{ /unless }}
                             {{ if is_current }}
                                 <button popovertarget="popover-nav-sidebar">{{ breadcrumb_title ?? nav_title ?? title }}</button>
