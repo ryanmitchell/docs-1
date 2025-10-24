@@ -61,13 +61,6 @@
         background: linear-gradient(to top, var(--color-black-off) 0%, var(--stop), transparent var(--stop), transparent 100%);
         img {
             filter: var(--filter-image-boost-2);
-            mask: url(/img/footer/waterfall-mask.svg) center/contain no-repeat, linear-gradient(#000 0 0); /* we need this extra layer for mask-composite */
-            mask-composite: exclude;
-            mask-repeat: no-repeat;
-            /* Fix weird bug where there is a hairline gap between the masked image and the subsequent DOM element */
-            --fix-hairline-gap: 0.75rem;
-            mask-position: 0% calc(100% + var(--fix-hairline-gap));
-            mask-size: 100%;
             object-fit: cover;
             width: 100%;
             object-position: top;
