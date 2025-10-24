@@ -53,7 +53,7 @@
     .c-entry-content {
         --font-size-sm-line-height: 1.4;
         --font-family-main-weight-normal: 300;
-        
+
         max-width: var(--max-width-content);
         margin-inline: auto;
         /* Based on e.g. >> Home on mobile */
