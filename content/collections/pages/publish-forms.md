@@ -7,6 +7,12 @@ id: b4b46ceb-9feb-4587-8f0d-2080511bf9e3
 
 ## Overview
 
+:::warning
+Publish Forms have changed significantly in v6, so these docs are out-of-date.
+
+We're doing some major reorganizing of the docs for the v6 launch and will have complete documentation sometime between now and then.
+:::
+
 When creating or editing content (entries, pages, etc), you are presented with a form view. This is what we call
 the "Publish" form. You're free to use these in your own addons or custom features.
 

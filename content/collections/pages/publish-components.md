@@ -7,6 +7,12 @@ id: e2577828-504b-490b-a8b6-10991ae8a0b6
 
 ## Overview
 
+:::warning
+Publish Forms have changed significantly in v6, so these docs are out-of-date.
+
+We're doing some major reorganizing of the docs for the v6 launch and will have complete documentation sometime between now and then.
+:::
+
 Statamic provides a handful of Vue components that can be used like building blocks to create forms. To read about the general "publish form" concept, including how
 to do all the server-side bits, [check out the publish forms page](/extending/publish-forms).
 
