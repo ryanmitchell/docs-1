@@ -44,6 +44,7 @@ scope;
 @import './components/nav/sidebar-advert.css';
 @import './components/nav/toc.css';
 @import './components/nav/breadcrumbs.css';
+@import './components/nav/back-nav.css';
 /* Components */
 @import './components/anchors.css';
 @import './components/entry-content.css';

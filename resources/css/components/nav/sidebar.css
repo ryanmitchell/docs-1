@@ -162,7 +162,9 @@
                         font-size: var(--font-size-ui-rem);
                         border: 1px solid transparent;
                         /* Switch the border color when the disclosure is open */
-                        label:not(:has(input:checked)) + & {
+                        label:not(:has(input:checked)) + &,
+                        /* When there's no disclosure add the border by default e.g. >> /fieldtypes/integer */
+                        &:not(label ~ &) {
                             border-color: var(--color-pink-light-2);
                         }
                         border-radius: var(--border-radius-lg);
