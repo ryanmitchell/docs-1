@@ -292,9 +292,12 @@
             }
             .c-nav-toc-with-popover-api__desktop {
                 position: sticky;
-                --top: 8rem;
+                --top: 7rem;
+                @media (width >= 2100px) {
+                    --top: 8rem;
+                }
                 top: var(--top);
-                block-size: calc(100vh - var(--top) -  6.5rem);
+                block-size: calc(100vh - var(--top) -  5rem);
                 ul:not(ul ul) {
                     /* Need to cut this short a little to force scrolling when there are a lot of items. */
                     height: 80dvh;

@@ -252,9 +252,12 @@
         /* --mq-nav-open-after */
         @media (width >= 1100px) {
             grid-area: sidebar-1;
-            --top: 8rem;
+            --top: 7rem;
+            @media (width >= 2100px) {
+                --top: 8rem;
+            }
             top: var(--top);
-            block-size: calc(100vh - var(--top) - 6.5rem);
+            block-size: calc(100vh - var(--top) - 5rem);
             .c-nav-sidebar-with-popover-api__mobile {
                 /* Prevent a lag in seeing the mobile nav collapse if you pull the window out  */
                 transition: unset;
