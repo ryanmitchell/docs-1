@@ -259,7 +259,7 @@
                 --top: 8rem;
             }
             top: var(--top);
-            block-size: calc(100vh - var(--top) - 5rem);
+            block-size: calc(100vh - var(--top) * 2.5);
             .c-nav-sidebar-with-popover-api__mobile {
                 /* Prevent a lag in seeing the mobile nav collapse if you pull the window out  */
                 transition: unset;
@@ -290,8 +290,8 @@
                     }
                     &:not(ul ul) {
                         /* Need to cut this short a little to force scrolling when there are a lot of items. */
-                        height: 84dvh;
-                        padding-block-end: var(--spacing-xl);
+                        height: 86dvh;
+                        padding-block-end: var(--spacing-m);
                     }
                 }
             }

@@ -297,7 +297,7 @@
                     --top: 8rem;
                 }
                 top: var(--top);
-                block-size: calc(100vh - var(--top) -  5rem);
+                block-size: calc(100vh - var(--top) * 2);
                 ul:not(ul ul) {
                     /* Need to cut this short a little to force scrolling when there are a lot of items. */
                     height: 80dvh;
