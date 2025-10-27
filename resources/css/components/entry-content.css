@@ -21,7 +21,6 @@
     .c-entry-content {
         /* Sometimes there are p tags in tables e.g. >> /tags */
         p:not(table *) {
-            max-width: var(--max-width-reading);
             /* Rem instead of em because of p tags inside li tags e.g. e.g. >> /fields */
             font-size: var(--font-size-md-rem);
         }
@@ -54,7 +53,7 @@
         --font-size-sm-line-height: 1.4;
         --font-family-main-weight-normal: 300;
 
-        max-width: var(--max-width-content);
+        max-width: var(--max-width-reading);
         margin-inline: auto;
         /* Based on e.g. >> Home on mobile */
         padding-inline: var(--spacing-xl);
@@ -74,7 +73,7 @@
             &:has(:not(p)) + article > p:first-child {
                 font-size: var(--font-size-lg);
                 line-height: var(--font-size-lg-line-height);
-                max-width: var(--max-width-content);
+                max-width: var(--max-width-reading);
                 margin-block-end: var(--spacing-lg);
             }
             /* e.g. >> /extending/markdown */

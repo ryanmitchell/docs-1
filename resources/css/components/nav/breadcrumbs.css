@@ -42,7 +42,7 @@
             }
             /* --mq-nav-open-before */
             @media (width < 1100px) {
-                max-width: var(--max-width-content);
+                max-width: var(--max-width-reading);
                 margin-inline: auto;
             }
             /* --mq-grid-after to --mq-nav-open-before */
@@ -111,7 +111,7 @@
         @media (width >= 1100px) {
             padding-inline: var(--spacing-xl);
             width: 100%;
-            max-width: var(--max-width-content);
+            max-width: var(--max-width-reading);
             margin-inline: auto;
         }
     }

@@ -52,7 +52,7 @@
             & h2 {
                 font-size: var(--font-size-3xl);
                 line-height: var(--font-size-3xl-line-height);
-                max-width: var(--max-width-content);
+                max-width: var(--max-width-reading);
                 margin-inline: auto;
             }
             & p {

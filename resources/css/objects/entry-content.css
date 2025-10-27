@@ -23,7 +23,7 @@
 
 @layer objects {
     .o-entry-content {
-        max-width: var(--max-width-content);
+        max-width: var(--max-width-reading);
         margin-inline: auto;
         padding-inline: var(--spacing-xl);
     }
