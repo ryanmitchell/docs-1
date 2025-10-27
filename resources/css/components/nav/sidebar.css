@@ -98,8 +98,7 @@
                 align-items: center;
                 justify-content: space-between;
                 /* Nudge so the nav aligns horizontally with the breadcrumbs */
-                padding-block: 0.55rem var(--spacing-2xs);
-                padding-inline-end: 0;
+                padding: 0.55rem 0 var(--spacing-2xs) var(--spacing-md);
                 font-size: var(--font-size-lg);
                 line-height: var(--font-size-lg-line-height);
                 font-weight: var(--font-family-main-weight-normal);
@@ -111,10 +110,6 @@
                 &:focus-visible {
                     /* Pull the focus outline state in slightly on the category headings so it doesn't disappear into the overflow:hidden; */
                     outline-offset: -3px;
-                }
-                /* --mq-text-bump-2-after */
-                @media (width >= 1441px) {
-                    padding-inline-start: var(--spacing-md);
                 }
             }
 
