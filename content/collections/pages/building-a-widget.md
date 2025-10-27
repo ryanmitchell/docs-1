@@ -14,9 +14,9 @@ You can generate a widget with a console command:
 php please make:widget LocalWeather
 ```
 
-This will automagically create a class in `app/Widgets` and a Blade view in `resources/views/widgets`.
+This will automagically create a class in `app/Widgets` and a Vue component in `resources/js/components/widgets`.
 
-The PHP class is responsible for returning the view and the view is responsible for what the user sees on the page.
+The PHP class is responsible for returning the Vue component:
 
 ```php
 // app/Widgets/LocalWeather.php
@@ -25,25 +25,57 @@ The PHP class is responsible for returning the view and the view is responsible 
   
 namespace App\Widgets;  
   
-use Statamic\Widgets\Widget;  
+use Statamic\Widgets\VueComponent;
+use Statamic\Widgets\Widget;
   
 class LocalWeather extends Widget  
 {
-    public function html()  
+    public function component()  
     {  
-        return view('widgets.local_weather');  
+        return VueComponent::render('LocalWeather');
     }  
 }
 ```
 ```blade
-<ui-widget title="LocalWeather">  
-    <div class="px-4 py-3">  
-        <p>👋 Hello world!</p>  
-    </div>  
-</ui-widget>
+<script setup>
+import { Widget } from '@statamic/cms/ui';
+</script>
+
+<template>
+    <Widget title="LocalWeather">
+        <div class="px-4 py-3">
+            <p>👋 Hello world!</p>
+        </div>
+    </Widget>
+</template>
 ```
 
-The [`<ui-widget>`](/ui-components/widget) component accepts a `title` and an optional `icon` prop. 
+Props can be passed as a second parameter to the `VueComponent::render()` method:
+
+```php
+return VueComponent::render('LocalWeather', [ // [tl! focus:2]
+    'temperature' => 10,
+]);
+```
+```blade
+<script setup>
+import { Widget } from '@statamic/cms/ui';
+
+defineProps({ // [tl! focus:2]
+    temperature: Number,
+});
+</script>
+
+<template>
+    <Widget title="LocalWeather">
+        <div class="px-4 py-3">
+            <p>It is currently {{ temperature }}°C</p> <!-- [tl! focus] -->
+        </div>
+    </Widget>
+</template>
+```
+
+The [`<Widget>`](/ui-components/widget) component requires a `title` prop, along with optional `icon` and `href` props. You may also pass an `actions` slot to render content in the top right of the widget.
 
 ## Configuring
 
