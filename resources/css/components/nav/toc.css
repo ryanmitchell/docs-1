@@ -292,7 +292,7 @@
             }
             .c-nav-toc-with-popover-api__desktop {
                 position: sticky;
-                --top: 8.5rem;
+                --top: 6rem;
                 top: var(--top);
                 block-size: calc(100vh - var(--top) -  6.5rem);
                 ul:not(ul ul) {

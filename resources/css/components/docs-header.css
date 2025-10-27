@@ -131,7 +131,7 @@
         }
         .c-docs-header__inner {
             padding: 1rem var(--spacing-lg) 3rem;
-            margin-block-end: 2rem;
+            margin-block-end: 1rem;
             .o-logomark {
                 /* Decrease */
                 font-size: 2.75em;
@@ -190,13 +190,13 @@
                     --background-image: url('../../../public/img/paper-tear-large-dark-mode.png');
                 }
             }
-            --background-position: 7.75rem;
+            --background-position: 5.75rem;
             background-repeat: repeat-x;
             background-size: 1800px auto, auto auto;
         }
         .c-docs-header__inner {
             /* Increase */
-            padding-block: 2.5rem 4.75rem;
+            padding-block: 1.6rem 3.75rem;
         }
     }
     /* GROUP COMPONENTS / SITE HEADER / SCROLL DRIVEN ANIMATIONS
@@ -217,7 +217,7 @@
         @media (width >= 2100px) {
             main {
                 /* Increase */
-                padding-block-start: 12.5rem;
+                padding-block-start: 11rem;
             }
         }
     }
