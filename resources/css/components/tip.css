@@ -89,9 +89,9 @@
     .c-tip__mascot {
         position: absolute;
         z-index: var(--z-index-above-body);
-        top: -1.3rem;
-        left: -2.5rem;
-        inline-size: 4.85rem;
+        top: -1rem;
+        left: -1.75rem;
+        inline-size: 4rem;
         filter: var(--filter-burnt-shadow);
     }
 }
