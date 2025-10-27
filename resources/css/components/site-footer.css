@@ -49,11 +49,11 @@
         position: relative;
     }
     .c-site-footer__scene__image-container {
-        max-height: 40rem;
+        max-height: 30rem;
         position: relative;
         display: flex;
         --stop: 4.5rem;
-    
+
         /* Custom */
         @media (width >= 500px) {
             --stop: 4rem;
@@ -65,12 +65,8 @@
             width: 100%;
             object-position: top;
         }
-        /* Custom */
-        @media (width > 3000px) {
-            max-height: 55rem;
-            img {
-                --fix-hairline-gap: 2rem;
-            }
+        @media (width >= 2100px) {
+            max-height: 37rem;
         }
     }
     .c-site-footer__scene__stars {
