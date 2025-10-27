@@ -22,6 +22,10 @@
     {{# GROUP CSS
     =================================================== #}}
     <link rel="stylesheet" href="{{ vite:asset src='resources/css/style.css' }}">
+    {{ if environment == 'local' }}
+        <link rel="stylesheet" href="/css/scratch.css">
+    {{ /if }}
+
     {{# GROUP JS
     =================================================== #}}
     <script>
