@@ -141,7 +141,7 @@
         padding-left: 1.85em;
         position: relative;
         font-size: 1.05em;
-        color: var(--color-primary-text-color)!important;
+        color: var(--color-primary-text)!important;
     }
 
     .tl-files-name:before {
