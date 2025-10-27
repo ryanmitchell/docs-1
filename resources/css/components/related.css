@@ -57,9 +57,9 @@
             block-size: var(--background-image-height);
             position: absolute;
             --background-position: 1.5rem;
-            --background-image: url('/img/paper-tear.png');
+            --background-image: url('../../../public/img/paper-tear.png');
             @container style(--color-scheme: dark) {
-                --background-image: url('/img/paper-tear-dark-mode.png');
+                --background-image: url('../../../public/img/paper-tear-dark-mode.png');
             }
             background: var(--background-image) no-repeat 0% var(--background-position), transparent;
             opacity: 0.8;
