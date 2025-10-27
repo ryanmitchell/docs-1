@@ -71,7 +71,7 @@
             /* Select Styling. Inspiration - https://moderncss.dev/custom-select-styles-with-pure-css/ */
             appearance: none;
             background: var(--background);
-            background-image: url(/img/dropdown.svg);
+            background-image: url(../../../public/img/dropdown.svg);
             background-repeat: no-repeat;
             background-size: 0.75em;
             background-position: calc(100%);
@@ -96,6 +96,6 @@
 @container style(--color-scheme: dark) {
     /* This won't work in Safari when nested in a layer for some reason */
     .c-theme-picker select {
-        background-image: url(/img/dropdown-dark-mode.svg);
+        background-image: url(../../../public/img/dropdown-dark-mode.svg);
     }
 }
