@@ -13,6 +13,7 @@
 
     /* GROUP VARIABLES -- SPACING
     =================================================== */
+    --spacing-4xs: 0.075rem;
     --spacing-3xs: 0.15rem;
     --spacing-2xs: 0.5rem;
     --spacing-xs: 0.75rem;

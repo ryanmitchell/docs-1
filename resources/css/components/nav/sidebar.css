@@ -156,7 +156,7 @@
                     }
 
                     ul {
-                        gap: 0;
+                        gap: var(--spacing-4xs);
                         max-height: unset;
                         padding-inline: calc(var(--spacing-md) - var(--dropdown-nav-item-padding));
                         font-size: var(--font-size-ui-rem);
@@ -173,6 +173,7 @@
                             /* Increase the pointer targets a little to improve usability */
                             padding: var(--dropdown-nav-item-padding);
                             display: inline-block;
+                            text-box: trim-start;
                         }
                         .o-current-menu-item {
                             text-decoration: none;
