@@ -219,7 +219,7 @@
         p {
             /* e.g. >> /quick-start-guide */
             + ol {
-                padding-block: var(--spacing-md) var(--spacing-2xl);
+                padding-block: var(--spacing-sm) var(--spacing-2xl);
             }
             /* e.g. >> /quick-start-guide */
             + ul {

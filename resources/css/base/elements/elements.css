@@ -73,7 +73,7 @@
         }
         /* Put some space between paragraphs and code blocks, except if it's in a tip */
         p:has(+ &):not(.c-tip p, ol p) {
-            margin-block-end: var(--spacing-lg);
+            margin-block-end: var(--spacing-md);
         }
         li & {
             /* Make code in bullet points slightly smaller */
@@ -187,12 +187,7 @@
         padding-block-end: var(--spacing-xs);
     }
     p {
-        margin-block-end: var(--spacing-lg);
-        /* --mq-nav-open-before */
-        @media (width < 1100px) {
-            /* Decrease */
-            margin-block-end: var(--spacing-md);
-        }
+        margin-block-end: var(--spacing-md);
         &:last-child {
             margin-block-end: 0;
         }
@@ -346,16 +341,16 @@
     /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / HIGH PRIORITY / VERTICAL SPACING
     =================================================== */
     h1 {
-        padding-block-end: var(--spacing-lg);
+        padding-block-end: var(--spacing-md);
     }
     h2 {
         /* E.g. h2 following article intro text */
-        padding-block-end: var(--spacing-lg);
+        padding-block-end: var(--spacing-md);
     }
     * + h2,
     article + article {
         /* E.g. h2 following article intro text */
-        padding-block: var(--spacing-sm) var(--spacing-lg);
+        padding-block: var(--spacing-sm) var(--spacing-md);
         &:has(+ h3) {
             /* e.g. >> /assets */
             padding-block-end: 0;
