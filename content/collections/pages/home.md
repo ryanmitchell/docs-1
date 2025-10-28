@@ -27,7 +27,7 @@ tiles:
     enabled: true
     flush_image: false
     hue_rotate: hue_rotate_1
-    tile_link: https://learnstatamic.com
+    tile_link: 'https://learnstatamic.com'
   -
     id: m8fszcgf
     tile_image: tiles/modern-people.png
@@ -40,13 +40,12 @@ tiles:
     tile_link: 'https://statamic.com/discord'
   -
     id: m8ft268a
-    tile_image: tiles/antlers.png
+    tile_image: tiles/computer.png
     tile_title: 'Antler Templating Docs'
     tile_description: 'Start unlocking the mighty flexible powers of Antlers.'
     type: tile
     enabled: true
-    tile_image_dark_mode: tiles/antlers-dark-mode.png
-    flush_image: true
+    flush_image: false
     hue_rotate: false
     tile_link: 'entry::d37b2af2-f2bf-493a-9345-7087fb5929ce'
   -
