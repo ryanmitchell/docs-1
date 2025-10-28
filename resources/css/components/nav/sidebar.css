@@ -259,7 +259,7 @@
                 --top: 8rem;
             }
             top: var(--top);
-            block-size: calc(100vh - var(--top) * 2.5);
+            block-size: calc(100vh - var(--top) * 2);
             .c-nav-sidebar-with-popover-api__mobile {
                 /* Prevent a lag in seeing the mobile nav collapse if you pull the window out  */
                 transition: unset;
