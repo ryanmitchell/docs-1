@@ -166,6 +166,7 @@
                         /* When there's no disclosure add the border by default e.g. >> /fieldtypes/integer */
                         &:not(label ~ &) {
                             border-color: var(--color-pink-light-2);
+                            box-shadow: var(--box-shadow-pink-light-sm);
                         }
                         border-radius: var(--border-radius-lg);
                         & a, button, span {
