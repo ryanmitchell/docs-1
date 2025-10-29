@@ -92,14 +92,14 @@
         }
         /* Custom */
         @media (width >= 768px) {
-            padding: var(--spacing-3xl);
+            padding: var(--spacing-2xl);
             &::before {
                 position: absolute;
                 z-index: var(--z-index-below-body);
                 inset: 0;
                 content: "";
                 background: var(--color-gradient-full-light-2);
-                border-radius: var(--border-radius-2xl);
+                border-radius: var(--border-radius-lg);
             }
             &:has(figcaption) {
                 /* Increase. Make a bit more room for the caption */
@@ -109,7 +109,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                border-radius: 0 var(--border-radius-xl);
+                border-radius: 0 var(--border-radius-lg);
             }
         }
     }
