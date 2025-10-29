@@ -370,7 +370,7 @@
         --color-purple-code-background: hsl(252deg 55% 25%);
         --color-pink-light-1: hsl(287deg 80% 22%);
         /* e.g. toc scrollbar */
-        --color-pink-light-2: hsl(287deg 80% 12%);
+        --color-pink-light-2: hsl(287deg 80% 15%);
         --color-pink-light-3: hsl(287deg 90% 8.5%);
         --color-pink-light-3-static: hsl(287deg 100% 17%);
         --color-pink-light-4: hsl(287deg 100% 5%);
@@ -443,6 +443,7 @@
         =================================================== */
         /* e.g. .c-docs-header__search */
         --box-shadow-pink-light: unset;
+        --box-shadow-pink-light-sm: 0px 5px 5px hsl(var(--color-shadow) 100% 97%);
         /* The shadow here stands out a touch more than in light mode */
         --box-shadow-not-t-light: 0 5px 10px var(--color-shadow), 0 4px 10px -2px var(--color-shadow);
         /* In dark mode this is the same as the above */
@@ -503,7 +504,7 @@
             --color-purple-code-background: hsl(252deg 55% 25%);
             --color-pink-light-1: hsl(287deg 80% 22%);
             /* e.g. toc scrollbar */
-            --color-pink-light-2: hsl(287deg 80% 12%);
+            --color-pink-light-2: hsl(287deg 80% 15%);
             --color-pink-light-3: hsl(287deg 90% 8.5%);
             --color-pink-light-3-static: hsl(287deg 100% 17%);
             --color-pink-light-4: hsl(287deg 100% 5%);
@@ -576,6 +577,7 @@
             =================================================== */
             /* e.g. .c-docs-header__search */
             --box-shadow-pink-light: unset;
+            --box-shadow-pink-light-sm: 0px 5px 5px hsl(var(--color-shadow) 100% 97%);
             /* The shadow here stands out a touch more than in light mode */
             --box-shadow-not-t-light: 0 5px 10px var(--color-shadow), 0 4px 10px -2px var(--color-shadow);
             /* In dark mode this is the same as the above */
