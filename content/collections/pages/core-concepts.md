@@ -41,7 +41,7 @@ Statamic operates in flat file mode by default, which reduces complexity compare
 As your site scales, you can choose to move from the flat file driver to one best suiting your needs. **Deferring this decision prevents premature optimization and technical debt.**
 
 <figure>
-    <img src="https://imgs.xkcd.com/comics/the_general_problem.png" alt="Premature Optimization comic by XKCD">
+    <img class="u-w-full" src="https://imgs.xkcd.com/comics/the_general_problem.png" alt="Premature Optimization comic by XKCD">
     <figcaption>Let's be honest. We've all done this.</figcaption>
 </figure>
 

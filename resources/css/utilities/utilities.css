@@ -42,6 +42,9 @@
             justify-content: center;
         }
     }
+    .u-w-full {
+        width: 100%;
+    }
     .u-image-boost-with-hue-rotate {
         filter: var(--filter-image-boost-1-with-hue-rotate);
     }
