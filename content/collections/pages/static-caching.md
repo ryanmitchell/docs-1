@@ -612,6 +612,45 @@ class CustomInvalidator extends DefaultInvalidator
 
 To clear the static file cache you can run `php please static:clear` (and/or delete the appropriate static file locations).
 
+## Background Re-caching
+
+By default, when a page is invalidated, the cached item is deleted, so the next person to visit the page will get a fresh version, which might be slow.
+
+You may opt into background re-caching which will refresh the item rather than deleting it. There
+
+```php
+'background_recache' => true,
+```
+
+If you are using full-measure static caching, you will need to adjust your server rewrite rules.
+
+```nginx
+if ($args ~* "live-preview=(.*)") {
+    set $try_location @not_static;
+}
+
+if ($arg___recache = "YOUR-TOKEN") { # [tl! ++]
+    set $try_location @not_static; # [tl! ++]
+} # [tl! ++]
+
+location / {
+    try_files $uri $try_location;
+}
+```
+
+You can get the token by running the `static:recache-token` command:
+
+```bash
+$ php please static:recache-token
+[INFO] Your token is: YOUR-TOKEN
+```
+
+Or, if you'd rather set it explicitly, you may do that:
+
+```php
+'recache_token' => 'no-one-will-guess-this',
+```
+
 ## File locations
 
 When using the file driver, the static HTML files are stored in the `static` directory of your webroot, but you can change it.
