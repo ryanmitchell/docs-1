@@ -79,7 +79,7 @@
                         <li>
                             <a wire:navigate
                                 href="{{ url }}"
-                                {{ if is_current }}class="o-current-menu-item"{{ /if }}
+                                {{ if is_current || is_parent }}class="o-current-menu-item"{{ /if }}
                             >
                                 {{ nav_title ?? title }}
                             </a>
