@@ -141,6 +141,15 @@
                 }
             }
 
+            .c-nav-sidebar-categories {
+                padding: var(--spacing-s-4) var(--spacing-m);
+                font-family: var(--font-family-prose);
+                font-size: var(--font-size-m);
+                line-height: var(--font-size-m-line-height);
+                box-shadow: var(--box-shadow-not-t-light);
+                border-radius: var(--border-radius-s);
+            }
+
             & ul {
                 list-style: none;
                 display: flex;
