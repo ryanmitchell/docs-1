@@ -446,7 +446,8 @@ Head to the **Blueprints** area in the sidebar and click **Blog**. Now you're lo
 Tab Sections let you group fields into Tabs which can help you stay organized, keep similar fields together, or help push optional, unusual fields out of mind for most authors. It's up to you how you'd like to organize these.
 
 <figure>
-    <img src="/img/quick-start/blueprint-sections.jpg" alt="A Blueprint and its default fields" width="600">
+    <img src="/img/quick-start/blueprint-sections-v6.jpg" alt="A Blueprint and its default fields" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/blueprint-sections-v6-dark.jpg" alt="A Blueprint and its default fields" class="u-hide-in-light-mode">
     <figcaption>This is content modeling right here.</figcaption>
 </figure>
 
@@ -463,7 +464,8 @@ Click **Create Field** in the **Main** section and behold! A big list of fieldty
 When this screen is opened, you're automatically focused in the search box, so you can start typing the fieldtype name if you know it (Hint: you could type `assets` now). Or, you can narrow the fields down by type – All, Text, Media, and Relationship. You'd find the Assets fieldtype inside Media.
 
 <figure>
-    <img src="/img/quick-start/fieldtypes.jpg" alt="A list of Statamic's fieldtypes" width="600">
+    <img src="/img/quick-start/fieldtypes-v6.jpg" alt="A list of Statamic's fieldtypes" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/fieldtypes-v6-dark.jpg" alt="A list of Statamic's fieldtypes" class="u-hide-in-light-mode">
     <figcaption>Over 40 different types to pick from!</figcaption>
 </figure>
 
@@ -472,17 +474,19 @@ Find the **Assets** fieldtype and click it. Assets fields let you pick from and 
 Next, give the field the `Display` name "Featured Image" and you'll see the `Handle` get slugified automatically to `featured_image`. This will be the variable name you will use in your templates to get the asset's data. The only additional setting you should tweak for now is to set `Max Files` to `1`. When you're done, click **Finish**.
 
 <figure>
-    <img src="/img/quick-start/fieldtype-config.jpg" alt="Configuring an Assets fieldtype" width="547">
+    <img src="/img/quick-start/fieldtype-config-v6.jpg" alt="Configuring an Assets fieldtype" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/fieldtype-config-v6-dark.jpg" alt="Configuring an Assets fieldtype" class="u-hide-in-light-mode">
     <figcaption>Every fieldtype has shared & unique options.</figcaption>
 </figure>
 
-Head back to your Blog collection and edit an entry (or create a new one if you'd like). You'll see your new field right there. Upload any image you have on your computer. If you need a dummy image, we recommend Google Image Searching for "rad 90s kid bedroom". That's a gold mine right there.
+Head back to your Blog collection and edit an entry (or create a new one if you'd like). You'll see your new field right there. Upload any image you have on your computer. If you need a dummy image, we recommend Google Image Searching for "rad 90s aesthetic". That's a gold mine right there.
 
 Hover over the thumbnail for your new image and click the Edit button (it looks like a pencil). There you can make a few adjustments to the image – like setting an Alt tag.
 
 <figure>
-    <img src="/img/quick-start/asset-editor.jpg" alt="Adding an Alt tag to an image" width="547">
-    <figcaption>Ducktails!</figcaption>
+    <img src="/img/quick-start/asset-editor-v6.jpg" alt="Adding an Alt tag to an image" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/asset-editor-v6-dark.jpg" alt="Adding an Alt tag to an image" class="u-hide-in-light-mode">
+    <figcaption>Seeeegaaaahh!</figcaption>
 </figure>
 
 :::tip
