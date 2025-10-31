@@ -38,6 +38,7 @@ After creating your site, Forge will take a few seconds to configure the necessa
 Assuming you've pointed your DNS to this server, all that's left is to head to `yourdomain.com/cp` and sign in to the Statamic Control Panel. The site is yours.
 
 <figure>
-    <img src="/img/quick-start/login.png" alt="Statamic Login Screen">
+    <img src="/img/quick-start/login.webp" alt="Statamic Login Screen" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/login-dark.webp" alt="Statamic Login Screen" class="u-hide-in-light-mode">
     <figcaption>If you see this screen at <code>/cp</code> you've just earned 200 XP!</figcaption>
 </figure>
