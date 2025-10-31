@@ -14,7 +14,8 @@ related_entries:
 Each Nav is a [structure](/structures) giving you the ability to rearrange items through the delightful experience of dragging and dropping boxes.
 
 <figure>
-    <img src="/img/structure.png" alt="A Statamic structure page tree" width="535">
+    <img src="/img/structure.webp" alt="A Statamic structure page tree" class="u-hide-in-dark-mode">
+    <img src="/img/structure-dark.webp" alt="A Statamic structure page tree" class="u-hide-in-light-mode">
 </figure>
 
 
@@ -83,7 +84,8 @@ Within the tag pair, you will have access to any fields defined on that particul
 Your navigation tree _may_ contain references to entries. The control panel's entry selector will show you entries across all collections by default. You may narrow down which collections will appear in the selector in the config area.
 
 <figure>
-    <img src="/img/navigation-collection-picker.png" alt="Configuring navigation collections" width="556" height="170">
+    <img src="/img/navigation-collection-picker.webp" alt="Configuring navigation collections" class="u-hide-in-dark-mode">
+    <img src="/img/navigation-collection-picker-dark.webp" alt="Configuring navigation collections" class="u-hide-in-light-mode">
     <figcaption>If you want to put pants in your navs, you can.</figcaption>
 </figure>
 
