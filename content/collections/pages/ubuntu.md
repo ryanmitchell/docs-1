@@ -202,7 +202,8 @@ sudo systemctl reload nginx
 Now visit your IP Address or `https://example.com` (but like the actual domain) if you've pointed your domain's A Record and you should see the Statamic landing page.
 
 <figure>
-    <img src="/img/quick-start/installed-3.3.png" alt="The Statamic Welcome Page">
+    <img src="/img/quick-start/installed-6.webp" alt="Statamic Welcome Screen" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/installed-6-dark.webp" balt="Statamic Welcome Screen" class="u-hide-in-light-mode">
     <figcaption>If you see this, you have just won.</figcaption>
 </figure>
 
