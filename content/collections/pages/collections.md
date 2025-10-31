@@ -44,7 +44,8 @@ We're going to pretend it's currently the summer of '99 and we are journalists c
 Here's an entry we might write about the event.
 
 <figure>
-    <img src="/img/entry-tony-hawk.png" alt="An entry being edited in the Statamic control panel">
+    <img src="/img/entry-tony-hawk.webp" alt="An entry being edited in the Statamic control panel" class="u-hide-in-dark-mode">
+    <img src="/img/entry-tony-hawk-dark.webp" alt="An entry being edited in the Statamic control panel" class="u-hide-in-light-mode">
     <figcaption>Entry publishing with only the default content fields.</figcaption>
 </figure>
 
@@ -112,7 +113,8 @@ Depending on the collection, a dedicated `title` field might not be useful to yo
 For example, a "reviews" collection might just have `author`, `stars`, and `content` fields. You could configure the titles to be "5 star rating by John Smith".
 
 <figure>
-    <img src="/img/title-format-setting.png" alt="Entry Title Format Setting" width="544" height="120">
+    <img src="/img/title-format-setting.webp" alt="Entry Title Format Setting" class="u-hide-in-dark-mode">
+    <img src="/img/title-format-setting-dark.webp" alt="Entry Title Format Setting" class="u-hide-in-light-mode">
     <figcaption>Configuring an automated title</figcaption>
 </figure>
 
@@ -161,7 +163,8 @@ If your collection requires a date, as they often do, you can decide how Statami
 Alternatively, you could have _past_ dates be private which would make entries act like "upcoming events" that disappear from a list when they're over.
 
 <figure>
-    <img src="/img/collection-date-behaviors.png" alt="Collection Date Behaviors">
+    <img src="/img/collection-date-behaviors.webp" alt="Collection Date Behaviors" class="u-hide-in-dark-mode">
+    <img src="/img/collection-date-behaviors-dark.webp" alt="Collection Date Behaviors" class="u-hide-in-light-mode">
     <figcaption>Just imagine! This could be you, configuring date behaviors.</figcaption>
 </figure>
 
@@ -193,7 +196,8 @@ We recommend [filtering](/tags/collection#published-status) and [querying](/repo
 :::
 
 <figure>
-    <img src="/img/collection-published-status-filtering.png" alt="Collection Published Status Filtering">
+    <img src="/img/collection-published-status-filtering.webp" alt="Collection Published Status Filtering" class="u-hide-in-dark-mode">
+    <img src="/img/collection-published-status-filtering-dark.webp" alt="Collection Published Status Filtering" class="u-hide-in-light-mode">
     <figcaption>Filter by entry status in your collection listings.</figcaption>
 </figure>
 
@@ -218,7 +222,8 @@ For example, you might need things to happen exactly when an entry is scheduled,
 Flick on the "Orderable" switch in a collection's settings and you'll have a drag and drop UI in the control panel to order the entries. The collection is now "structured". Learn more about [structures](/structures).
 
 <figure>
-    <img src="/img/collection-structure.png" alt="An orderable collection">
+    <img src="/img/collection-structure.webp" alt="An orderable collection" class="u-hide-in-dark-mode">
+    <img src="/img/collection-structure-dark.webp" alt="An orderable collection" class="u-hide-in-light-mode">
     <figcaption>You can tell these entries are orderable because of the way they are.</figcaption>
 </figure>
 
@@ -231,7 +236,8 @@ Order will take precedence when sorting. For example, if you make a dated collec
 A structured collection will **not** have a maximum depth unless you set one, allowing you to nest entries as deep as you like. Set the `max_depth` option to limit this behavior. Setting `max_depth: 1` will replace the tree UI with a flat, table-based UI.
 
 <figure>
-    <img src="/img/reorderable-entries.png" alt="An orderable collection with max depth of 1">
+    <img src="/img/reorderable-entries.webp" alt="An orderable collection with max depth of 1" class="u-hide-in-dark-mode">
+    <img src="/img/reorderable-entries-dark.webp" alt="An orderable collection with max depth of 1" class="u-hide-in-light-mode">
     <figcaption>These reorderable entries have a max depth of 1.</figcaption>
 </figure>
 
@@ -410,10 +416,11 @@ taxonomies:
 You may mount a collection onto an entry as a way of saying "all these entries belong to this section". When you do this, two neat things happen:
 
 - The collection will share the URL of the entry.
-- If the entry is listed in a structure, you will see shortcut links to **add or edit** entries in that collection.
+- If the entry is listed in a structure, you will see shortcut links to **add or edit** entries in that collection, like the Blog page in the screenshot below.
 
 <figure>
-    <img src="/img/mounted-collection.png" alt="Mounted collections in a structure">
+    <img src="/img/mounted-collection.webp" alt="Mounted collections in a structure" class="u-hide-in-dark-mode">
+    <img src="/img/mounted-collection-dark.webp" alt="Mounted collections in a structure" class="u-hide-in-light-mode">
     <figcaption>Look at those add and edit links!</figcaption>
 </figure>
 
