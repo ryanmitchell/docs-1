@@ -182,27 +182,43 @@
             li {
                 --size: 1.75rem;
                 list-style: none;
-                padding-inline-start: calc(var(--size) + var(--spacing-sm));
                 &:not(:last-child) {
                     padding-block-end: var(--spacing-xs);
                 }
                 position: relative;
-                &::before {
-                    position: absolute;
-                    left: 0;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    inline-size: var(--size);
-                    block-size: var(--size);
-                    content: counter(item);
-                    counter-increment: item;
-                    color: light-dark(var(--color-primary-text), var(--color-body-background));
-                    font-size: var(--font-size-sm);
-                    font-weight: var(--font-family-serif-weight-strong);
-                    margin-inline-end: min(var(--spacing-md), 3vw);
-                    background: var(--color-yellow-light-1);
-                    border-radius: 50%;
+
+                /* Sometimes we have an ul inside an ol e.g. >> /getting-started/installing/laravel */
+                &:not(ol ul *) {
+                    padding-inline-start: calc(var(--size) + var(--spacing-sm));
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        inline-size: var(--size);
+                        block-size: var(--size);
+                        content: counter(item);
+                        counter-increment: item;
+                        color: light-dark(var(--color-primary-text), var(--color-body-background));
+                        font-size: var(--font-size-sm);
+                        font-weight: var(--font-family-serif-weight-strong);
+                        margin-inline-end: min(var(--spacing-md), 3vw);
+                        background: var(--color-yellow-light-1);
+                        border-radius: 50%;
+                    }
+                }
+            }
+            ul {
+                /* e.g. >> /getting-started/installing/laravel */
+                padding-block-start: var(--spacing-xs);
+                padding-inline-start: var(--spacing-sm);
+                li {
+                    list-style-type: circle;
+                    padding-inline-start: var(--spacing-4xs);
+                    &:not(:last-child) {
+                        padding-block-end: var(--spacing-2xs);
+                    }
                 }
             }
         }
