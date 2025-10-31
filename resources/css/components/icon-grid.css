@@ -30,7 +30,8 @@
                 filter: var(--filter-image-boost-1);
             }
             inline-size: 100%;
-            max-height: 5.25rem;
+            max-height: 5rem;
+            max-width: 9rem;
         }
 
         h2, h3 {
