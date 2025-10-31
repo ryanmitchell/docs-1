@@ -83,8 +83,8 @@ In your terminal, run `statamic new your-project-name` and follow the prompts to
 If you encounter any issues running `statamic new`, like a `Command not found` error, have a look at [our tips on troubleshooting this](/troubleshooting/command-not-found-statamic).
 
 <figure>
-    <img src="/img/herd-statamic-cli.jpg" alt="Screenshot showing the Kitty terminal emulator running the statamic new command with ASCII art">
-    <figcaption>Hot pink and sweet lookin' 💅</figcaption>
+    <img src="/img/getting-started/installing/laravel-herd/herd-statamic-cli.webp" alt="Screenshot showing the Kitty terminal emulator running the statamic new command with ASCII art">
+    <figcaption>Lime green and zesty spirit 🍋</figcaption>
 </figure>
 
 ## Access the site
@@ -92,7 +92,7 @@ If you encounter any issues running `statamic new`, like a `Command not found` e
 Sweet, if you did all the previous steps you should now be able to open your site at  `http://your-project-name.test`.
 
 <figure>
-    <img src="/img/herd-fresh-statamic-site.jpg" alt="Screenshot showing a browser window with the welcome page of a fresh Statamic site">
+    <img src="/img/getting-started/installing/laravel-herd/herd-fresh-statamic-site.webp" alt="Screenshot showing a browser window with the welcome page of a fresh Statamic site">
 </figure>
 
 The Control Panel, Statamic's admin area, can be accessed at `/cp` where you can log in with the user you created during the CLI's setup wizard.
