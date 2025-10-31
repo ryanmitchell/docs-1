@@ -87,7 +87,7 @@
     /* Only descending from certain tags, otherwise torchlight is used */
     :is(h2, h3, h4, p, figure, li) {
         code {
-            /* e.g. try <code><?php bloginfo('stylesheet_url'); ?></code> and you'll see that it overflows on smaller screens */
+            /* e.g. try <code>long text here</code> and you'll see that it overflows on smaller screens */
             overflow-x: scroll;
             padding: 0.07rem 0.4rem;
             margin: 0.15rem;
@@ -97,6 +97,13 @@
             font-weight: var(--font-family-code-weight-medium);
             letter-spacing: -0.2px;
         }
+    }
+    :is(h2, h3, h4) code {
+        /* Decrease */
+        letter-spacing: -0.7px;
+        font-size: 0.95em;
+        /* Make it stand out more */
+        --color-code-background: var(--color-purple-light-1);
     }
 
     figure code {

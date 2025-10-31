@@ -362,7 +362,7 @@
         /* e.g. a folder name in the torchlight file tree view */
         --color-purple: hsl(256deg 60% 70%);
         /* e.g. hr-style border before meerkat feedback */
-        --color-purple-light-1: hsl(256deg 40% 45%);
+        --color-purple-light-1: hsl(256deg 40% 32%);
         /* e.g. torchlight file tree view */
         --color-purple-light-2: hsl(240deg 20% 10%);
         --color-purple-light-2-highlight: hsl(256deg 40% 15%);
@@ -496,7 +496,7 @@
             /* e.g. a folder name in the torchlight file tree view */
             --color-purple: hsl(256deg 60% 70%);
             /* e.g. hr-style border before meerkat feedback */
-            --color-purple-light-1: hsl(256deg 40% 45%);
+            --color-purple-light-1: hsl(256deg 40% 32%);
             /* e.g. torchlight file tree view */
             --color-purple-light-2: hsl(240deg 20% 10%);
             --color-purple-light-2-highlight: hsl(256deg 40% 15%);
