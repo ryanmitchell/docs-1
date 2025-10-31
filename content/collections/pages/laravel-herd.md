@@ -92,7 +92,8 @@ If you encounter any issues running `statamic new`, like a `Command not found` e
 Sweet, if you did all the previous steps you should now be able to open your site at  `http://your-project-name.test`.
 
 <figure>
-    <img src="/img/herd-fresh-statamic-site.webp" alt="Screenshot showing a browser window with the welcome page of a fresh Statamic site">
+    <img src="/img/herd-fresh-statamic-site.webp" alt="Screenshot showing a browser window with the welcome page of a fresh Statamic site" class="u-hide-in-dark-mode">
+    <img src="/img/herd-fresh-statamic-site-dark.webp" alt="Screenshot showing a browser window with the welcome page of a fresh Statamic site" class="u-hide-in-light-mode">
 </figure>
 
 The Control Panel, Statamic's admin area, can be accessed at `/cp` where you can log in with the user you created during the CLI's setup wizard.
