@@ -177,8 +177,9 @@
     --font-family-serif-weight-medium: 450;
     --font-family-serif-weight-strong: 600;
 
-    --font-family-code-weight-light: 500;
-    --font-family-code-weight-normal: 650;
+    --font-family-code-weight-light: 375;
+    --font-family-code-weight-normal: 500;
+    --font-family-code-weight-medium: 650;
     --font-family-code-weight-strong: 800;
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES

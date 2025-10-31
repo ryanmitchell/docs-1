@@ -127,7 +127,7 @@
         color: white;
         position: relative;
         text-transform: uppercase;
-        font-weight: var(--font-family-code-weight-normal);
+        font-weight: var(--font-family-code-weight-medium);
         margin-block-end: min(2.85vw, var(--spacing-sm));
         svg {
             position: absolute;

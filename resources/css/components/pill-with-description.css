@@ -61,14 +61,14 @@
                     /* Custom */
                     font-size: clamp(1rem, 4vw, 1.1rem);
                     font-family: var(--font-family-code);
-                    font-weight: var(--font-family-code-weight-normal);
+                    font-weight: var(--font-family-code-weight-medium);
                     text-transform: lowercase;
                 }
                 &:last-child {
                     padding-inline: var(--spacing-md);
                     font-size: var(--font-size-xs);
                     font-family: var(--font-family-code);
-                    font-weight: var(--font-family-code-weight-normal);
+                    font-weight: var(--font-family-code-weight-medium);
                     text-transform: uppercase;
                     letter-spacing: 0.5px;
                     color: var(--color-purple);

@@ -171,7 +171,7 @@
         position: relative;
         display: inline-block;
         color: var(--color-purple)!important;
-        font-weight: var(--font-family-code-weight-normal);
+        font-weight: var(--font-family-code-weight-medium);
         /* Custom */
         @media (width >= 768px) {
             font-size: 1.15em;

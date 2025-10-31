@@ -66,7 +66,7 @@
         /* https://dbushell.com/2024/11/05/webkit-font-smoothing/ */
         -webkit-font-smoothing: antialiased;
         font-family: var(--font-family-code);
-        font-weight: var(--font-family-code-weight-light);
+        font-weight: var(--font-family-code-weight-normal);
         + p:not(ol p, ul p) {
             /* Not on this page e.g. >> /extending/vite-in-addons */
             padding-block-start: var(--spacing-sm);
@@ -94,7 +94,7 @@
             background: var(--color-code-background);
             border-radius: 5px;
             font-family: var(--font-family-code);
-            font-weight: var(--font-family-code-weight-normal);
+            font-weight: var(--font-family-code-weight-medium);
             letter-spacing: -0.2px;
         }
     }

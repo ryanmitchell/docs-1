@@ -44,6 +44,7 @@
 
         p {
             font-family: var(--font-family-code);
+            font-weight: var(--font-family-code-weight-light);
             font-size: var(--font-size-xs);
             line-height: var(--font-size-xs-line-height);
         }
