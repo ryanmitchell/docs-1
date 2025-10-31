@@ -20,7 +20,8 @@ Globals are intended to be used for **reusable content** or content that **belon
 Globals are organized into "sets", each containing [fields](/fields). This convention helps you keep groups of globals together and stay organized. Each set also acts as a "scope" for templating purposes.
 
 <figure>
-    <img src="/img/global-set-footer.png" alt="Statamic Global Set Example">
+    <img src="/img/global-set-footer.webp" alt="Statamic Global Set Example" class="u-hide-in-dark-mode">
+    <img src="/img/global-set-footer-dark.webp" alt="Statamic Global Set Example" class="u-hide-in-light-mode">
     <figcaption>Global Set</figcaption>
 </figure>
 
@@ -50,7 +51,6 @@ title: Footer
 copyright: 2021 Neat Fake Company, LLC
 flair: Made with ❤️ by humans
 ```
-
 
 ## Frontend templating
 
