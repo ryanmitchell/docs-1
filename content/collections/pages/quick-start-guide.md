@@ -61,8 +61,8 @@ If you encounter any errors, Google them frantically and try anything and everyt
 **Just kidding**, that's a terrible idea. Please don't do that. You should check our [troubleshooting](/troubleshooting) guide and [GitHub discussions](https://github.com/statamic/cms/discussions) to look for a validated solution before resorting to such measures. We try our best to have answers to all the most common things you might encounter. Modern web development is amazing when everything is up to date, and can be pretty frustrating when it isn't. We feel this pain too.
 
 <figure>
-    <img src="/img/quick-start/installed-6.jpg" alt="Statamic Welcome Screen" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/installed-6-dark.jpg" balt="Statamic Welcome Screen" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/installed-6.webp" alt="Statamic Welcome Screen" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/installed-6-dark.webp" balt="Statamic Welcome Screen" class="u-hide-in-light-mode">
     <figcaption>If you see this you are right on track.</figcaption>
 </figure>
 
@@ -75,15 +75,15 @@ As part of the install process, you should have created a super user account, bu
 At any time you can run `php please make:user` from the command line and follow along with the prompts (name, email, etc). For the purpose of this walkthrough, be sure to say `yes` when asked if the user should be a **super user** otherwise you'll just have to do it again. And again. And again until you finally say `yes`. Never be afraid of committing to success.
 
 <figure>
-    <img src="/img/quick-start/make-user.jpg" alt="Statamic Make:User Command">
+    <img src="/img/quick-start/make-user.webp" alt="Statamic Make:User Command">
     <figcaption>You can customize user fields later.</figcaption>
 </figure>
 
 Now you can sign in. Head to [http://cyberspace-place.test/cp](http://cyberspace-place.test/cp) and use your email address and password to sign into the control panel.
 
 <figure>
-    <img src="/img/quick-start/login.jpg" alt="Statamic Login Screen" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/login-dark.jpg" alt="Statamic Login Screen" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/login.webp" alt="Statamic Login Screen" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/login-dark.webp" alt="Statamic Login Screen" class="u-hide-in-light-mode">
     <figcaption>If you see this screen at <code>/cp</code> you've just earned 200 XP!</figcaption>
 </figure>
 
@@ -92,8 +92,8 @@ Now you can sign in. Head to [http://cyberspace-place.test/cp](http://cyberspace
 Next, let's get some content of _our_ choosing to show on the homepage. Head to `Collections → Pages` in the control panel, and you'll see an empty home page entry waiting for you. Click on the entry's title to edit it. Type anything you want in the `content` field and then click **Save & Publish**.
 
 <figure>
-    <img src="/img/quick-start/editing-home.jpg" alt="Editing the home page" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/editing-home-dark.jpg" alt="Editing the home page" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/editing-home.webp" alt="Editing the home page" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/editing-home-dark.webp" alt="Editing the home page" class="u-hide-in-light-mode">
     <figcaption>Don't overthink it. Just type some aedgaeduhadfubugra</figcaption>
 </figure>
 
@@ -114,8 +114,8 @@ Delete all the placeholder HTML from the template and replace it with the follow
 Refresh the site in your browser and you should see your content in all of its glory. Each of those double curly tags is a **variable**. When on a URL that matches an entry's route rule, all of that entry's field data is available automatically in the defined template. We'll get into adding new fields in just a bit.
 
 <figure>
-    <img src="/img/quick-start/new-home.jpg" alt="Your new home page" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/new-home-dark.jpg" alt="Your new home page" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/new-home.webp" alt="Your new home page" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/new-home-dark.webp" alt="Your new home page" class="u-hide-in-light-mode">
     <figcaption>What did you write? Was it a dad joke?</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Your layout file contains any markup you want present no matter what page you’
 Think of layouts like a **picture frame**, and everything that changes from section to section, page to page _inside_ the frame — goes into templates. In practice, templates are injected inline wherever you put a `{{ template_content }}` variable in your layout to create a complete HTML document.
 
 <figure>
-    <img src="/img/quick-start/new-layout.jpg" alt="Your new layout">
+    <img src="/img/quick-start/new-layout.webp" alt="Your new layout">
     <figcaption>If copy & pasted properly you should see this 👆</figcaption>
 </figure>
 
@@ -170,8 +170,8 @@ Here's our todo list:
 Head back to the Control Panel and click on the Collections link in the sidebar. Click the blue **Create Collection** button and then call your new collection "Blog".
 
 <figure>
-    <img src="/img/quick-start/create-collection-v6.jpg" alt="Creating a blog collection" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/create-collection-v6-dark.jpg" alt="Creating a blog collection" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/create-collection-v6.webp" alt="Creating a blog collection" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/create-collection-v6-dark.webp" alt="Creating a blog collection" class="u-hide-in-light-mode">
     <figcaption>Name it whatever you want, as long as you name it Blog.</figcaption>
 </figure>
 
@@ -180,16 +180,16 @@ Head back to the Control Panel and click on the Collections link in the sidebar.
 Let's save you a minute or two and generate the index and show template. Click on **Scaffold Views**
 
 <figure>
-    <img src="/img/quick-start/scaffold-views-link-v6.jpg" alt="Link to Scaffold Views" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/scaffold-views-link-v6-dark.jpg" alt="Link to Scaffold Views" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/scaffold-views-link-v6.webp" alt="Link to Scaffold Views" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/scaffold-views-link-v6-dark.webp" alt="Link to Scaffold Views" class="u-hide-in-light-mode">
     <figcaption>Click it.</figcaption>
 </figure>
 
 And then click the Create Views button. The defaults are perfect.
 
 <figure>
-    <img src="/img/quick-start/scaffold-views-v6.jpg" alt="Scaffold collection views" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/scaffold-views-v6-dark.jpg" alt="Scaffold collection views" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/scaffold-views-v6.webp" alt="Scaffold collection views" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/scaffold-views-v6-dark.webp" alt="Scaffold collection views" class="u-hide-in-light-mode">
     <figcaption>Click the button.</figcaption>
 </figure>
 
@@ -203,8 +203,8 @@ Two new files will be created. We'll be editing them soon:
 Next, let's configure the collection to behave the way a typical blog should. Click **Configure Collection**.
 
 <figure>
-    <img src="/img/quick-start/configure-collection-link-v6.jpg" alt="Link to configure your collection" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/configure-collection-link-v6-dark.jpg" alt="Link to configure your collection" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/configure-collection-link-v6.webp" alt="Link to configure your collection" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/configure-collection-link-v6-dark.webp" alt="Link to configure your collection" class="u-hide-in-light-mode">
     <figcaption>And now click this.</figcaption>
 </figure>
 
@@ -221,8 +221,8 @@ We'll review some of the important settings, but we only need to touch two of th
 - Set your route rule
 
 <figure>
-    <img src="/img/quick-start/blog-settings-v6.jpg" alt="Settings to make a blog" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/blog-settings-v6-dark.jpg" alt="Settings to make a blog" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/blog-settings-v6.webp" alt="Settings to make a blog" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/blog-settings-v6-dark.webp" alt="Settings to make a blog" class="u-hide-in-light-mode">
     <figcaption>These are the only two you need to set.</figcaption>
 </figure>
 
@@ -254,8 +254,8 @@ We like to make things work and then make them better. With that in mind, let's 
 Head back to your blog Collection screen and click **Create Entry**.
 
 <figure>
-    <img src="/img/quick-start/create-entry-link-v6.jpg" alt="Link to create your first blog entry" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/create-entry-link-v6-dark.jpg" alt="Link to create your first blog entry" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/create-entry-link-v6.webp" alt="Link to create your first blog entry" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/create-entry-link-v6-dark.webp" alt="Link to create your first blog entry" class="u-hide-in-light-mode">
     <figcaption>And finally, click this.</figcaption>
 </figure>
 
@@ -294,7 +294,7 @@ It's code editor time! Let's get that list of the 5 most recent entries onto the
 If you refresh your homepage (and managed to name your placeholder entry or two the same as us), you should see this:
 
 <figure>
-    <img src="/img/quick-start/new-homepage-v6.jpg" alt="Link to create your first blog entry">
+    <img src="/img/quick-start/new-homepage-v6.webp" alt="Link to create your first blog entry">
     <figcaption>We said it would look ugly, but we lied.</figcaption>
 </figure>
 
@@ -333,7 +333,7 @@ A few cool things to note here in this code example:
 - The `content` field is being automatically converted from Markdown to HTML because we're using a [Markdown](/fieldtypes/markdown) field. If you were to use a generic [Textarea](/fieldtypes/textarea) field, you'd need to transform the Markdown yourself by using a [modifier](/modifiers). It would look like this: `{{ textarea | markdown }}`.
 
 <figure>
-    <img src="/img/quick-start/blog-show-v6.jpg" alt="A blog post">
+    <img src="/img/quick-start/blog-show-v6.webp" alt="A blog post">
     <figcaption>How close does yours look?</figcaption>
 </figure>
 
@@ -446,8 +446,8 @@ Head to the **Blueprints** area in the sidebar and click **Blog**. Now you're lo
 Tab Sections let you group fields into Tabs which can help you stay organized, keep similar fields together, or help push optional, unusual fields out of mind for most authors. It's up to you how you'd like to organize these.
 
 <figure>
-    <img src="/img/quick-start/blueprint-sections-v6.jpg" alt="A Blueprint and its default fields" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/blueprint-sections-v6-dark.jpg" alt="A Blueprint and its default fields" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/blueprint-sections-v6.webp" alt="A Blueprint and its default fields" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/blueprint-sections-v6-dark.webp" alt="A Blueprint and its default fields" class="u-hide-in-light-mode">
     <figcaption>This is content modeling right here.</figcaption>
 </figure>
 
@@ -464,8 +464,8 @@ Click **Create Field** in the **Main** section and behold! A big list of fieldty
 When this screen is opened, you're automatically focused in the search box, so you can start typing the fieldtype name if you know it (Hint: you could type `assets` now). Or, you can narrow the fields down by type – All, Text, Media, and Relationship. You'd find the Assets fieldtype inside Media.
 
 <figure>
-    <img src="/img/quick-start/fieldtypes-v6.jpg" alt="A list of Statamic's fieldtypes" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/fieldtypes-v6-dark.jpg" alt="A list of Statamic's fieldtypes" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/fieldtypes-v6.webp" alt="A list of Statamic's fieldtypes" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/fieldtypes-v6-dark.webp" alt="A list of Statamic's fieldtypes" class="u-hide-in-light-mode">
     <figcaption>Over 40 different types to pick from!</figcaption>
 </figure>
 
@@ -474,8 +474,8 @@ Find the **Assets** fieldtype and click it. Assets fields let you pick from and 
 Next, give the field the `Display` name "Featured Image" and you'll see the `Handle` get slugified automatically to `featured_image`. This will be the variable name you will use in your templates to get the asset's data. The only additional setting you should tweak for now is to set `Max Files` to `1`. When you're done, click **Finish**.
 
 <figure>
-    <img src="/img/quick-start/fieldtype-config-v6.jpg" alt="Configuring an Assets fieldtype" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/fieldtype-config-v6-dark.jpg" alt="Configuring an Assets fieldtype" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/fieldtype-config-v6.webp" alt="Configuring an Assets fieldtype" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/fieldtype-config-v6-dark.webp" alt="Configuring an Assets fieldtype" class="u-hide-in-light-mode">
     <figcaption>Every fieldtype has shared & unique options.</figcaption>
 </figure>
 
@@ -484,8 +484,8 @@ Head back to your Blog collection and edit an entry (or create a new one if you'
 Hover over the thumbnail for your new image and click the Edit button (it looks like a pencil). There you can make a few adjustments to the image – like setting an Alt tag.
 
 <figure>
-    <img src="/img/quick-start/asset-editor-v6.jpg" alt="Adding an Alt tag to an image" class="u-hide-in-dark-mode">
-    <img src="/img/quick-start/asset-editor-v6-dark.jpg" alt="Adding an Alt tag to an image" class="u-hide-in-light-mode">
+    <img src="/img/quick-start/asset-editor-v6.webp" alt="Adding an Alt tag to an image" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/asset-editor-v6-dark.webp" alt="Adding an Alt tag to an image" class="u-hide-in-light-mode">
     <figcaption>Seeeegaaaahh!</figcaption>
 </figure>
 
