@@ -95,18 +95,21 @@ Computed values are only available for **top-level** fields. You can't use them 
 Or view your computed values in the control panel if you configure your blueprint to allow for it. The first step is to add a field with your computed value's `handle`:
 
 <figure>
-    <img src="/img/computed-field-handle.png" alt="Computed field handle">
+    <img src="/img/computed-field-handle.webp" alt="Computed field handle" class="u-hide-in-dark-mode">
+    <img src="/img/computed-field-handle-dark.webp" alt="Computed field handle" class="u-hide-in-light-mode">
 </figure>
 
 Next, set your field `Visibility` to `Computed`. This will ensure your field is displayed on your Publish Form as a read-only field [that will not store any data on save](/fields#field-data-flow):
 
 <figure>
-    <img src="/img/computed-field-visibility.png" alt="Computed field visibility config">
+    <img src="/img/computed-field-visibility.webp" alt="Computed field visibility config" class="u-hide-in-dark-mode">
+    <img src="/img/computed-field-visibility-dark.webp" alt="Computed field visibility config" class="u-hide-in-light-mode">
 </figure>
 
 You may also show this field as a column on your listings using the `Listable` setting, as shown above:
 
 <figure>
-    <img src="/img/computed-field-listing.png" alt="Computed field visibility config">
-    <figcaption>One of us never has credit card debt, but who's complaining?</figcaption>
+    <img src="/img/computed-field-listing.webp" alt="Computed field visibility config" class="u-hide-in-dark-mode">
+    <img src="/img/computed-field-listing-dark.webp" alt="Computed field visibility config" class="u-hide-in-light-mode">
+    <figcaption>One of us didn't win anything, but does he need the money anyway?</figcaption>
 </figure>
