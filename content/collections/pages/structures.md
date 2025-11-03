@@ -15,7 +15,8 @@ Structures are a flexible way to create hierarchies of different items. Statamic
 Each structure is a hierarchy of links and/or titles. These links may be to entries in one or more [collections](/collections), external URLs, or even anchor links in your content.
 
 <figure>
-    <img src="/img/structure.png" alt="A Statamic structure page tree" width="535">
+    <img src="/img/structure.webp" alt="A Statamic structure page tree" class="u-hide-in-dark-mode">
+    <img src="/img/structure-dark.webp" alt="A Statamic structure page tree" class="u-hide-in-light-mode">
     <figcaption>Part of the structure of this very site.</figcaption>
 </figure>
 
