@@ -200,8 +200,8 @@
             padding: 0 calc(var(--dropdown-nav-item-padding) + 3rem);
             /* Nudge so the nav aligns horizontally with the breadcrumbs */
             margin-block: 0.5rem var(--spacing-xs);
-            font-size: var(--font-size-lg);
-            line-height: var(--font-size-lg-line-height);
+            font-size: var(--font-size-md);
+            line-height: var(--font-size-md-line-height);
             font-weight: var(--font-family-main-weight-normal);
             text-transform: uppercase;
 
