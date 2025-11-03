@@ -99,8 +99,8 @@
                 justify-content: space-between;
                 /* Nudge so the nav aligns horizontally with the breadcrumbs */
                 padding: 0.55rem 0 var(--spacing-2xs) var(--spacing-md);
-                font-size: var(--font-size-lg);
-                line-height: var(--font-size-lg-line-height);
+                font-size: var(--font-size-md);
+                line-height: var(--font-size-md-line-height);
                 font-weight: var(--font-family-main-weight-normal);
                 text-transform: uppercase;
                 text-decoration: none;
