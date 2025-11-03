@@ -210,6 +210,7 @@
     =================================================== */
     /* -m is just above 1rem */
     --font-size-md: clamp(0.9em, 4vw, 1em);
+    --font-size-md-line-height: 1.5;
     --font-size-md-rem: clamp(0.9rem, 4vw, 1rem);
     /* e.g. .c-tip, with more characters, such as "Best Practice" */
     --font-size-md-uppercase: 1.075em;

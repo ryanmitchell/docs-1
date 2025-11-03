@@ -27,7 +27,8 @@ All fields share the following settings regardless of type:
 - **Localizable** – Whether the field can be translated in [other sites](#localization)
 
 <figure>
-    <img src="/img/field-settings.png" alt="Textarea field settings">
+    <img src="/img/field-settings.webp" alt="Textarea field settings" class="u-hide-in-dark-mode">
+    <img src="/img/field-settings-dark.webp" alt="Textarea field settings" class="u-hide-in-light-mode">
     <figcaption>A textarea field's settings screen.</figcaption>
 </figure>
 
@@ -56,7 +57,8 @@ Fields are always submitted on save, except for in the following situations:
 If you want to override the above-mentioned field condition data flow behaviour, you can either use a [Revealer Field](/fieldtypes/revealer), or set the following to 'Always Save' your field:
 
 <figure>
-    <img src="/img/field-always-save.png" alt="Always save field setting">
+    <img src="/img/field-always-save.webp" alt="Always save field setting" class="u-hide-in-dark-mode">
+    <img src="/img/field-always-save-dark.webp" alt="Always save field setting" class="u-hide-in-light-mode">
 </figure>
 
 ## Blueprints & fieldsets
@@ -72,7 +74,8 @@ Blueprints are attached to collections, taxonomies, global sets, assets, users, 
 The visual UI and storage format for any given field is determined by its [fieldtype](/fieldtypes). There are 40+ included fieldtypes to help you design intuitive content management experiences for your authors.
 
 <figure>
-    <img src="/img/fieldtypes.png" alt="Statamic 3 fieldtype picker">
+    <img src="/img/quick-start/fieldtypes-v6.webp" alt="Statamic 6 fieldtype picker" class="u-hide-in-dark-mode">
+    <img src="/img/quick-start/fieldtypes-v6-dark.webp" alt="Statamic 6 fieldtype picker" class="u-hide-in-light-mode">
     <figcaption>The fieldtype picker thingamajig</figcaption>
 </figure>
 
