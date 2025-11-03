@@ -76,7 +76,8 @@ All users will share the same blueprint, and it hangs out in the root of the dir
 It’s possible to have fields be displayed only under certain conditions. For example, you may only want to show a caption field if an asset field has an image selected, or a whole block of fields if a toggle switch is enabled.
 
 <figure>
-    <img src="/img/field-conditions.png" alt="Statamic conditional field rule builder">
+    <img src="/img/field-conditions.webp" alt="Statamic conditional field rule builder" class="u-hide-in-dark-mode">
+    <img src="/img/field-conditions-dark.webp" alt="Statamic conditional field rule builder" class="u-hide-in-light-mode">
     <figcaption>The conditional field rule builder</figcaption>
 </figure>
 
@@ -227,7 +228,8 @@ The [Grid fieldtype](/fieldtypes/grid) lets you define a set of sub-fields, whic
 You should define its fields using the blueprint field syntax. This will allow you to reference other fields and/or import entire fieldsets.
 
 <figure>
-    <img src="/img/grid.png" alt="An example grid field" />
+    <img src="/img/grid.webp" alt="An example grid field" class="u-hide-in-dark-mode">
+    <img src="/img/grid-dark.webp" alt="An example grid field" class="u-hide-in-light-mode">
     <figcaption>This is an example Grid field.</figcaption>
 </figure>
 
