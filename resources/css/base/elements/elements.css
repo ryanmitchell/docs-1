@@ -89,13 +89,14 @@
         code {
             /* e.g. try <code>long text here</code> and you'll see that it overflows on smaller screens */
             overflow-x: scroll;
-            padding: 0.07rem 0.4rem;
+            padding: 0.07rem 0.3rem;
             margin: 0.15rem;
             background: var(--color-code-background);
             border-radius: 5px;
             font-family: var(--font-family-code);
             font-weight: var(--font-family-code-weight-medium);
             letter-spacing: -0.2px;
+            font-size: 90%;
         }
     }
     :is(h2, h3, h4) code {
