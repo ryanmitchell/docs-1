@@ -190,7 +190,7 @@
         content: "";
         position: absolute;
         left: 2px;
-        top: 12px;
+        top: 10px;
         block-size: 0.7em;
         inline-size: 1.1em;
         background: radial-gradient(circle at center, var(--color-yellow-light-1) 60%,transparent 100%);
