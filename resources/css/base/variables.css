@@ -215,7 +215,7 @@
     /* e.g. .c-tip, with more characters, such as "Best Practice" */
     --font-size-md-uppercase: 1.075em;
     /* e.g. >> Home > Lead Text */
-    --font-size-lg: clamp(1em, 4vw, 1.12em);
+    --font-size-lg: clamp(1em, 4vw, 1.2em);
     --font-size-lg-line-height: 1.55;
     /* e.g. .c-tip, just a few characters, such as "Hot Tip!" */
     --font-size-lg-uppercase: 1.125em;
