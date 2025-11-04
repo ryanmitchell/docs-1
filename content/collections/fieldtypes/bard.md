@@ -96,7 +96,6 @@ options:
     description: >
       Choose how to deal with empty nodes. Options: `false`, `true`, `trim`. Default: `false`.
 
-stage: 1
 id: f4bf58d3-cbce-4957-b883-d92fd4791e89
 ---
 ## Overview
@@ -252,7 +251,7 @@ Bard uses [TipTap](https://tiptap.dev/) (which in turn is built on top of [Prose
 
 ## Custom set icons
 
-You can change the icons available in the set picker by setting an icons directory in a service provider.
+You can change the icons available in the set picker by configuring an icon set in a service provider.
 
 For example, you can drop this into your `AppServiceProvider`'s `boot` method:
 
@@ -261,12 +260,6 @@ use Statamic\Fieldtypes\Sets;
 
 public function boot()
 {
-    Sets::setIconsDirectory(folder: 'light');
+    Sets::useIcons('heroicons', resource_path('svg/heroicons'));
 }
-```
-
-Alternatively, if you want to use a different base directory altogether, you can do this:
-
-```php
-Sets::setIconsDirectory(directory: resource_path('custom-icons'));
 ```

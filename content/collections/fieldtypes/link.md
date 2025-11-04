@@ -37,7 +37,7 @@ Creating a "first child" link will dynamically return the URL to first entry nes
 For example, if you set a First Child link on the Getting Started entry below, it will return the URL to the "Requirements" entry.
 
 <figure>
-    <img src="/img/structure.png" alt="A Statamic 3 structure tree" width="535">
+    <img src="/img/structure.png" alt="A Statamic 6 structure tree" width="535">
 </figure>
 
 This option will only be provided when the field is in a collection. Globals and terms, by their nature, don't have children.

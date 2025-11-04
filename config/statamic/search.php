@@ -28,6 +28,7 @@ return [
         'docs-'.config('docs.version') => [
             'driver' => env('SEARCH_DRIVER', 'meilisearch'),
             'searchables' => ['docs:*'],
+            // 'searchables' => ['collection:*', 'taxonomy:*'],
             'fields' => [
                 'title',
                 'search_title',
@@ -65,12 +66,6 @@ return [
                 App\Search\DocTransformer::class,
             ],
         ],
-
-        // 'blog' => [
-        //     'driver' => 'local',
-        //     'searchables' => 'collection:blog',
-        // ],
-
     ],
 
     /*
