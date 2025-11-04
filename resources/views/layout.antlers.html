@@ -39,17 +39,7 @@
                         </button>
                         <ul>
                             <li>
-                                <span class="c-nav-toc-with-popover-api-category-heading">On this page
-                                    {{# {{ if section }}
-                                        {{ nav :handle="section" }}
-                                            {{ if ({children | where('is_current', true) | count} > 0) || is_current }}
-                                                {{ navigation_image }}
-                                                    {{ partial:image_dimensions/navigation_image }}
-                                                {{ /navigation_image }}
-                                            {{ /if }}
-                                        {{ /nav }}
-                                    {{ /if }} #}}
-                                </span>
+                                <span class="c-nav-toc-with-popover-api-category-heading">On this page</span>
                                 {{ template_content | toc }}
                             </li>
                         </ul>
@@ -59,17 +49,7 @@
                     <ul class="o-shadow-container-vertical">
                         {{ unless $hide_toc == 'yes' }}
                             <li>
-                                <span class="c-nav-toc-with-popover-api-category-heading">On this page
-                                    {{# {{ if section }}
-                                        {{ nav :handle="section" }}
-                                            {{ if ({children | where('is_current', true) | count} > 0) || is_current }}
-                                                {{ navigation_image }}
-                                                    {{ partial:image_dimensions/navigation_image }}
-                                                {{ /navigation_image }}
-                                            {{ /if }}
-                                        {{ /nav }}
-                                    {{ /if }} #}}
-                                </span>
+                                <span class="c-nav-toc-with-popover-api-category-heading">On this page</span>
                                 {{ template_content | toc }}
                             </li>
                         {{ /unless }}
