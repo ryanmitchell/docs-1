@@ -2,7 +2,7 @@
 title: Updating
 id: e6f05019-6bdd-488e-ba45-39ae7ea5cee7
 blueprint: page
-intro: Updates are handled by [Composer](https://getcomposer.org/), PHP's dependency manager. We recommend running all updates locally (not on production) via the command line.
+intro: Updates are handled by [Composer](https://getcomposer.org/), PHP's dependency manager. We recommend running all updates locally (not on production) via the command line and deploying those changes to production after verifying everything still works as it should.
 ---
 
 :::best-practice
@@ -31,7 +31,7 @@ From within the **Tools &rarr; Updates** section, Statamic will provide you with
 
 If you choose to install a non-latest version, your `statamic/cms`  Composer version dependency will be fixed to whichever explicit version you choose. To go back to a constraint-style version, you'll need to update your `composer.json` file.
 
-For example, if you chose `v4.0.1` in the control panel, this will be your Composer constraint.
+For example, if you chose `v6.0.1` in the control panel, this will be your Composer constraint.
 
 ```json
 {
