@@ -8,7 +8,7 @@ breadcrumb_title: Overview
 ---
 ## Statamic is opinionated but configurable
 
-Statamic is an opinionated platform. We like defaults to match the most common use cases. We implement patterns that help speed up your workflow, enforce consistency, and make it easy to share code between projects.
+Statamic is an **opinionated platform**. We set defaults to match the most common use cases and implement patterns that help speed up your workflow, enforce consistency, and make it easy to share code between projects.
 
 Following these conventions will make it easier to switch between different Statamic projects because you'll know right where everything is and what it's called.
 
@@ -25,7 +25,7 @@ Do your best to maintain a project `README.md` with anything you do to override 
 :::
 
 
-## Statamic is flat first
+## Statamic is flat _first_
 
 Statamic has the ability to adapt to any data storage mechanism, from relational databases like MySQL and Postgres, to NoSQL solutions like MongoDB and Redis, and more. This feature is called [Repositories](/extending/repositories).
 
@@ -57,11 +57,11 @@ Or if you prefer to break everything up into small, discrete, optional fields, s
 
 ## You bring the HTML
 
-Statamic doesn't start with a design or HTML you're expected to use or hack around. It doesn't include any CSS or JavaScript either. All of that is up to you (or a [Starter Kit](/starter-kits)) to provide.
+Statamic doesn't start with a design or HTML you're expected to use or hack apart. It doesn't include any CSS or JavaScript either. All of that is up to you (or a [Starter Kit](/starter-kits)) to provide.
 
 Every Statamic site &mdash; just like every fingerprint and person in the world &mdash; is unique. This is not a platform for the generic web. This is a tool used to build anything you can imagine.
 
-Because of this, most Statamic projects need to involve a developer. It's not very "no-code" friendly to assemble. But once the site is built and all the collections and blueprints configured, just about anyone can handle maintaining the site.
+Because of this, **most Statamic projects need to involve a developer** for at least _part_ of the process. It's not very "no-code" friendly solution to assemble. But once the site is built and all the collections and blueprints configured, just about **anyone can handle maintaining the site**.
 
 ## Keep it simple
 
@@ -91,6 +91,6 @@ Hopefully you get the idea and see how you can solve almost any challenge with c
 
 ## The Control Panel can be optional
 
-You should be able to do everything (and more) without ever logging into the Control Panel. Granted, it _does_ tend to make some of the more complicated things easier (like creating relationships, discovering all possible options for a given setting, and so on), but we love efficiency and your editor is a great place to find it.
+You should be able to do everything (and more) without ever logging into the Control Panel. Granted, it _does_ tend to make some of the more complicated things easier (like creating relationships, discovering all possible options for a given setting, and rearranging pages in a nav tree), but we love efficiency and your editor is a great place to find it.
 
-Project-wide find & replace is incredibly powerful.
+Plus, you can easily tap into the power of AI in your code editor to manipulate every little bit of your site and content.
