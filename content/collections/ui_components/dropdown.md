@@ -61,6 +61,24 @@ Headers and footers can be added to the dropdown by using the `<ui-dropdown-head
 </ui-dropdown>
 ```
 
+## Destructive variant
+
+Items can have a `destructive` variant to indicate the action it performs will delete, destroy, or otherwise remove something from the site.
+
+```component
+<ui-dropdown>
+    <template #trigger>
+        <ui-button text="Show List of Actions" />
+    </template>
+    <ui-dropdown-menu>
+        <ui-dropdown-item text="Do a Nothing" icon="sun" />
+        <ui-dropdown-item text="Delete a Something" variant="destructive" icon="trash" />
+    </ui-dropdown-menu>
+</ui-dropdown>
+```
+
+
+
 ## Disabled items
 
 Items can be disabled by using the `disabled` prop.
