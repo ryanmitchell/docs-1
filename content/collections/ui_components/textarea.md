@@ -13,14 +13,14 @@ intro: Simple multi-line text input.
 Prevent users from interacting with the textarea by disabling it.
 
 ```component
-<ui-textarea disabled text="Can't touch this." label="Lyrics" />
+<ui-textarea disabled model-value="Can't touch this." label="Lyrics" />
 ```
 
 
 ## Elastic
 Allow the textarea to adjust its size based on the content.
 ```component
-<ui-textarea elastic rows="2" text="If you catch a chinchilla in Chile, and cut off its beard willy-nilly, you can honestly say, you made on that day, a Chilean chinchilla's chin chilly.">
+<ui-textarea elastic rows="2" model-value="If you catch a chinchilla in Chile, and cut off its beard willy-nilly, you can honestly say, you made on that day, a Chilean chinchilla's chin chilly.">
 ```
 
 
