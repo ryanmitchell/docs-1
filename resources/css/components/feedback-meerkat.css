@@ -24,13 +24,16 @@
 @layer components {
     .c-feedback-meerkat {
         margin-block-start: var(--spacing-4xl);
+        text-decoration-line: none;
+        border: 1px solid transparent;
+        color: var(--color-black);
         /* Custom */
         @media (width < 500px) {
             margin-block-start: 6.5rem;
         }
-        padding: var(--spacing-xl);
+        padding: var(--spacing-lg);
         background: var(--color-gradient-burnt);
-        border-radius: var(--border-radius-xl);
+        border-radius: var(--border-radius-lg);
 
         position: relative;
         &::before {
@@ -80,7 +83,7 @@
             right: 0;
             inline-size: 100%;
             border-block-start: 1px dashed var(--color-purple-light-1);
-            transition: inline-size 0.35s var(--animation-timing-function-hipster) 0.1s;
+            transition: inline-size 0.25s var(--animation-timing-function-hipster) 0.3s;
         }
 
         img {
@@ -88,10 +91,12 @@
             z-index: var(--z-index-below-body);
             top: 0;
             inline-size: 60px;
-            transition: all 1s var(--animation-timing-function-hipster) 0.1s;
+            transition: all .7s var(--animation-timing-function-hipster) 0.1s;
             rotate: -5deg;
         }
-        &:has(.c-btn:hover) {
+        &:hover {
+            border-color: var(--color-black);
+            transition: border-color 0.35s var(--animation-timing-function-hipster) 0.1s;
             &::after {
                 inline-size: 85%;
             }
@@ -106,10 +111,7 @@
             font-size: var(--font-size-xl);
             line-height: var(--font-size-xl-line-height);
             font-weight: var(--font-family-main-weight-medium);
-        }
-
-        .c-btn {
-            margin: 0;
+            padding-bottom: 8px;
         }
 
         /* Custom */
