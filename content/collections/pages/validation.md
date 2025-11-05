@@ -11,7 +11,8 @@ template: page
 While configuring a [blueprint or fieldset field](/blueprints), switch to the **Validation** tab where you can choose from [any built in Laravel rule][laravel-validation].
 
 <figure>
-    <img src="/img/field-validation.png" width="521" alt="Field validation"/>
+    <img src="/img/field-validation.webp" alt="Field validation" class="u-hide-in-dark-mode"/>
+    <img src="/img/field-validation-dark.webp" alt="Field validation" class="u-hide-in-light-mode"/>
     <figcaption>Add validation rules (with a shortcut for requiring)</figcaption>
 </figure>
 
@@ -149,7 +150,8 @@ You may use custom validation rules via Laravel's `Rule` objects.
 To references those from your field, you can add them to your `validation` array as if you were writing PHP:
 
 <figure>
-    <img src="/img/field-validation-custom-rule.png" width="643" alt="Custom Field validation rules" />
+    <img src="/img/field-validation-custom-rule.webp" alt="Custom Field validation rules" class="u-hide-in-dark-mode"/>
+    <img src="/img/field-validation-custom-rule-dark.webp" alt="Custom Field validation rules" class="u-hide-in-light-mode"/>
     <figcaption>Custom Field validation rules</figcaption>
 </figure>
 
