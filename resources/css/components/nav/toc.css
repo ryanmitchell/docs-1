@@ -105,7 +105,11 @@
                             position: absolute;
                             z-index: var(--z-index-below-body);
                             top: 0.6rem;
-                            left: var(--spacing-lg);
+                            left: 0.6rem;
+                            /* --mq-compressed-toc-after */
+                            @media (width >= 1400px) {
+                                left: var(--spacing-lg);
+                            }
                             height: calc(100% - 0.6rem);
                             border-inline-start: 1px solid var(--color-pink-light-3-static);
                             @container style(--color-scheme: dark) {
@@ -138,7 +142,11 @@
                     ul {
                         gap: var(--spacing-3xs);
                         max-height: unset;
-                        padding: 0 3rem;
+                        padding: 0 2rem;
+                        /* --mq-compressed-toc-after */
+                        @media (width >= 1400px) {
+                            padding-inline: 3rem;
+                        }
                         font-size: var(--font-size-ui-rem);
                         .o-current-menu-item {
                             text-decoration: none;
@@ -197,7 +205,11 @@
             gap: var(--spacing-md);
             align-items: center;
             justify-content: space-between;
-            padding: 0 calc(var(--dropdown-nav-item-padding) + 3rem);
+            padding: 0 calc(var(--dropdown-nav-item-padding) + 2rem);
+            /* --mq-compressed-toc-after */
+            @media (width >= 1400px) {
+                padding-inline: calc(var(--dropdown-nav-item-padding) + 3rem);
+            }
             /* Nudge so the nav aligns horizontally with the breadcrumbs */
             margin-block: 0.5rem var(--spacing-xs);
             font-size: var(--font-size-md);
