@@ -50,7 +50,6 @@
             }
             p {
                 max-width: 96%;
-                font-size: unset;
                 font-weight: var(--font-family-main-weight-medium);
                 /* Custom */
                 @media (width < 500px) {
