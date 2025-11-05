@@ -307,7 +307,8 @@
     }
     h1, .h1, h1 a, .h1 a, h2, .h2, h2 a, .h2 a, h3, .h3, h3 a, .h3 a {
         /* Not when headings are inside li, which they sometimes are, e.g. /tips */
-        &:not(li *) {
+        /* Not when headings are inside .ui-component-example */
+        &:not(li *):not(.ui-component-example *) {
             font-family: var(--font-family-serif);
             font-weight: var(--font-family-serif-weight-normal);
             /* https://app.typographychecklist.com/ 91 - Use discretionary ligatures and swashes in headlines */
