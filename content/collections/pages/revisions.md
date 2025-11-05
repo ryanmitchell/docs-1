@@ -12,7 +12,8 @@ pro: true
 Revisions is Statamic's publishing workflow feature which provides different _states_ and corresponding behaviors for your entries — published, unpublished, working copy, and revision.
 
 <figure>
-    <img src="/img/publish-revision.png" alt="Revisions" width="398">
+    <img src="/img/publish-revision.webp" alt="Revisions" width="450" class="u-hide-in-dark-mode">
+    <img src="/img/publish-revision-dark.webp" alt="Revisions" width="450" class="u-hide-in-light-mode">
     <figcaption>Leave notes describing your updates. Kinda like git!</figcaption>
 </figure>
 
