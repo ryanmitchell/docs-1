@@ -49,7 +49,6 @@
                 border-radius: var(--border-radius-2xl);
             }
             p {
-                max-width: 96%;
                 font-weight: var(--font-family-main-weight-medium);
                 /* Custom */
                 @media (width < 500px) {
