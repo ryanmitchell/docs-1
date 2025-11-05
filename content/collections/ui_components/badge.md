@@ -6,7 +6,7 @@ template: ui-component
 intro: Highlight contextual information, like status, count, or related data. You can pass text through a `text` prop or use it like an HTML tag pair.
 ---
 
-```component
+```component space-x-3
 <ui-badge color="green" size="lg">New</ui-badge>
 <ui-badge color="red" size="lg" text="Hot"></ui-badge>
 <ui-badge color="amber" size="lg" text="Soup"></ui-badge>
@@ -16,7 +16,7 @@ intro: Highlight contextual information, like status, count, or related data. Yo
 ## Sizes
 Badges are available in two sizes via the <code>size</code> prop.
 
-```component
+```component space-x-3
 <ui-badge size="sm">Small</ui-badge>
 <ui-badge>Default</ui-badge>
 <ui-badge size="lg">Large</ui-badge>
@@ -26,7 +26,7 @@ Badges are available in two sizes via the <code>size</code> prop.
 ## Colors
 <p>Use the <code>color</code> attribute to change the badge's color.</p>
 
-```component
+```component flex flex-wrap gap-3
 <ui-badge>Default</ui-badge>
 <ui-badge color="white">White</ui-badge>
 <ui-badge color="black">Black</ui-badge>
@@ -54,7 +54,7 @@ Badges are available in two sizes via the <code>size</code> prop.
 
 Use the <code>variant</code> prop to change the badge's style and shape. Flat badges are in slightly taller than default ones to account for the optical perception of borders and shadows.
 
-```component
+```component space-x-3
 <ui-badge size="lg">Default</ui-badge>
 <ui-badge variant="flat" size="lg">Flat</ui-badge>
 ```
@@ -64,7 +64,7 @@ Use the <code>variant</code> prop to change the badge's style and shape. Flat ba
 
 Use the `append` and `prepend` props to add smaller supporting text before or after the main text, perfect for counts, numbers, and other small details.
 
-```component
+```component space-x-3
 <ui-badge color="black" append="42">Events</ui-badge>
 <ui-badge color="purple" prepend="Updates">31</ui-badge>
 ```
@@ -74,7 +74,7 @@ Use the `append` and `prepend` props to add smaller supporting text before or af
 
 Automatically sized and styled icons are available for your badges using the `icon` or `icon-append` props to pass the name of an icon.
 
-```component
+```component space-x-3
 <ui-badge icon="mail">david@hasselhoff.com</ui-badge>
 <ui-badge icon-append="x" color="red" as="button">Delete</ui-badge>
 ```
