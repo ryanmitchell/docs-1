@@ -18,9 +18,8 @@ You can assemble your own input field with a label, description, input, and anyt
     <ui-label required>Email</ui-label>
     <ui-description>We need it so we can sell your info to spammers.</ui-description>
     <ui-input name="email" type="email" />
-</ui-field
+</ui-field>
 ```
-
 
 ## Types
 
@@ -38,11 +37,9 @@ Use the browser's various input types for different situations: `text`, `email`,
 Add an icon to your input by passing the name of the with `icon` prop. You can use `icon-append` and `icon-prepend` to add an icon to the input's end and start, respectively.
 
 ```component
-<div class="flex flex-col gap-3 w-full max-w-md">
-    <ui-input label="Email" icon="mail" placeholder="jim@bob.com" />
-    <ui-input label="Email" icon-append="mail" placeholder="jim@bob.com" />
-    <ui-input label="Email" icon-prepend="mail" placeholder="jim@bob.com" />
-</div>
+<ui-input label="Email" icon="mail" placeholder="jim@bob.com" />
+<ui-input label="Email" icon-append="mail" placeholder="jim@bob.com" />
+<ui-input label="Email" icon-prepend="mail" placeholder="jim@bob.com" />
 ```
 
 
@@ -82,7 +79,7 @@ Add a clear button to your input by passing the `clearable` prop.
 Add a copy button to your input by passing the `copyable` prop.
 
 ```component
-<ui-input label="Secret" copyable readonly v-model="values.secret" />
+<ui-input label="Secret" copyable readonly model-value="values.secret" />
 ```
 
 
@@ -90,7 +87,7 @@ Add a copy button to your input by passing the `copyable` prop.
 Add a button to toggle showing a password's text by passing the viewable prop.
 
 ```component
-<ui-input label="Password" type="password" viewable v-model="values.password" />
+<ui-input label="Password" type="password" viewable model-value="values.password" />
 ```
 
 
