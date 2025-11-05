@@ -14,7 +14,7 @@ Revisions is Statamic's publishing workflow feature which provides different _st
 <figure>
     <img src="/img/publish-revision.webp" alt="Revisions" width="450" class="u-hide-in-dark-mode">
     <img src="/img/publish-revision-dark.webp" alt="Revisions" width="450" class="u-hide-in-light-mode">
-    <figcaption>Leave notes describing your updates. Kinda like git!</figcaption>
+    <figcaption>Leave notes describing your updates. Kinda like Git!</figcaption>
 </figure>
 
 ## Enabling
@@ -65,7 +65,8 @@ Unpublishing an entry will create a revision and remove it from the front-end, a
 The history view will show you all revisions, publish, unpublish, and restore states, and let you preview and restore from any previous point of the entry.
 
 <figure>
-    <img src="/img/revisions.png" alt="Revisions" width="398">
+    <img src="/img/revisions.webp" alt="Revisions" class="u-hide-in-dark-mode" width="398">
+    <img src="/img/revisions-dark.webp" alt="Revisions" class="u-hide-in-light-mode" width="398">
     <figcaption>This is your revision history. You can tell because it says so.</figcaption>
 </figure>
 
