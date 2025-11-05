@@ -22,13 +22,17 @@ Checkboxes can have descriptions below their labels.
 />
 ```
 
+## Disabled
+
+Disable a checkbox with the `disabled` prop.
+
+```component
+<ui-checkbox disabled name="terms" label="I Agree" />
+```
+
 ## Checkbox group
 
-Organize a list of related checkboxes vertically.
-
-::: tip
-When using checkbox groups, add your `name` or `v-model` to the group element instead of the individual checkboxes
-:::
+Organize a list of related checkboxes vertically. When using checkbox groups, add your `name` or `v-model` to the _group element_ instead of the individual checkboxes.
 
 ```component
 <ui-checkbox-group name="meals">
@@ -47,7 +51,7 @@ When using checkbox groups, add your `name` or `v-model` to the group element in
 
 You can also arrange your checkboxes inline, horizontally.
 
-```component
+```component flex items-center space-x-3
 <ui-checkbox-group name="books" :inline="true" class="flex justify-center">
     <ui-checkbox value="The Hobbit" />
     <ui-checkbox value="Lord of the Rings" />
