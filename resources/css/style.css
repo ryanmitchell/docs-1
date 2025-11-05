@@ -23,7 +23,6 @@ scope;
 @source "../../vendor/statamic/cms/packages/ui/src";
 
 @import './base/elements/elements.css';
-@import './base/elements/forms.css';
 @import './base/elements/tables.css';
 /* Objects */
 @import './objects/badge-heading.css';
