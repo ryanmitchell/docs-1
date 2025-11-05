@@ -30,7 +30,7 @@ scope;
 @import './objects/entry-content.css';
 @import './objects/scroll-shadows.css';
 @import './objects/collapsible-side-menu-with-checkboxes.css';
-@import './objects/toc-js-scroll-spy.css';
+@import './objects/toc-scroll-spy.css';
 /* Components > Global */
 @import './components/skip-to-content.css';
 @import './components/docs-header.css';
