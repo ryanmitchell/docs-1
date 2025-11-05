@@ -61,11 +61,11 @@
                 /* e.g. >> /updating */
                 margin-block-end: var(--spacing-lg);
             }
-            h2:has(+ &) + & {
+            h2 + & {
                 /* e.g. >> /tags/children */
                 margin-block-start: var(--spacing-3xs);
             }
-            header:has(+ &) + & {
+            header + & {
                 /* e.g. >> /updating */
                 margin-block-start: var(--spacing-lg);
             }
