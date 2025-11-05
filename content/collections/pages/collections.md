@@ -20,7 +20,7 @@ Not to be redundant, but Collections are simply containers that hold entries. Yo
 
 Each collection holds settings that affect all of its entries. Like URL patterns by way of [routes](/routing), which fields are available with [blueprints](/blueprints), as well as any desired [date behaviors](#dates).
 
-You can also set default values like template, blueprint, and published status.
+You can also set default values for system fields like template, blueprint, and published status.
 
 A collection is defined by a YAML file stored in the `content/collections` directory. All accompanying entries will be stored in a sub-directory with a matching name. For example, a `blog` collection looks like this:
 
@@ -32,14 +32,20 @@ content/collections/
     youre-looking-for.md
   blog.yaml
 ```
+
+:::tip
+Creating a collection in the control panel takes care of all of this for you automatically, so don't stress too hard about memorizing all the details.
+:::
+
 ## Entries
 
-Each entry — at the very least — has a title, published status, id, and probably some content. The content fields are determined by one or more [blueprints](/blueprints) set on the collection.
+Each entry has, at the very least, a title, published status, id, and _usually_ additional content fields. These content fields are determined by one or more [blueprints](/blueprints) set on the collection.
 
 Entries are stored as Markdown files inside their collection's respective directory (`content/collections/{collection}/entry.md`). At any time you can edit any entry in your code editor by popping open these files and doing what comes naturally.
-### Let's go deeper.
 
-We're going to pretend it's currently the summer of '99 and we are journalists covering the Summer X Games. The weather here in San Fransisco is beautiful and 275,000 people are watching Tony Hawk make history.
+### An example
+
+Let's to pretend it's the summer of '99 and we are journalists covering the Summer X Games. The weather here in San Fransisco is beautiful and 275,000 people are watching Tony Hawk make history.
 
 Here's an entry we might write about the event.
 
@@ -64,12 +70,12 @@ You can create, edit, and delete entries in the control panel _or_ filesystem, i
 
 ### View data
 
-Each entry has its own unique URL. When you're on it, all of the entry's data will be available in your views as variables. If an entry is _missing_ data, intentionally or not, it will fall back to a series of defaults. We call this fallback logic [the cascade](/cascade).
+Each entry has its own unique URL. When you're on that URL in your web browser, all of the entry's data will be available in your views as variables. If an entry is _missing_ data, intentionally or not, it will fall back to a series of defaults. We call this fallback logic [the cascade](/cascade).
 
 If a value doesn't exist in one place, it'll check the next place, then the next, and so on, in this order:
 
 1. The entry
-2. The origin entry (if using localization)
+2. The origin entry if using localization (the entry it was localized from)
 3. The collection
 
 ### Setting default data {#inject}
@@ -96,19 +102,19 @@ inject: #[tl! focus:start]
 
 ## Blueprints
 
-Each Collection uses blueprints to define the available fields when creating and editing its entries.
+Each collection uses blueprints to define the available fields when creating and editing its entries.
 
-If you don't explicitly create a blueprint, your entries will have a basic set of fields: title, markdown content, slug, etc. Of course, you're able to create your own.
+When you create a new collection, a blueprint of the same name will be createed for you as your default. It contains a very basic set of fields: title, `content`, `slug`, `author`, and `date`, if the collection is configured to store dates. You can customize this blueprint as you wish, as well as create your own additional blueprints.
 
-If you create _more than_ one blueprint you'll be given the option to choose which one you want when creating a new entry.
+If you create _more than_ one blueprint you'll be given the option to choose which one you want when creating a new entry. While this isn't common, it can be a pretty powerful option in the right situations.
 
 You can hide blueprints from appearing in the new entry menu by activating the _Hidden_ toggle on the blueprint's UI or setting `hide: true` in the blueprint's yaml file.
 
 ## Titles
 
-All entries need a title. Statamic uses titles to display entries in a consistent way throughout the Control Panel.
+All entries require a title. Statamic uses titles to display entries in a consistent way throughout the Control Panel.
 
-Depending on the collection, a dedicated `title` field might not be useful to you. In this case, you may configure a "title format" which would be used to automatically generate titles from other fields.
+Depending on the purpose of the collection, a dedicated `title` field might not be useful to you. In this case, you may configure a "title format" which would be used to automatically generate titles from other fields so you don't have to invent something every time.
 
 For example, a "reviews" collection might just have `author`, `stars`, and `content` fields. You could configure the titles to be "5 star rating by John Smith".
 
@@ -138,9 +144,11 @@ To use modifiers in title formats, make sure to use the `{{` Antlers syntax, lik
 
 ## Slugs
 
-Slugs are what you would typically use in entry URLs. For an entry named `My Entry`, the slug might be `my-entry`.
+Slugs are used in entry URLs. For an entry named `My Entry`, the slug would default to `my-entry` unless you edit it.
 
-When creating entries in the Control Panel, if you submit an entry with an empty `slug`, one will be generated based on the title.
+Slugs are automatically generated for you based on the title, but if you edit them, that automatic process is switched off. We trust you know what you're doing.
+
+### Disabling Slugs
 
 If the entries in a specific collection don't need to have dedicated URLs, or if the entries' route only contains other fields, a `slug` field may not be useful for you.
 
@@ -153,12 +161,12 @@ slugs: false
 This will prevent collections from automatically adding a slug field.
 
 :::tip
-Since Statamic stores entries as files, it uses the slug for the filename. If you disable slugs, it will use the ID instead. (e.g. `my-entry.md` vs. `123.md`)
+Since Statamic stores entries as files, it uses the slug for the filename. If you disable slugs, it will use the ID instead. (e.g. `123.md` instead of `my-entry.md`)
 :::
 
 ## Dates
 
-If your collection requires a date, as they often do, you can decide how Statamic uses it to control default visibility. For example, you can choose to have dates set in the future to be private (404), which effectively allows you to schedule their publish date.
+If your collection entries require a date — as they often do — you can decide how Statamic uses it to control visibility. For example, you can choose to have dates set in the future to be private (404), which allows you to schedule their publish date.
 
 Alternatively, you could have _past_ dates be private which would make entries act like "upcoming events" that disappear from a list when they're over.
 
@@ -182,7 +190,7 @@ Date behaviors are _defaults_. They can be overridden at the [tag level](/tags/c
 
 ### Date behavior and published status
 
-You can override [date behavior visibility settings](#available-date-behaviors) on an entry-by-entry basis by setting `published: false` on your entry.
+You can override [date behavior visibility settings](#available-date-behaviors) by setting the **Publish by Default** option to `false`.
 
 Each entry will automatically be assigned one of four possible computed `status` values, which respects both your collection's date behavior settings, as well as your entry's published setting:
 
@@ -203,19 +211,21 @@ We recommend [filtering](/tags/collection#published-status) and [querying](/repo
 
 ## Time
 
-To get more granular and introduce _time_, add a [date field](/fieldtypes/date) named `date` to your blueprint and Statamic will respect however you configure it. You can use this approach to have entries publish at a **specific time**, e.g. `11:45am`.
+**Time** nmay be enabled on your [date field](/fieldtypes/date) to have entries publish at a **specific time**, e.g. `11:45am`, or to ensure that multiple entries in the same day are published in chronological order. We recommend leaving the **Time Enabled** setting on.
+
+You can also enable the **Show Seconds** setting if you need to publish more than one entry per minute.
 
 :::tip
-If you don't enable the time, all entries on a given day will assume a default time of midnight, or `00:00`. If you want to make sure that multiple entries on the same day are ordered in the order you published them, turn the time on.
+If you don't enable the time, _all_ entries on a given day will assume a default time of midnight, or `00:00`.
 :::
 
 ## Scheduling
 
-If you've added a date and/or time to your entries in order to "schedule" them, you may need to set up the scheduler in order for Statamic to properly invalidate things.
+If you've added a date and/or time to your entries in order to "schedule" them, you may need to set up the scheduler in order for Statamic to properly invalidate your cache to display them at the right time.
 
 For example, you might need things to happen exactly when an entry is scheduled, like refreshing a cached blog listing, or sending a notification.
 
-[Learn how to use the scheduler](/scheduling)
+[Learn how to use the scheduler](/scheduling).
 
 ## Ordering
 
@@ -233,7 +243,7 @@ Order will take precedence when sorting. For example, if you make a dated collec
 
 ### Constraining Depth
 
-A structured collection will **not** have a maximum depth unless you set one, allowing you to nest entries as deep as you like. Set the `max_depth` option to limit this behavior. Setting `max_depth: 1` will replace the tree UI with a flat, table-based UI.
+A structured collection will **not** have a maximum depth unless you set one, allowing you to nest entries as deep as you like. Set the `max_depth` option to limit this behavior. Setting the **Max Depth** option to `1` will replace the tree UI with a flat, table-based UI.
 
 <figure>
     <img src="/img/reorderable-entries.webp" alt="An orderable collection with max depth of 1" class="u-hide-in-dark-mode">
@@ -247,13 +257,13 @@ For non-structured collections, you can choose which field and direction to sort
 
 ### Root page
 
-If you specify that your collection should "expect a root page", the first item in the tree UI will be considered the root. This entry will _not_ use a slug in its URI.
+If you specify that your collection should "expect a root page", the first item in the tree UI will be considered the "root". This entry will _not_ use a slug in its URI — it will be treated as a `/`.
 
-The most common usage for this is to define a home page in a pages' collection. In this example, the root page's url would be `/` instead of `/home`.
+The most common usage for this is to define a home page in a pages' collection. In this example, the root page's url would be `/` instead of `/home`. But this woudl also be true of a sub-section. If you had an ordered `documents` collection that was set up to live at `/documents/`, the "root" of that collection in this case would be the `/documents/` URL.
 
 ## Routing
 
-Entries receive their URLs from their collection's route setting. You can use standard meta variables in addition to the variables from the collection's blueprint to define your route rule. You can even use [computed values](/computed-values) or Antlers to do advanced things.
+Entries receive their URLs from their collection's route setting. You can use standard meta variables in addition to the variables from the collection's blueprint to define your route rule. You can even use [computed values](/computed-values) or Antlers to create more complicated dynamic route logic.
 
 ``` yaml
 route: /blog/{slug}
@@ -268,7 +278,7 @@ route:
 ```
 
 :::tip
-Statamic does not automatically define route rules. If you want entries in your new collection to have URLs, make sure you define one!
+Statamic does not automatically define route rules. If you want entries in your new collection to have URLs (almost always the case), make sure you define one!
 :::
 
 ### Meta variables
@@ -413,10 +423,10 @@ taxonomies:
 
 ## Mounting
 
-You may mount a collection onto an entry as a way of saying "all these entries belong to this section". When you do this, two neat things happen:
+You may "mount" a collection onto an entry in your collection config as a way of saying "all these entries belong to this section". When you do this, two neat things happen:
 
-- The collection will share the URL of the entry.
-- If the entry is listed in a structure, you will see shortcut links to **add or edit** entries in that collection, like the Blog page in the screenshot below.
+- The collection's entries will become subpages of the entry. E.g. `/blog/that-one-time-at-dev-camp`
+- If the entry is in a structured collection with a nav tree, you will see shortcut links to **add or edit** entries in that collection, like the Blog page in the screenshot below.
 
 <figure>
     <img src="/img/mounted-collection.webp" alt="Mounted collections in a structure" class="u-hide-in-dark-mode">
@@ -424,57 +434,15 @@ You may mount a collection onto an entry as a way of saying "all these entries b
     <figcaption>Look at those add and edit links!</figcaption>
 </figure>
 
-### Mount setting
-
-You can mount a collection to an entry in the collection configure page (or by specifying the ID of the desired entry in the collection's YAML config file). For example, you might mount a **tropical fish** collection to an **aquarium** entry page.
-
-Now you can use `mount` variable in the route to automatically prepend the mounted entry's URL. So for example, if you mounted a collection to `/aquarium` with `/{mount}/{slug}`, all your fish URLs will follow the `/aquarium/entry-url` pattern. If you later move `/aquarium` to `/house-of-fishies`, all your entries will automatically update with `/house-of-fishies/entry-url`.
-
-``` yaml
-title: Our Tropical Fishies
-mount: id-of-the-aquarium-entry
-route: '/{mount}/{slug}'
-```
-
-### Looping through mounted entries
-
-You can loop through all entries in the mounted collection easily by using the `{{ collection }}` tag and setting the `from` value to bind to the mounted collection using `mount`, like so.
-
-::tabs
-
-::tab antlers
-```antlers
-{{ collection :from="mount" }}
-    {{ title }}
-{{ /collection}}
-```
-
-::tab blade
-```blade
-<statamic:collection
-  :from="$mount"
->
-  {{ $title }}
-</statamic:collection>
-```
-
-::
-
-:::tip
-If you are coming from Statamic 2, you might have used the `{{ entries }}` tag pair to loop through mounted collections. That tag is no longer available, and instead, you should use the above approach.
-:::
 
 ## Search indexes
 
-You can configure search indexes for your collections to improve the efficiency and relevancy of your users' searches. Learn [how to connect indexes](search#connecting-indexes).
+You can configure search indexes for your collections to improve the efficiency and relevancy of your users' searches. Learn [how to connect indexes](/frontend/search#connecting-indexes).
 
 ## Revisions
 
-Revisions allow you to see the history of any given entry over time. Revisions need to be enabled on the site level ([read those docs](/revisions)), and then you can enable them for any collection.
+Revisions allow you to see the history of any given entry over time. Revisions need to be enabled on the site level ([read those docs](/revisions)), and then you can enable them for any collection in your collection config.
 
-```
-revisions: true
-```
 
 ## Labels
 
@@ -491,7 +459,7 @@ return [
 ];
 ```
 
-Of course, you may add the same key to `messages.php` in other language directories as necessary.
+You may add the same key to `messages.php` in other language directories as necessary.
 
 ## Localization
 
