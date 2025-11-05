@@ -5,7 +5,7 @@ title: Card
 template: ui-component
 intro: The ubiquitous container of all elements! The div of any component system. Cards can contain anything you want – content, widgets, settings, forms, you name it.
 ---
-```component
+```component bg-gray-100
 <ui-card class="space-y-6 w-92 mx-auto">
     <header>
         <ui-heading size="lg">Create a new account</ui-heading>
@@ -25,7 +25,7 @@ intro: The ubiquitous container of all elements! The div of any component system
 
 Remove all the inner padding to set the content flush to the sides with the <code>inset</code> prop.
 
-```component
+```component bg-gray-100 flex items-center justify-center
 <ui-card inset class="w-64">
 <img class="rounded-t-xl" src="https://images.unsplash.com/photo-1549524362-47d913ec9a0e?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 <div class="p-4 text-sm">
@@ -33,6 +33,17 @@ Remove all the inner padding to set the content flush to the sides with the <cod
 </div>
 </ui-card>
 ```
+
+
+## Variants
+
+Use the `variant` prop to change the appearance of the card.
+
+```component bg-gray-100 flex items-center justify-center gap-3
+<ui-card class="size-30">Default</ui-card>
+<ui-card class="size-30" variant="flat">Flat</ui-card>
+```
+
 
 ## Card Panels
 
