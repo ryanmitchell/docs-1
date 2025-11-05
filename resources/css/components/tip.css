@@ -69,6 +69,10 @@
                 /* e.g. >> /updating */
                 margin-block-start: var(--spacing-lg);
             }
+            header:has(h1:only-child) + & {
+                /* e.g. >> ui-components/overview */
+                margin-block-start: var(--spacing-2xs);
+            }
         }
     }
     /* Cross pollinated */
