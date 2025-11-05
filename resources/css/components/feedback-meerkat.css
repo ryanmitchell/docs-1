@@ -26,7 +26,7 @@
         margin-block-start: var(--spacing-4xl);
         text-decoration-line: none;
         border: 1px solid transparent;
-        color: var(--color-black);
+        color: var(--color-primary-text);
         /* Custom */
         @media (width < 500px) {
             margin-block-start: 6.5rem;
@@ -98,10 +98,10 @@
             border-color: var(--color-black);
             transition: border-color 0.35s var(--animation-timing-function-hipster) 0.1s;
             &::after {
-                inline-size: 85%;
+                inline-size: 87%;
             }
             img {
-                top: -100px;
+                top: -80px;
                 rotate: unset;
             }
         }
