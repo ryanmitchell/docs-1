@@ -185,9 +185,9 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES
     =================================================== */
     /*
-        -s sizes are sub 1rem
-        -m is just above 1rem
-        -l sizes are above 1rem
+        -sm sizes are sub 1rem
+        -md is just above 1rem
+        -lg and xl sizes are above 1rem
     */
     /* e.g. breadcrumbs */
     --font-size-2xs: 0.8em;
@@ -208,7 +208,6 @@
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- OUTSIDE SCALE
     =================================================== */
-    /* -m is just above 1rem */
     --font-size-md: clamp(0.9em, 4vw, 1em);
     --font-size-md-line-height: 1.5;
     --font-size-md-rem: clamp(0.9rem, 4vw, 1rem);
@@ -282,8 +281,6 @@
     --transition-transform: transform 0.3s var(--animation-timing-function-fast-out-slow-in);
     --animation-timing-function-hipster: cubic-bezier(0.55, 0, 0.1, 1);
 
-    /* GROUP VARIABLES -- OTHER
-    =================================================== */
     /* --mq-root-variable-adjustments-1 */
     @media (min-width: 450px) {
         /* GROUP VARIABLES -- SPACING
@@ -322,6 +319,8 @@
     @media (width >= 1441px) {
         /* Decrease */
         --font-size-ui-rem: 0.85rem;
+        --font-size-md: clamp(0.9em, 4vw, 1.015em);
+        --font-size-md-rem: clamp(0.9rem, 4vw, 1.015rem);
     }
 
     /* GROUP VARIABLES -- LIGHT/DARK MODE
