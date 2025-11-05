@@ -236,7 +236,7 @@
         font-weight: var(--font-family-main-weight-heavy);
     }
     /* Only target our own name-spaced components so that we don't affect plugins */
-    :is([class^="c-"], [class^="o-"]) svg {
+    :is([class^="c-"], [class^="o-"]) svg:not(.ui-component-example svg) {
         fill: currentColor;
         /* For SVG icons */
         width: 1em;
