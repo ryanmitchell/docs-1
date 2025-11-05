@@ -17,8 +17,9 @@ related_entries:
 The most common and obvious reason users exist is to have the means to access the Control Panel and manage the content of your site. But there is so much more a user can do, if you so desire.
 
 <figure>
-    <img src="/img/users-index.png" alt="List of Statamic Control Panel users">
-    <figcaption>Why hasn't the Hoff logged in?</figcaption>
+    <img src="/img/users-index.webp" alt="List of Statamic Control Panel users" class="u-hide-in-dark-mode">
+    <img src="/img/users-index-dark.webp" alt="List of Statamic Control Panel users" class="u-hide-in-light-mode">
+    <figcaption>Why hasn't the Hoff logged in? And why is he inpersonating Jason?</figcaption>
 </figure>
 
 ## Creating users
@@ -36,7 +37,8 @@ You can also [create users by hand](/tips/creating-users-by-hand) in a YAML file
 When creating users in the Control Panel you can send email invitations to help guide those users into activating their accounts and signing in for the first time. You can even customize a lovely little welcome message for them.
 
 <figure>
-    <img src="/img/user-invitation.png" alt="A user invitation screen">
+    <img src="/img/user-invitation.webp" alt="A user invitation screen" class="u-hide-in-dark-mode">
+    <img src="/img/user-invitation-dark.webp" alt="A user invitation screen" class="u-hide-in-light-mode">
     <figcaption>An opportunity for a knock knock joke, perhaps?</figcaption>
 </figure>
 
@@ -202,8 +204,9 @@ Each user account has an avatar field named `avatar`. By default it's an [Assets
 This avatar is used throughout the Control Panel to represent the user when the context is important. For example, on your user dropdown menu, as an entry's "Author", or while using [Real Time Collaboration](https://github.com/statamic/collaboration).
 
 <figure>
-    <img src="/img/user-avatar.png" alt="A user's avatar in the control panel global header" width="246">
-    <figcaption>Behold — an avatar!</figcaption>
+    <img src="/img/user-avatar.webp" alt="A user's avatar in the control panel global header" width="500" class="u-hide-in-dark-mode">
+    <img src="/img/user-avatar-dark.webp" alt="A user's avatar in the control panel global header" width="500" class="u-hide-in-light-mode">
+    <figcaption>Behold — an avatar! Little SNL joke there, <a href="https://www.youtube.com/watch?v=Q8PdffUfoF0" target="_blank">for anyone in the mood</a></figcaption>
 </figure>
 
 ## Ordering
