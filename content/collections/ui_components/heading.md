@@ -43,7 +43,7 @@ Add an appropriately sized icon to your heading with the `icon` prop.
 ```
 
 
-# As a link
+## As a link
 
 Headings can have a link set with an <code>href</code> prop.
 
