@@ -16,14 +16,15 @@ class ComponentSnippets extends Modifier
 
         // Replace ```component...``` blocks with partial calls
         $replaced = preg_replace_callback(
-            '/```component\n(.*?)\n```/s',
+            '/```component([^\n]*)\n(.*?)\n```/s',
             function ($matches) {
-                $code = $matches[1];
+                $class = trim($matches[1]);
+                $code = $matches[2];
                 $code = preg_replace('/<br\s*\/?>/i', '', $code);
                 $code = trim($code);
                 $url = '/cp/ui-component/'.base64_encode($code);
 
-                return Blade::render('partials.component-example', ['code' => $code, 'url' => $url]);
+                return Blade::render('partials.component-example', ['code' => $code, 'url' => $url, 'class' => $class]);
             },
             $value
         );
