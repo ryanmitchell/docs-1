@@ -12,7 +12,7 @@ intro: Buttons are used to trigger actions. They come in many sizes and flavors.
 
 You can set the button text with a `text` prop or by using the component like an HTML tag pair.
 
-```component
+```component space-x-3
 <ui-button>HTMLy</ui-button>
 <ui-button text="Propy" />
 ```
@@ -21,7 +21,7 @@ You can set the button text with a `text` prop or by using the component like an
 
 Use the `variant` prop to change the appearance of the button.
 
-```component
+```component space-x-3
 <ui-button>Default</ui-button>
 <ui-button variant="primary">Primary</ui-button>
 <ui-button variant="danger">Danger</ui-button>
@@ -34,7 +34,7 @@ Use the `variant` prop to change the appearance of the button.
 
 Use the `size` prop to change the size of the button.
 
-```component
+```component space-x-3
 <ui-button>Base</ui-button>
 <ui-button size="sm">Small</ui-button>
 <ui-button size="xs">Extra Small</ui-button>
@@ -45,7 +45,7 @@ Use the `size` prop to change the size of the button.
 
 Automatically sized and styled icons are available for your buttons using the `icon` or `icon-append` props. You can also compose your own buttons with icons by nesting an [icon](/ui-components/icon) component.
 
-```component
+```component flex items-center space-x-3
 <ui-button icon="dots" />
 
 <ui-button icon-append="arrow-right">
@@ -62,7 +62,7 @@ Automatically sized and styled icons are available for your buttons using the `i
 
 Round buttons have their place too — like [Bard](/fieldtypes/bard) set pickers. Just set the `round` prop.
 
-```component
+```component space-x-3
 <ui-button icon="plus" round></ui-button>
 <ui-button icon="plus" round size="sm"></ui-button>
 <ui-button icon="plus" round size="xs"></ui-button>
@@ -107,9 +107,9 @@ Group buttons together to create a cohesive set of actions.
 Group icons together.
 
 ```component
-    <ui-button-group>
-        <ui-button icon="paragraph-align-left"></ui-button>
-        <ui-button icon="paragraph-align-center"></ui-button>
+<ui-button-group>
+    <ui-button icon="paragraph-align-left"></ui-button>
+    <ui-button icon="paragraph-align-center"></ui-button>
     <ui-button icon="paragraph-align-right"></ui-button>
 </ui-button-group>
 ```
