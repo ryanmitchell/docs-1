@@ -8,3 +8,4 @@ tabs:
             handle: content
             field:
               type: markdown
+              antlers: true
