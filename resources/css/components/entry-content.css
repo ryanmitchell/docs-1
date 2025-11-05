@@ -16,6 +16,7 @@
     </div>
 
 */
+@scope (html) to (.ui-component-example__render) {
 /* Put some rules at the element layer where components should easily override them */
 @layer elements {
     .c-entry-content {
@@ -277,4 +278,5 @@
             padding-inline: var(--spacing-xl);
         }
     }
+}
 }

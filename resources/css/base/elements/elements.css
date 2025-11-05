@@ -2,6 +2,7 @@
     interpolate-size: allow-keywords;
 }
 
+@scope (html) to (.ui-component-example__render) {
 @layer elements {
     html {
         background: var(--color-body-background);
@@ -581,4 +582,5 @@
             outline-offset: 5px;
         }
     }
+}
 }

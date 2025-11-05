@@ -4,6 +4,7 @@
     navigation: auto;
 }
 
+@scope (html) to (.ui-component-example__render) {
 @layer base {
     /* GROUP RESET / FRAMEWORK - Taken from html5boilerplate.com
     =================================================== */
@@ -30,4 +31,5 @@
         width: 100%;
         border: none;
     }
+}
 }
