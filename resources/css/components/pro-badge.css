@@ -90,9 +90,13 @@
         flex-wrap: wrap;
         gap: var(--spacing-2xs);
         padding: var(--spacing-3xs) var(--spacing-2xs);
-        background: linear-gradient(to right, var(--color-yellow-light-4) 0%,var(--color-yellow-light-2) 100%);
+        background: linear-gradient(to right, var(--color-yellow-light-3) 0%,var(--color-yellow-light-2) 100%);
         font-size: var(--font-size-xs);
         rotate: -2.5deg;
+        .o-badge-heading & {
+            min-width: 9.5rem;
+            background: linear-gradient(to right, var(--color-yellow-light-4) 0%,var(--color-yellow-light-2) 100%);
+        }
 
         img {
             inline-size: 2em;
