@@ -72,19 +72,19 @@
         line-height: 1;
     }
 
-    textarea {
+    textarea:not(.ui-component-example textarea) {
         width: 100%;
         /* e.g. something like Hubspot might be a bit short */
         min-height: 200px;
     }
 
-    [type="checkbox"] {
+    [type="checkbox"]:not(.ui-component-example label) {
         /* Override any input styles */
         box-shadow: none;
     }
 
-    [type="checkbox"],
-    [type="radio"] {
+    [type="checkbox"]:not(.ui-component-example label),
+    [type="radio"]:not(.ui-component-example label) {
         margin-right: var(--spacing-s);
     }
 
