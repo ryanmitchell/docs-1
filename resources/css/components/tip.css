@@ -77,7 +77,7 @@
     .hint-title {
         display: inline-block;
         padding: var(--spacing-3xs) var(--spacing-md);
-        margin-block-end: var(--spacing-lg);
+        margin-block-end: var(--spacing-md);
         font-size: var(--font-size-lg-uppercase);
         text-transform: uppercase;
     }
