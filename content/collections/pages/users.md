@@ -57,7 +57,7 @@ To customize these fields, edit the included `user` [blueprint](/blueprints) and
 <div class="c-pro-badge">
     <a href="/licensing">
         <div class="c-pro-badge__text">
-            ⭐️ Pro Feature ⭐️
+            <span>⭐️</span> Pro Feature <span>⭐️</span>
         </div>
     </a>
 </div>
@@ -150,7 +150,7 @@ Super Admin accounts are special accounts with **access and permission to everyt
 <div class="c-pro-badge">
     <a href="/licensing">
         <div class="c-pro-badge__text">
-            ⭐️ Pro Feature ⭐️
+            <span>⭐️</span> Pro Feature <span>⭐️</span>
         </div>
     </a>
 </div>
