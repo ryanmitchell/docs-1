@@ -27,7 +27,7 @@ Remove all the inner padding to set the content flush to the sides with the <cod
 
 ```component bg-gray-100 flex items-center justify-center
 <ui-card inset class="w-64">
-<img class="rounded-t-xl" src="https://images.unsplash.com/photo-1549524362-47d913ec9a0e?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+<img class="rounded-t-xl max-w-full" src="https://images.unsplash.com/photo-1549524362-47d913ec9a0e?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 <div class="p-4 text-sm">
     <strong>This is me</strong>. I am an amazing motocross stunt driver and am available for weddings, parties, and bar mitzvahs.
 </div>
