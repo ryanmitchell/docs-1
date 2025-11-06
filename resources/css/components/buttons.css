@@ -14,7 +14,7 @@
     </div>
 
 */
-@scope (html) to (.ui-component-example__render) {
+
     @layer components {
         .c-btn,
         form button,
@@ -122,4 +122,3 @@
             font-size: 1rem;
         }
     }
-}
