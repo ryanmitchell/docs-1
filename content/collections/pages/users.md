@@ -226,9 +226,9 @@ Each user can have their own preferred language in the Control Panel. Head to yo
 
 You can set the language for _everyone_ by going to **Default**, or you can set by Role or just the current user (yourself) with **Override For User**.
 
-
 <figure>
-    <img src="/img/user-language-preference.png" alt="User Language Preferences">
+    <img src="/img/user-language-preference.webp" alt="User Language Preferences" class="u-hide-in-dark-mode">
+    <img src="/img/user-language-preference-dark.webp" alt="User Language Preferences" class="u-hide-in-light-mode">
     <figcaption>Last we checked, Statamic has been translated into a lot of languages.</figcaption>
 </figure>
 
@@ -237,7 +237,8 @@ You can set the language for _everyone_ by going to **Default**, or you can set 
 Statamic gives you the ability to impersonate users via the Control Panel. This lets you see the Control Panel and front end of your site through the eyes of the user you chose. This is pretty neat if certain content or capabilities are limited through roles and permissions and you want to test those things. It saves quite some time since there's no need to manually sign out and in again with a different user anymore.
 
 <figure>
-    <img src="/img/user-impersonation.jpg" alt="List view of Statamic Control Panel users with a dropdown showing various options, one of them being 'Start Impersonation'">
+    <img src="/img/user-impersonation.webp" alt="List view of Statamic Control Panel users with a dropdown showing various options, one of them being 'Start Impersonation'" class="u-hide-in-dark-mode">
+    <img src="/img/user-impersonation-dark.webp" alt="List view of Statamic Control Panel users with a dropdown showing various options, one of them being 'Start Impersonation'" class="u-hide-in-light-mode">
     <figcaption>Masquerade as someone else 🎭</figcaption>
 </figure>
 
