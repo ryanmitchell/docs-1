@@ -4,15 +4,15 @@ blueprint: ui_component
 title: Splitter
 intro: Splitter is a component that allows you to split content into multiple, resizable panes.
 ---
-```component
+```component flex
 <ui-splitter-group>
-<ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Left
-</ui-splitter-panel>
-<ui-splitter-resize-handle class="w-3"/>
-<ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Right
-</ui-splitter-panel>
+    <ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Left
+    </ui-splitter-panel>
+    <ui-splitter-resize-handle class="w-3"/>
+    <ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Right
+    </ui-splitter-panel>
 </ui-splitter-group>
 ```
 
@@ -20,7 +20,7 @@ intro: Splitter is a component that allows you to split content into multiple, r
 
 You can set the default size of a panel by using the `default-size` prop.
 
-```component
+```component flex
 <ui-splitter-group>
 <ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
     Sidebar
@@ -37,7 +37,7 @@ You can set the default size of a panel by using the `default-size` prop.
 
 Splitters can be collapsible to reduce the amount of space they take up, or to hide them completely. Use the `collapsible` prop to make the splitter collapsible and control the minimum size of the panel with the `min-size` prop.
 
-```component
+```component flex
 <ui-splitter-group>
 <ui-splitter-panel collapsible :min-size="15" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
     Sidebar
@@ -54,7 +54,7 @@ Splitters can be collapsible to reduce the amount of space they take up, or to h
 
 Splitters can be nested to create more complex layouts.
 
-```component
+```component flex
 <ui-splitter-group class="p-4">
 <ui-splitter-panel class="bg-gray-100 rounded-xl h-48 flex items-center justify-center">
     Left
