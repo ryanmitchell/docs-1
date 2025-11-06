@@ -95,9 +95,9 @@ Group buttons together to create a cohesive set of actions.
 
 ```component
 <ui-button-group>
-<ui-button variant="default">Oldest</ui-button>
-<ui-button  variant="default">Newest</ui-button>
-<ui-button  variant="default">Top</ui-button>
+    <ui-button variant="default">Oldest</ui-button>
+    <ui-button variant="default">Newest</ui-button>
+    <ui-button variant="default">Top</ui-button>
 </ui-button-group>
 ```
 
