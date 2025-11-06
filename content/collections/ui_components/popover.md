@@ -39,17 +39,17 @@ Use standard Tailwind classes with important (!) to control the size of the popo
 
 Popovers can pop out in any direction – `top`, `bottom`, `left`, and `right`. Set that direction with the `side` prop.
 
-```component
+```component flex space-x-3 justify-center
 <ui-popover side="left">
     <template #trigger>
-        <ui-button text="To the left" />
+        <ui-button text="&larr; To the left" />
     </template>
     <p>Popped to the left</p>
 </ui-popover>
 
 <ui-popover side="right">
     <template #trigger>
-        <ui-button text="To the right" />
+        <ui-button text="To the right &rarr;" />
     </template>
     <p>Popped to the right</p>
 </ui-popover>
