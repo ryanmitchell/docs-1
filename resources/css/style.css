@@ -17,6 +17,8 @@ scope;
 @import "tailwindcss/theme.css" layer(theme) source(none);
 @import "tailwindcss/utilities.css" layer(utilities) source(none);
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @import "@statamic/ui/ui.css";
 @source "../../vendor/statamic/cms/packages/ui/src";
 
