@@ -112,7 +112,7 @@
             line-height: var(--font-size-md-line-height);
             /* Reduce to compensate for the increased image height */
             padding-block: var(--spacing-sm);
-            :is(img, svg) {
+            :is(img, svg:not(.external)) {
                 min-inline-size: unset;
                 inline-size: 2.65rem;
                 block-size: 2.65rem;
@@ -126,7 +126,7 @@
         }
     }
 
-    .c-logo-grid :is(img, svg) {
+    .c-logo-grid :is(img, svg:not(.external)) {
         /* This is needed for rasterised images */
         object-fit: contain;
         height: 2rem;
