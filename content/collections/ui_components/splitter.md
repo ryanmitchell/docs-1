@@ -22,13 +22,13 @@ You can set the default size of a panel by using the `default-size` prop.
 
 ```component flex
 <ui-splitter-group>
-<ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Sidebar
-</ui-splitter-panel>
-<ui-splitter-resize-handle class="w-3"/>
-<ui-splitter-panel :default-size="75" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Main
-</ui-splitter-panel>
+    <ui-splitter-panel class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Sidebar
+    </ui-splitter-panel>
+    <ui-splitter-resize-handle class="w-3"/>
+    <ui-splitter-panel :default-size="75" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Main
+    </ui-splitter-panel>
 </ui-splitter-group>
 ```
 
@@ -39,13 +39,13 @@ Splitters can be collapsible to reduce the amount of space they take up, or to h
 
 ```component flex
 <ui-splitter-group>
-<ui-splitter-panel collapsible :min-size="15" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Sidebar
-</ui-splitter-panel>
-<ui-splitter-resize-handle class="w-3"/>
-<ui-splitter-panel :default-size="75" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
-    Main
-</ui-splitter-panel>
+    <ui-splitter-panel collapsible :min-size="15" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Sidebar
+    </ui-splitter-panel>
+    <ui-splitter-resize-handle class="w-3"/>
+    <ui-splitter-panel :default-size="75" class="h-24 bg-gray-100 rounded-xl flex items-center justify-center">
+        Main
+    </ui-splitter-panel>
 </ui-splitter-group>
 ```
 
@@ -56,20 +56,20 @@ Splitters can be nested to create more complex layouts.
 
 ```component flex
 <ui-splitter-group class="p-4">
-<ui-splitter-panel class="bg-gray-100 rounded-xl h-48 flex items-center justify-center">
-    Left
-</ui-splitter-panel>
-<ui-splitter-resize-handle class="w-3"/>
-<ui-splitter-panel>
-    <ui-splitter-group direction="vertical">
-        <ui-splitter-panel class="bg-gray-100 rounded-xl flex items-center justify-center">
-            Right Top
-        </ui-splitter-panel>
-        <ui-splitter-resize-handle class="h-3" />
-        <ui-splitter-panel class="bg-gray-100 dark:bg-gray-900 rounded-xl flex items-center justify-center">
-            Right Bottom
-        </ui-splitter-panel>
-    </ui-splitter-group>
-</ui-splitter-panel>
+    <ui-splitter-panel class="bg-gray-100 rounded-xl h-48 flex items-center justify-center">
+        Left
+    </ui-splitter-panel>
+    <ui-splitter-resize-handle class="w-3"/>
+    <ui-splitter-panel>
+        <ui-splitter-group direction="vertical">
+            <ui-splitter-panel class="bg-gray-100 rounded-xl flex items-center justify-center">
+                Right Top
+            </ui-splitter-panel>
+            <ui-splitter-resize-handle class="h-3" />
+            <ui-splitter-panel class="bg-gray-100 dark:bg-gray-900 rounded-xl flex items-center justify-center">
+                Right Bottom
+            </ui-splitter-panel>
+        </ui-splitter-group>
+    </ui-splitter-panel>
 </ui-splitter-group>
 ```
