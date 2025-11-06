@@ -128,6 +128,12 @@
                 /* Increase */
                 background-size: 100% auto, auto auto;
             }
+
+            .c-nav-collapse-expand,
+            .c-theme-picker {
+                /* Force the flanking icons of the search box to be the same size, so the search box sits centered horizontally. */
+                min-inline-size: 30px;
+            }
         }
         .c-docs-header__inner {
             padding: 1rem var(--spacing-lg) 3rem;
