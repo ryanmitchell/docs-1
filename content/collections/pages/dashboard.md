@@ -7,11 +7,12 @@ id: 249e046f-a9b4-494b-9e4d-084c28e01028
 ---
 ## Overview
 
-When you log into the control panel, you will be taken to the dashboard &mdash; a customizable screen containing widgets. Widgets!
+When you log in to the control panel, you'll see the dashboard, which is a customizable screen. At first, you'll find a Getting Started message like the one below, but if you're feeling widget-y, you can add widgets to the dashboard.
 
 <figure>
-    <img src="/img/dashboard.png" alt="Statamic Global Set Example">
-    <figcaption>The dashboard and the Getting Started widget</figcaption>
+    <img src="/img/dashboard.webp" alt="Statamic Global Set Example" class="u-hide-in-dark-mode">
+    <img src="/img/dashboard-dark.webp" alt="Statamic Global Set Example" class="u-hide-in-light-mode">
+    <figcaption>The default dashboard with no widgets</figcaption>
 </figure>
 
 ## Widgets
