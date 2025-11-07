@@ -563,7 +563,7 @@
 }
 /* GROUP ELEMENTS / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
 =================================================== */
-@layer base {
+@layer base-docs {
     :is(a, button, summary):focus-visible,
     /* focus-visible on input so we don't cause an outline when ticking cookie choices */
     input:focus-visible,
