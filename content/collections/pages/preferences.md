@@ -11,7 +11,8 @@ Where application configuration lives in PHP config files, preferences can be ac
 Users can access preferences through the cog icon in the upper right hand corner of the CP.
 
 <figure>
-    <img src="/img/preferences-nav-item.png" alt="CP Preferences">
+    <img src="/img/preferences-nav-item.webp" alt="CP Preferences" class="u-hide-in-dark-mode" width="500">
+    <img src="/img/preferences-nav-item-dark.webp" alt="CP Preferences" class="u-hide-in-light-mode" width="500">
     <figcaption>Manage your own preferences!</figcaption>
 </figure>
 
@@ -20,14 +21,16 @@ Users can access preferences through the cog icon in the upper right hand corner
 In order to customize preferences for other users, you must first enable [Statamic Pro](/tips/how-to-enable-statamic-pro), and you must either be a super user or have permissions to manage preferences.
 
 <figure>
-    <img src="/img/manage-preferences-permission.png" alt="Manage Preferences Permission">
+    <img src="/img/manage-preferences-permission.webp" alt="Manage Preferences Permission" class="u-hide-in-dark-mode">
+    <img src="/img/manage-preferences-permission-dark.webp" alt="Manage Preferences Permission" class="u-hide-in-light-mode">
     <figcaption>Are you rad enough to manage global preferences?</figcaption>
 </figure>
 
 This will allow you to customize the default preferences for all users, or on a role-by-role basis, though end-users will still have the ability to further customize their own CP nav as they see fit.
 
 <figure>
-    <img src="/img/preferences-other-users.png" alt="Preferences for Other Users">
+    <img src="/img/preferences-other-users.webp" alt="Preferences for Other Users" class="u-hide-in-dark-mode" width="550">
+    <img src="/img/preferences-other-users-dark.webp" alt="Preferences for Other Users" class="u-hide-in-light-mode" width="550">
     <figcaption>Manage the preferences for other users!</figcaption>
 </figure>
 
