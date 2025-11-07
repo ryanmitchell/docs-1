@@ -16,7 +16,8 @@ Keep in mind: Live Preview does not work using the `array` cache driver.
 :::
 
 <figure>
-    <img src="/img/live-preview.jpg" alt="Statamic Live Preview">
+    <img src="/img/live-preview.webp" alt="Statamic Live Preview" class="u-hide-in-dark-mode">
+    <img src="/img/live-preview-dark.webp" alt="Statamic Live Preview" class="u-hide-in-light-mode">
     <figcaption>And he's still touring, ladies and gentlemen.</figcaption>
 </figure>
 
@@ -33,7 +34,8 @@ You can customize the list of device sizes in `config/statamic/live_preview.php`
 ```
 
 <figure>
-    <img src="/img/device-sizes.png" alt="Device Size Switcher" width="441">
+    <img src="/img/device-sizes.webp" alt="Device Size Switcher" class="u-hide-in-dark-mode" width="500">
+    <img src="/img/device-sizes-dark.webp" alt="Device Size Switcher" class="u-hide-in-light-mode" width="500">
     <figcaption>This dropdown will obey you better than any puppy will, guaranteed.</figcaption>
 </figure>
 
