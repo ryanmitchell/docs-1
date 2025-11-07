@@ -6,7 +6,8 @@ title: Command Palette
 The command palette provides handy access to many pages and actions in the Control Panel without having to leave your keyboard.
 
 <figure>
-    <img src="/img/command-palette.png" alt="Command Palette">
+    <img src="/img/command-palette.webp" alt="Command Palette" class="u-hide-in-dark-mode">
+    <img src="/img/command-palette-dark.webp" alt="Command Palette" class="u-hide-in-light-mode">
     <figcaption>Make friends with the `⌘K` shortcut 😎</figcaption>
 </figure>
 
