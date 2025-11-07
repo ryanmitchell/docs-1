@@ -348,15 +348,15 @@
     }
     /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / HIGH PRIORITY / VERTICAL SPACING
     =================================================== */
-    #main h1 {
+    h1 {
         padding-block-end: var(--spacing-md);
     }
-    #main h2 {
+    h2 {
         /* E.g. h2 following article intro text */
         padding-block-end: var(--spacing-md);
     }
-    #main * + h2,
-    #main article + article {
+    * + h2,
+    article + article {
         /* E.g. h2 following article intro text */
         padding-block: var(--spacing-sm) var(--spacing-md);
         &:has(+ h3) {
@@ -366,11 +366,11 @@
     }
     /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / LOW PRIORITY / VERTICAL SPACING
     =================================================== */
-    #main h3 {
+    h3 {
         /* e.g. >> /contributing */
         padding-block: var(--spacing-md) var(--spacing-sm);
     }
-    #main h4 {
+    h4 {
         /* e.g. >> /content-managers-guide */
         padding-block: var(--spacing-md) var(--spacing-lg);
         &:has(code) {
@@ -378,7 +378,7 @@
             padding-block-start: var(--spacing-lg);
         }
     }
-    #main h5 {
+    h5 {
         padding-block: var(--spacing-2xl) var(--spacing-lg);
     }
 }
