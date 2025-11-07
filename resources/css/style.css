@@ -23,7 +23,7 @@ scope;
 @source "../../vendor/statamic/cms/packages/ui/src";
 
 @import './base/variables.css';
-@scope (html) to (.ui-component-example__render) {
+@scope (html) to (.ui-component-example__render, [data-dismissable-layer]) {
     @import './base/reset.css';
     @import './base/elements/elements.css';
     @import './base/elements/tables.css';
