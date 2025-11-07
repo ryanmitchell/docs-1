@@ -14,7 +14,8 @@ related_entries:
 Enabling Statamic's Git integration is like having Spock in your enterprise, listening for content changes with those large handsome ears. You won't find anyone more committed. 🖖
 
 <figure>
-    <img src="/img/git-utility.png" alt="Git utility allowing user to manually trigger commits from control panel">
+    <img src="/img/git-utility.webp" alt="Git utility allowing user to manually trigger commits from control panel" class="u-hide-in-dark-mode" width="600">
+    <img src="/img/git-utility-dark.webp" alt="Git utility allowing user to manually trigger commits from control panel" class="u-hide-in-light-mode" width="600">
 </figure>
 
 ## Enabling
