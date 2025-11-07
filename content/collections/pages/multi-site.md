@@ -43,10 +43,11 @@ First, enable `multisite` in your `config/statamic/system.php`:
 
 ### Adding new sites
 
-Next, you can add new sites through the control panel:
+Next, you can add new sites through the control panel by clicking the Site menu item in the sidebar:
 
 <figure>
-    <img src="/img/configure-sites.png" alt="Configure sites page in control panel">
+    <img src="/img/configure-sites.webp" alt="Configure sites page in control panel" class="u-hide-in-dark-mode">
+    <img src="/img/configure-sites-dark.webp" alt="Configure sites page in control panel" class="u-hide-in-light-mode">
 </figure>
 
 Or directly in your `resources/sites.yaml` file:
