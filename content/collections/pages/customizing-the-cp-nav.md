@@ -12,10 +12,11 @@ This page refers to the Control Panel's side-bar navigation. Not to be confused 
 
 ## Accessing CP Nav Preferences
 
-Users can access CP Nav preferences through the cog icon in the upper right hand corner of the CP.
+Users can access CP Nav preferences through the sidebar under `Settings > Preferences`.
 
 <figure>
-    <img src="/img/cp-nav-preferences.png" alt="CP Nav Preferences">
+    <img src="/img/cp-nav-preferences.webp" alt="CP Nav Preferences" class="u-hide-in-dark-mode">
+    <img src="/img/cp-nav-preferences-dark.webp" alt="CP Nav Preferences" class="u-hide-in-light-mode">
     <figcaption>Manage your own CP nav!</figcaption>
 </figure>
 
@@ -24,14 +25,16 @@ Users can access CP Nav preferences through the cog icon in the upper right hand
 In order to customize CP nav preferences for other users, you must first enable [Statamic Pro](/tips/how-to-enable-statamic-pro), and you must either be a super user or have permissions to manage preferences.
 
 <figure>
-    <img src="/img/manage-preferences-permission.png" alt="Manage Preferences Permission">
+    <img src="/img/manage-preferences-permission.webp" alt="Manage Preferences Permission" class="u-hide-in-dark-mode">
+    <img src="/img/manage-preferences-permission-dark.webp" alt="Manage Preferences Permission" class="u-hide-in-light-mode">
     <figcaption>Are you rad enough to manage global preferences?</figcaption>
 </figure>
 
 This will allow you to customize the default CP nav for all users, or on a role-by-role basis, though end-users will still have the ability to further customize their own CP nav as they see fit.
 
 <figure>
-    <img src="/img/cp-nav-preferences-other-users.png" alt="CP Nav Preferences for Other Users">
+    <img src="/img/preferences-other-users.webp" alt="CP Nav Preferences for Other Users" class="u-hide-in-dark-mode">
+    <img src="/img/preferences-other-users-dark.webp" alt="CP Nav Preferences for Other Users" class="u-hide-in-light-mode">
     <figcaption>Manage the default CP nav for other users!</figcaption>
 </figure>
 

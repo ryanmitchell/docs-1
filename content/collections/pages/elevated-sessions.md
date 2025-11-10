@@ -6,7 +6,8 @@ title: Elevated Sessions
 Elevated Sessions allow you to prompt users for their password or a verification code before being able to take certain actions.
 
 <figure>
-    <img src="/img/elevated-session.png" alt="Elevated Session prompt">
+    <img src="/img/elevated-session.webp" alt="Elevated Session prompt" class="u-hide-in-dark-mode">
+    <img src="/img/elevated-session-dark.webp" alt="Elevated Session prompt" class="u-hide-in-light-mode">
     <figcaption>Make sure you remember your password! 🔑</figcaption>
 </figure>
 
