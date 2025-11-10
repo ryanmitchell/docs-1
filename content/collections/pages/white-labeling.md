@@ -17,20 +17,12 @@ Keep in mind that according to the license terms you can only rebrand for person
 
 ### CP theme
 
-You can choose to switch the default "rad" login theme with a more vanilla (and boring) "business" theme.
-
-``` php
-'theme' => env('STATAMIC_THEME', 'rad'),
-```
-
-**Available options**:
-
-- `rad`
-- `business`
+You can channel your inner branding overlord in `config/statamic/cp.php`—just find the “White Labeling” section and reign supreme!
 
 <figure>
-    <img src="/img/white-label-login.png" alt="Statamic White Label Theme">
-    <figcaption>Here's the "business" theme with a custom logo</figcaption>
+    <img src="/img/white-label-login.webp" alt="Statamic White Label Theme" class="u-hide-in-dark-mode">
+    <img src="/img/white-label-login-dark.webp" alt="Statamic White Label Theme" class="u-hide-in-light-mode">
+    <figcaption>Here's the theme with a custom primary color and logo</figcaption>
 </figure>
 
 ### Custom CMS name
