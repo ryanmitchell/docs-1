@@ -20,7 +20,6 @@ updated_at: 1633025886
 
 Assets live in directories on your local server, in an [Amazon S3 bucket](https://aws.amazon.com/s3), or other cloud storage services. Each defined location is called a **container**.
 
-
 Statamic scans the files in each container and caches [meta information](#metadata) (like `width` and `height` for images) on them. This cache is used to speed up interactions and response times when working with them on the [frontend](/frontend) of your site.
 
 ## Asset browser
@@ -28,7 +27,8 @@ Statamic scans the files in each container and caches [meta information](#metada
 You can explore these files in the Control Panel's asset browser. You can edit, sort, search, move, rename, replace, reupload, preview, and — if working with images — even set focal crop points to make dynamically resized images look their best.
 
 <figure>
-    <img src="/img/asset-browser-v4.png" alt="Assets browser">
+    <img src="/img/asset-browser-v6.webp" alt="Assets browser" class="u-hide-in-dark-mode">
+    <img src="/img/asset-browser-v6-dark.webp" alt="Assets browser" class="u-hide-in-light-mode">
     <figcaption>Browsing some assets.</figcaption>
 </figure>
 
@@ -38,10 +38,11 @@ There are a number of actions that can be taken on assets while in the asset bro
 
 Single asset actions are available by clicking the options menu (three-dot icon) associated with the asset, and picking the desired action from the dropdown list.
 
-Bulk asset actions are available at the top of the asset browser whenever you have one or more assets selected.
+Bulk asset actions are available in a floating toolbar at the bottom of the asset browser whenever you have one or more assets selected.
 
 <figure>
-    <img src="/img/asset-actions.png" alt="Assets actions">
+    <img src="/img/asset-actions.webp" alt="Assets actions" class="u-hide-in-dark-mode">
+    <img src="/img/asset-actions-dark.webp" alt="Assets actions" class="u-hide-in-light-mode">
     <figcaption>Check out those sweet actions.</figcaption>
 </figure>
 
@@ -51,7 +52,8 @@ Editing an asset opens a new modal window with a number of additional options, a
 Most of the asset actions are also available inside the editor, along with the ability to set a Focal Point for images.
 
 <figure>
-    <img src="/img/asset-editor-v4.png" alt="The Statamic Asset Editor">
+    <img src="/img/asset-editor-v6.webp" alt="The Statamic Asset Editor" class="u-hide-in-dark-mode">
+    <img src="/img/asset-editor-v6-dark.webp" alt="The Statamic Asset Editor" class="u-hide-in-light-mode">
     <figcaption>The asset editor is pretty slick, if we say so ourselves.</figcaption>
 </figure>
 
@@ -118,7 +120,8 @@ Asset fields are configured like a [blueprint](/blueprints) and attached to the 
 This data is stored in the asset's [meta data](#metadata) file.
 
 <figure>
-    <img src="/img/asset-editor.png" alt="The asset editor editing an image">
+    <img src="/img/asset-editor.webp" alt="The asset editor editing an image" class="u-hide-in-dark-mode">
+    <img src="/img/asset-editor-dark.webp" alt="The asset editor editing an image" class="u-hide-in-light-mode">
     <figcaption>Editing an image with the asset editor.</figcaption>
 </figure>
 
