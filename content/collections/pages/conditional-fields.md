@@ -13,7 +13,8 @@ related_entries:
 Field conditions are set on individual field settings in [blueprints](/blueprints). For example, you could create a `meta_description` field that is only shown and submitted when the `content` field is longer than 140 characters.
 
 <figure>
-    <img src="/img/field-conditions.png" alt="Statamic conditional field rule builder">
+    <img src="/img/field-conditions.webp" alt="Statamic conditional field rule builder" class="u-hide-in-dark-mode">
+    <img src="/img/field-conditions-dark.webp" alt="Statamic conditional field rule builder" class="u-hide-in-light-mode">
     <figcaption>The conditional field rule builder</figcaption>
 </figure>
 
