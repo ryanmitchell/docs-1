@@ -21,6 +21,9 @@ scope;
 @import "@statamic/ui/ui.css";
 @source "../../vendor/statamic/cms/packages/ui/src";
 
+:root {
+    interpolate-size: allow-keywords;
+}
 @import './base/variables.css';
 @scope (html) to (.ui-component-example__render, [data-dismissable-layer]) {
     @import './base/reset.css';
