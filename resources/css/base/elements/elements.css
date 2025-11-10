@@ -367,8 +367,8 @@
         padding-block: var(--spacing-md) var(--spacing-sm);
     }
     h4 {
-        /* e.g. >> /content-managers-guide */
-        padding-block: var(--spacing-md) var(--spacing-lg);
+        /* e.g. >> /frontend/augmentation */
+        padding-block: var(--spacing-md) var(--spacing-sm);
         &:has(code) {
             /* e.g. >> /forms */
             padding-block-start: var(--spacing-lg);
