@@ -110,7 +110,8 @@ To do this, first configure an image manipulation preset in `config/statamic/ass
 Then in your asset container settings, you can configure uploads to use this preset:
 
 <figure class="mt-0">
-    <img src="/img/glide-process-source-images.png" alt="Glide Process Source Images">
+    <img src="/img/glide-process-source-images.webp" alt="Glide Process Source Images" class="u-hide-in-dark-mode">
+    <img src="/img/glide-process-source-images-dark.webp" alt="Glide Process Source Images" class="u-hide-in-light-mode">
 </figure>
 
 :::tip
@@ -124,7 +125,8 @@ As mentioned [above](#presets), Statamic will generate images for all of your co
 By default, Statamic will do this "intelligently", which means it'll generate all presets except for the one used for source processing:
 
 <figure>
-    <img src="/img/glide-intelligently-warm.png" alt="Glide Intelligently Warm Presets">
+    <img src="/img/glide-intelligently-warm.webp" alt="Glide Intelligently Warm Presets" class="u-hide-in-dark-mode">
+    <img src="/img/glide-intelligently-warm-dark.webp" alt="Glide Intelligently Warm Presets" class="u-hide-in-light-mode">
 </figure>
 
 However, you may wish to configure which presets are warmed in your asset container settings (or leave this option blank to disable warming altogether):
