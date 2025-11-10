@@ -180,7 +180,8 @@ This example dynamically renders each input's HTML. You could alternatively writ
 In the Forms area of the control panel you can explore the collected responses, configure dashboards and export the data to CSV or JSON formats.
 
 <figure>
-  <img src="/img/cp-forms.png" alt="List of form submissions in the control panel">
+  <img src="/img/cp-forms.webp" alt="List of form submissions in the control panel" class="u-hide-in-dark-mode">
+  <img src="/img/cp-forms-dark.webp" alt="List of form submissions in the control panel" class="u-hide-in-light-mode">
   <figcaption>Forms. Submissions. Features.</figcaption>
 </figure>
 
