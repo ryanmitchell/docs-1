@@ -156,6 +156,10 @@
         position: relative;
         font-size: 1.05em;
         color: var(--color-primary-text)!important;
+        /* Override inline styles from Torchlight theme */
+        & ~ .token {
+            color: var(--color-primary-text) !important;
+        }
     }
 
     .tl-files-name:before {
@@ -178,6 +182,10 @@
         /* Custom */
         @media (width >= 768px) {
             font-size: 1.15em;
+        }
+        /* Override inline styles from Torchlight theme */
+        & .token {
+            color: var(--color-purple) !important;
         }
         /* The last line with a folder */
         /* Commented out based on e.g. >> /extending/vite-in-addons */
