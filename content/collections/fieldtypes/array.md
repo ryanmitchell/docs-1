@@ -5,6 +5,7 @@ intro: Manage data in a `key:value` array format.
 overview: |
   The array fieldtype is used to manage `key: value` array data. It's similar to the [table](/fieldtypes/table) fieldtype but with a more strict data structure and compact user interface.
 screenshot: fieldtypes/screenshots/v6/array.webp
+screenshot_dark: fieldtypes/screenshots/v6/array-dark.webp
 options:
   -
     name: keys
