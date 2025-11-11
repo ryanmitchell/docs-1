@@ -59,6 +59,8 @@
         position: relative;
         /* e.g. >> /collections and /stache */
         margin-block-start: var(--spacing-xl);
+        /* e.g. >> /frontend/protecting-content where there's a heading of "Password form" followed by a figure */
+        :is(h2, h3, h4, h5, h6) + &,
         ul + & {
             /* Decrease, e.g. >> /getting-started/quick-start-guide */
             margin-block-start: var(--spacing-2xs);
