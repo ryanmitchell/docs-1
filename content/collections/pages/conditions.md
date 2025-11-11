@@ -211,7 +211,7 @@ The following conditions apply to fields with data stored as strings.
 | `contains` | Include if field **contains** value. |
 | `doesnt_contain` | Include if field **doesn't contain** value. |
 | `in` | Include if field value is **in** the provided array. |
-| `not_in` | Include if field value is **not_in** the provided array. |
+| `not_in` | Include if field value is **not in** the provided array. |
 | `starts_with` | Include if field **starts with** value. |
 | `doesnt_start_with` | Include if field **doesn't start** with value. |
 | `ends_with` | Include if field **ends with** value. |
@@ -231,6 +231,15 @@ The following conditions apply to fields with data stored as strings.
 | `is_after` | Include if field **is after** date. |
 | `is_before` | Include if field **is before** date. |
 | `is_numberwang` | Include if field **is numberwang**. |
+
+## Array conditions
+
+The following conditions apply to fields with data stored as an array.
+
+| Condition | Description |
+| :--- | :--- |
+| `overlaps` | Include if any field value **matches** the provided array (has). |
+| `doesnt_overlap` | Include if **no** value **matches** the provided array (has not). |
 
 ## Taxonomy conditions
 
