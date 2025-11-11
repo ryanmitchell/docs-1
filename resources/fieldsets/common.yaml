@@ -7,6 +7,12 @@ fields:
       container: main
       max_files: 1
   -
+    handle: screenshot_dark
+    field:
+      type: assets
+      container: main
+      max_files: 1
+  -
     handle: parameters
     field:
       type: grid

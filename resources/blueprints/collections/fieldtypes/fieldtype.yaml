@@ -13,6 +13,9 @@ tabs:
           -
             import: common
             handle: screenshot
+          -
+            import: common
+            handle: screenshot_dark
   sidebar:
     display: Sidebar
     sections:

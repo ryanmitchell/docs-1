@@ -4,8 +4,13 @@
     {{ if screenshot }}
         <figure>
             {{ screenshot }}
-                <img src="{{ url }}" alt="Screenshot of {{ page:title }}" style="width: 100%; max-width: 33rem;">
+                <img src="{{ url }}" alt="Screenshot of {{ page:title }}" style="width: 100%; max-width: 33rem;" class="u-hide-in-dark-mode">
             {{ /screenshot }}
+            {{ if screenshot_dark }}
+                {{ screenshot_dark }}
+                    <img src="{{ url }}" alt="Screenshot of {{ page:title }}" style="width: 100%; max-width: 33rem;" class="u-hide-in-light-mode">
+                {{ /screenshot_dark }}
+            {{ /if }}
             {{# e.g. /fieldtypes/assets #}}
             <figcaption>The {{ title }} in action!</figcaption>
         </figure>
