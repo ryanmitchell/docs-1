@@ -1,9 +1,4 @@
 @layer elements {
-    html {
-        background: var(--color-body-background);
-        color: var(--color-primary-text);
-    }
-
     body {
         min-height: 100vh;
 
