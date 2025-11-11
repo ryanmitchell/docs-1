@@ -121,11 +121,11 @@ password: local-password
 ]
 ```
 
-
 ### Password form
 
 <figure>
-    <img src="/img/password-protected.png" alt="A Statamic password protected page">
+    <img src="/img/password-protected.webp" alt="A Statamic password protected page" class="u-hide-in-dark-mode">
+    <img src="/img/password-protected-dark.webp" alt="A Statamic password protected page" class="u-hide-in-light-mode">
     <figcaption>The default password protected login screen.</figcaption>
 </figure>
 
