@@ -182,7 +182,7 @@
                                 content: '';
                                 border-inline-start: 3.5px solid var(--color-pink-light-1);
                                 position: absolute;
-                                left: calc(0% - var(--spacing-xs) - var(--dropdown-nav-item-padding) * 1.5);
+                                left: calc(0% - (var(--spacing-md) - var(--dropdown-nav-item-padding)));
                                 height: 1.5em;
                             }
                         }
