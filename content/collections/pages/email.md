@@ -29,7 +29,8 @@ For specific driver configuration details, reference the [Laravel Mail Driver do
 There's an email utility in the control panel to help you easily test your email settings. Enter an email address (preferably your own) and click **Send Test Email** and wait. If you don't get anything before your birthday you know your settings need tweaking.
 
 <figure>
-    <img src="/img/email-utility.png" alt="Email Utility" width="480">
+    <img src="/img/email-utility.webp" alt="Email Utility" width="550" class="u-hide-in-dark-mode">
+    <img src="/img/email-utility-dark.webp" alt="Email Utility" width="550" class="u-hide-in-light-mode">
     <figcaption>Is email working? Click to find out!</figcaption>
 </figure>
 
