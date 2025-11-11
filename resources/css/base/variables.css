@@ -264,7 +264,7 @@
 
     /* GROUP VARIABLES -- DECORATION -- OTHER
     =================================================== */
-    --filter-image-boost-content: contrast(100%) saturate(1.1);
+    --filter-image-boost-content: saturate(1.12);
     --filter-image-boost-1: contrast(103%) saturate(1.12);
     --filter-image-boost-1-with-hue-rotate: contrast(103%) saturate(1.12) hue-rotate(-12deg);
     --filter-image-boost-1-with-hue-rotate-extra: contrast(108%) saturate(1.35) hue-rotate(-12deg);
