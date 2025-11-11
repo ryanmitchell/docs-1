@@ -132,7 +132,8 @@ By default, Statamic will do this "intelligently", which means it'll generate al
 However, you may wish to configure which presets are warmed in your asset container settings (or leave this option blank to disable warming altogether):
 
 <figure class="mt-0">
-    <img src="/img/glide-warm-specific-presets.png" alt="Glide Warm Specific Presets">
+    <img src="/img/glide-warm-specific-presets.webp" alt="Glide Warm Specific Presets" class="u-hide-in-dark-mode">
+    <img src="/img/glide-warm-specific-presets-dark.webp" alt="Glide Warm Specific Presets" class="u-hide-in-light-mode">
 </figure>
 
 :::tip
