@@ -300,9 +300,11 @@
         }
     }
     .c-nav-collapse-expand {
+        display: flex;
+        justify-content: center;
+        padding-inline-end: var(--spacing-2xs);
         svg {
             fill: none;
-            width: 100%;
         }
         &:not(.js__expand-collapse-nav--collapsed) {
             #top-arrow {
