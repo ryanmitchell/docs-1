@@ -6,7 +6,7 @@ stage: 5
 id: 32bc9a50-3b12-11e6-bdf4-0800200c9a66
 ---
 ## Overview
-This tag is useful for debugging. It will stop execution of the page and render the raw data of the variables in your current context (page, variable loop, etc).
+This tag is useful for debugging. It will render the raw data of the variables in your current context (page, variable loop, etc).
 
 Dropping it in a template or layout will show you all the data that's been injected into the view layer.
 
